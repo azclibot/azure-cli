@@ -96,3 +96,12 @@ def cf_gallery_images(cli_ctx, _):
 
 def cf_gallery_image_versions(cli_ctx, _):
     return _compute_client_factory(cli_ctx).gallery_image_versions
+
+
+def _image_builder_client_factory(cli_ctx):
+    from azure.cli.core.commands.client_factory import get_mgmt_service_client
+    from azure.mgmt.imagebuilder import ImageBuilderClient
+    return get_mgmt_service_client(cli_ctx, ImageBuilderClient)
+
+def cf_img_bldr_image_templates(cli_ctx, _):
+    return _image_builder_client_factory(cli_ctx).virtual_machine_image_template

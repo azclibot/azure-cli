@@ -5,7 +5,7 @@
 
 from azure.cli.command_modules.vm._client_factory import (cf_vm, cf_avail_set, cf_ni,
                                                           cf_vm_ext,
-                                                          cf_vm_ext_image, cf_vm_image, cf_usage,
+                                                          cf_vm_ext_image, cf_vm_image, cf_img_bldr_image_templates, cf_usage,
                                                           cf_vmss, cf_vmss_vm,
                                                           cf_vm_sizes, cf_disks, cf_snapshots,
                                                           cf_images, cf_run_commands,
@@ -34,6 +34,10 @@ def load_command_table(self, _):
     compute_disk_encryption_custom = CliCommandType(
         operations_tmpl='azure.cli.command_modules.vm.disk_encryption#{}',
         operation_group='virtual_machines'
+    )
+
+    image_builder_custom = CliCommandType(
+        operations_tmpl='azure.cli.command_modules.vm.image_builder#{}',
     )
 
     compute_availset_sdk = CliCommandType(
@@ -131,6 +135,11 @@ def load_command_table(self, _):
         client_factory=cf_gallery_image_versions,
     )
 
+    image_builder_image_templates_sdk = CliCommandType(
+        operations_tmpl="azure.mgmt.imagebuilder.operations.virtual_machine_image_template_operations#VirtualMachineImageTemplateOperations.{}",
+        client_factory=cf_img_bldr_image_templates,
+    )
+
     with self.command_group('disk', compute_disk_sdk, operation_group='disks', min_api='2017-03-30') as g:
         g.custom_command('create', 'create_managed_disk', supports_no_wait=True, table_transformer=transform_disk_show_table_output, validator=process_disk_or_snapshot_create_namespace)
         g.command('delete', 'delete', supports_no_wait=True, confirmation=True)
@@ -147,6 +156,17 @@ def load_command_table(self, _):
         g.show_command('show', 'get')
         g.command('delete', 'delete')
         g.generic_update_command('update', custom_func_name='update_image')
+
+    with self.command_group('image template', image_builder_image_templates_sdk, custom_command_type=image_builder_custom) as g:
+        g.custom_command('create', 'create_image_template')  # need to handle different sources
+        g.custom_command('list', 'list_image_templates') # two api methods for by resource group and all
+        g.custom_command('show', 'get_image_template')  # need to add run output information
+
+        g.command('build', 'run')
+        g.command('delete', 'delete')
+        g.generic_update_command('update', 'list_image_templates')
+        g.wait_command('wait')
+
 
     with self.command_group('snapshot', compute_snapshot_sdk, operation_group='snapshots', min_api='2016-04-30-preview') as g:
         g.custom_command('create', 'create_snapshot', validator=process_disk_or_snapshot_create_namespace, supports_no_wait=True)

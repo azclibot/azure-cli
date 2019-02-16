@@ -5,7 +5,7 @@
 
 from azure.cli.command_modules.vm._client_factory import (cf_vm, cf_avail_set, cf_ni,
                                                           cf_vm_ext,
-                                                          cf_vm_ext_image, cf_vm_image, cf_img_bldr_image_templates, cf_usage,
+                                                          cf_vm_ext_image, cf_vm_image, cf_usage,
                                                           cf_vmss, cf_vmss_vm,
                                                           cf_vm_sizes, cf_disks, cf_snapshots,
                                                           cf_images, cf_run_commands,
@@ -19,6 +19,9 @@ from azure.cli.command_modules.vm._validators import (
     process_vm_create_namespace, process_vmss_create_namespace, process_image_create_namespace,
     process_disk_or_snapshot_create_namespace, process_disk_encryption_namespace, process_assign_identity_namespace,
     process_remove_identity_namespace, process_vm_secret_format, process_vm_vmss_stop)
+
+from azure.cli.command_modules.vm._image_builder import process_image_template_create_namespace, \
+    image_builder_client_factory, cf_img_bldr_image_templates
 
 from azure.cli.core.commands import DeploymentOutputLongRunningOperation, CliCommandType
 from azure.cli.core.commands.arm import deployment_validate_table_format, handle_template_based_exception
@@ -37,7 +40,8 @@ def load_command_table(self, _):
     )
 
     image_builder_custom = CliCommandType(
-        operations_tmpl='azure.cli.command_modules.vm.image_builder#{}',
+        operations_tmpl='azure.cli.command_modules.vm._image_builder#{}',
+        client_factory=image_builder_client_factory
     )
 
     compute_availset_sdk = CliCommandType(
@@ -158,10 +162,9 @@ def load_command_table(self, _):
         g.generic_update_command('update', custom_func_name='update_image')
 
     with self.command_group('image template', image_builder_image_templates_sdk, custom_command_type=image_builder_custom) as g:
-        g.custom_command('create', 'create_image_template')  # need to handle different sources
-        g.custom_command('list', 'list_image_templates') # two api methods for by resource group and all
+        g.custom_command('create', 'create_image_template', supports_no_wait=True, validator=process_image_template_create_namespace)
+        g.custom_command('list', 'list_image_templates') # custom because there are two api methods for by resource group and all
         g.custom_command('show', 'get_image_template')  # need to add run output information
-
         g.command('build', 'run')
         g.command('delete', 'delete')
         g.generic_update_command('update', 'list_image_templates')

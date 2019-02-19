@@ -120,7 +120,7 @@ def load_arguments(self, _):
         c.argument('location', get_location_type(self.cli_ctx), help="Location. Values from: `az account list-locations`. If no configured location, defaults to the location of the resource group. You can configure the default location using `az configure --defaults location=<location>`.")
         c.argument('scripts', nargs='+', help="Space-separated list of scripts to customize the image with. Each script must be a publicly accessible URL or a path to an existing file. If a file path is given, the script will be uploaded to a storage account.")
         c.argument('source', options_list="--image-source", help="The image to customize. Must be a valid platform image URN, platform image alias, or Red Hat ISO image URI. Values from: ...")
-        c.argument('template_name', image_template_name_type, help="The name of the image template.")
+        c.argument('image_template_name', image_template_name_type, help="The name of the image template.")
         c.argument('checksum', help="The SHA256 checksum of the Red Hat ISO image")
         c.argument('managed_image_destinations', nargs='+', help='Managed image distribution information. Space-separated list of key-value pairs. E.g "image_1=westus2 image_2=westus". Each key is the name or resource ID of the managed image to be created. Each value is the location of the image.')
         c.argument('shared_image_destinations', nargs='+', help='Shared image gallery (sig) distribution information. Space-separated list of key-value pairs. E.g "my_gallery_1/image_def_1=eastus,westus  my_gallery_2/image_def_2=uksouth,canadaeast,francesouth." '

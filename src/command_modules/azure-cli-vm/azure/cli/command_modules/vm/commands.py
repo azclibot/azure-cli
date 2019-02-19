@@ -165,7 +165,7 @@ def load_command_table(self, _):
         g.custom_command('create', 'create_image_template', supports_no_wait=True, validator=process_image_template_create_namespace)
         g.custom_command('list', 'list_image_templates') # custom because there are two api methods for by resource group and all
         g.custom_command('show', 'get_image_template')  # need to add run output information
-        g.command('build', 'run')
+        g.custom_command('build', 'build_image_template', supports_no_wait=True)# should be g.command('build', 'run') but due to bug with Accept, need to make this custom....
         g.command('delete', 'delete')
         g.generic_update_command('update', 'list_image_templates')
         g.wait_command('wait')

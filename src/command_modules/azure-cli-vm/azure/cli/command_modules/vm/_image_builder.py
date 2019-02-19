@@ -15,7 +15,7 @@ from azure.cli.core.util import sdk_no_wait
 from azure.cli.core.commands.client_factory import get_subscription_id
 from azure.cli.core.commands.validators import get_default_location_from_resource_group
 from knack.util import CLIError
-from msrestazure.tools import is_valid_resource_id, resource_id
+from msrestazure.tools import is_valid_resource_id, resource_id, parse_resource_id
 
 
 class _SourceType(Enum):
@@ -180,7 +180,7 @@ def process_image_template_create_namespace(cmd, namespace):
     namespace.scripts_list = scripts
     namespace.destinations_lists = destinations
 
-def create_image_template(client, resource_group_name, template_name, source, scripts,
+def create_image_template(client, resource_group_name, image_template_name, source, scripts,
                           checksum=None, location=None, no_wait=False,
                           managed_image_destinations=None, shared_image_destinations=None,
                           source_dict=None, scripts_list=None, destinations_lists=None):
@@ -202,13 +202,16 @@ def create_image_template(client, resource_group_name, template_name, source, sc
 
     # create image template distribution / destination settings
     for dest_type, id, loc_info in destinations_lists:
-        if dest_type == _SourceType.PLATFORM_IMAGE:
-            template_destinations.append(ImageTemplateManagedImageDistributor(image_id=id, location=loc_info))
-        elif dest_type == _SourceType.ISO_URI:
-            template_destinations.append(ImageTemplateSharedImageDistributor(gallery_image_id=id, replication_regions=loc_info))  # pylint: disable=line-too-long
+        parsed = parse_resource_id(id)
+        if dest_type == _DestType.MANAGED_IMAGE:
+            template_destinations.append(ImageTemplateManagedImageDistributor(image_id=id, location=loc_info, run_output_name=parsed['name']))
+        elif dest_type == _DestType.SHARED_IMAGE_GALLERY:
+            template_destinations.append(ImageTemplateSharedImageDistributor(gallery_image_id=id, replication_regions=loc_info, run_output_name=parsed['child_name_1']))  # pylint: disable=line-too-long
+        else:
+            logger.info("No applicable destination found for destination {}".format(tuple([dest_type, id, loc_info])))
 
     image_template = ImageTemplate(source=template_source, customize=template_scripts, distribute=template_destinations, location=location)
-    return sdk_no_wait(no_wait, client.virtual_machine_image_template.create_or_update, image_template, resource_group_name, template_name)
+    return sdk_no_wait(no_wait, client.virtual_machine_image_template.create_or_update, image_template, resource_group_name, image_template_name)
 
 def list_image_templates(*args, **kwargs):
     pass
@@ -217,6 +220,14 @@ def get_image_template(*args, **kwargs):
     pass
 
 
+def build_image_template(client, resource_group_name, image_template_name, no_wait=False):
+
+    # bug we need to specify utf8 in headers.
+    header = {'Content-Type' : 'text/plain; charset=utf-8'}
+
+    return sdk_no_wait(no_wait, client.virtual_machine_image_template.run, resource_group_name, image_template_name, custom_headers=header)
+
+    pass
 
 
 

@@ -221,16 +221,16 @@ def get_image_template(*args, **kwargs):
 
 
 def build_image_template(client, resource_group_name, image_template_name, no_wait=False):
-
-    # bug we need to specify utf8 in headers.
-    header = {'Content-Type' : 'text/plain; charset=utf-8'}
-
+    # bug we need to specify utf8 in headers. Todo: remove when bug fixed.
+    header = {'Content-Type' : 'application/json'}
     return sdk_no_wait(no_wait, client.virtual_machine_image_template.run, resource_group_name, image_template_name, custom_headers=header)
 
-    pass
+def show_build_output(client, resource_group_name, image_template_name, output_name=None):
+    if output_name:
+        return client.virtual_machine_image_template.get_run_output(resource_group_name, image_template_name, output_name)
+    return client.virtual_machine_image_template.get_run_outputs(resource_group_name, image_template_name)
 
-
-
+# region Client Factories
 
 def image_builder_client_factory(cli_ctx, _):
     from azure.cli.core.commands.client_factory import get_mgmt_service_client
@@ -239,3 +239,5 @@ def image_builder_client_factory(cli_ctx, _):
 
 def cf_img_bldr_image_templates(cli_ctx, _):
     return image_builder_client_factory(cli_ctx, _).virtual_machine_image_template
+
+# endregion

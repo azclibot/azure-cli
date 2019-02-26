@@ -7,6 +7,8 @@ from azure.cli.testsdk import (
     ScenarioTest, ResourceGroupPreparer, LiveScenarioTest, api_version_constraint,
     StorageAccountPreparer)
 
+from msrestazure.tools import parse_resource_id
+
 # pylint: disable=line-too-long
 # pylint: disable=too-many-lines
 
@@ -25,7 +27,12 @@ class ImageTemplateTest(ScenarioTest):
             'scope': '/subscriptions/{}/resourceGroups/{}'.format(subscription_id, rg)
         })
 
-        self.cmd("role assignment create --assignee {assignee} --role {role} --scope {scope}")
+        try:
+            self.cmd("role assignment create --assignee {assignee} --role {role} --scope {scope}")
+        except AssertionError as ex:
+            if self.is_live:
+                raise ex
+            pass
 
     @ResourceGroupPreparer(name_prefix='img_tmpl_basic')
     def test_image_template_basic(self, resource_group):
@@ -85,6 +92,42 @@ class ImageTemplateTest(ScenarioTest):
                      self.check('distribute[0].type', 'managedImage')
                  ])
 
+    @ResourceGroupPreparer(name_prefix='img_tmpl_basic_2', location="westus2")
+    def test_image_template_basic_sig(self, resource_group):
+        self._assign_ib_permissions(resource_group)
+
+        subscription_id = self.get_subscription_id()
+        self.kwargs.update({
+            'tmpl_01': 'template01',
+            'img_src': IMAGE_SOURCE,
+            'script': TEST_SCRIPT,
+            'sub': subscription_id,
+            'gallery': 'gallery1',
+            'sig1': 'image1'
+        })
+
+        # create a sig
+        self.cmd('sig create -g {rg} --gallery-name {gallery}', checks=self.check('name', self.kwargs['gallery']))
+        self.cmd('sig image-definition create -g {rg} --gallery-name {gallery} --gallery-image-definition {sig1} '
+                 '--os-type linux -p publisher1 -f offer1 -s sku1')
+
+        # Test that sig output can be set through output.
+
+        self.kwargs['sig_out'] = "{}/{}=westus,eastus".format(self.kwargs['gallery'], self.kwargs['sig1'])
+        output = self.cmd('image-builder template create -n {tmpl_01} -g {rg} --scripts {script} --image-source {img_src} '
+                 '--shared-image-destinations {sig_out}',
+                 checks=[
+                     self.check('distribute[0].replicationRegions[0]', 'westus'),
+                     self.check('distribute[0].replicationRegions[1]', 'eastus'),
+                     self.check('distribute[0].runOutputName', '{sig1}')
+                 ]).get_output_in_json()
+
+        parsed = parse_resource_id(output['distribute'][0]['galleryImageId'])
+
+        self.assertTrue(parsed['name'], self.kwargs['gallery'])
+        self.assertTrue(parsed['child_name_1'], self.kwargs['sig1'])
+
+
     @ResourceGroupPreparer(name_prefix='img_tmpl_managed')
     def test_image_build_managed_image(self, resource_group, resource_group_location):
         self._assign_ib_permissions(resource_group)
@@ -132,9 +175,13 @@ class ImageTemplateTest(ScenarioTest):
                  '--os-type linux -p publisher1 -f offer1 -s sku1')
 
         self.cmd('image-builder template create -n {tmpl} -g {rg} --scripts {script} --image-source {img_src}')
-        self.cmd('image-builder output add -n {tmpl} -g {rg} --gallery-name {gallery} --gallery-image-definition {sig1} '
-                 '--gallery-replication-regions westus')
+        self.cmd('image-builder output add -n {tmpl} -g {rg} --gallery-name {gallery} --gallery-image-definition {sig1} --gallery-replication-regions westus',
+                 checks=[
+                     self.check('distribute[0].replicationRegions[0]', 'westus'),
+                     self.check('distribute[0].runOutputName', '{sig1}')
+                 ])
 
+        # Takes a long time to build a SIG based image template.
         self.cmd('image-builder run -n {tmpl} -g {rg}')
 
         output = self.cmd('image-builder show -n {tmpl} -g {rg} --output-name {sig1}',

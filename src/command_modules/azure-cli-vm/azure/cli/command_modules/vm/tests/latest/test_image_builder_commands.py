@@ -193,4 +193,6 @@ class ImageTemplateTest(ScenarioTest):
         self.cmd('vm create --name {vm} -g {rg} --image {image_id}')
         self.cmd('vm show -n {vm} -g {rg}', checks=self.check('provisioningState', 'Succeeded'))
 
-
+    @ResourceGroupPreparer(name_prefix='img_tmpl_managed')
+    def test_image_build_managed_image_win(self, resource_group, resource_group_location):
+        pass

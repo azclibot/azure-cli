@@ -33,6 +33,11 @@ class _DestType(Enum):
     MANAGED_IMAGE = 1
     SHARED_IMAGE_GALLERY = 2
 
+class _ScriptType(Enum):
+    SHELL = "Shell"
+    POWERSHELL = "PowerShell"
+    UNKNOWN = None
+
 # region Client Factories
 
 def image_builder_client_factory(cli_ctx, _):
@@ -47,7 +52,7 @@ def cf_img_bldr_image_templates(cli_ctx, _):
 
 def _parse_script(script_str):
     script_name = script_str
-    script = {"script": script_str, "name": script_name}
+    script = {"script": script_str, "name": script_name, "type": _ScriptType.UNKNOWN}
     if urlparse(script_str).scheme and "://" in script_str:
         logger.info("{} appears to be a url.".format(script_str))
         if "/" in script_str:
@@ -59,7 +64,14 @@ def _parse_script(script_str):
         script["is_url"] = False
         if not os.path.isfile(script_str):
             raise CLIError("Script file {} does not exist.".format(script_str))
-        raise CLIError("Script file found, however, uploading to a storage account is not yet supported on the CLI.")
+        raise CLIError("Script file found. Please provide a publicly accessible url instead.")
+        # raise CLIError("Script file found, however, uploading to a storage account is not yet supported on the CLI.")
+
+    if script_str.lower().endswith(".sh"):
+        script["type"] = _ScriptType.SHELL
+    elif script_str.lower().endswith(".ps1"):
+        script["type"] = _ScriptType.POWERSHELL
+
     return script
 
 def _no_white_space_or_err(words):
@@ -173,6 +185,11 @@ def process_image_template_create_namespace(cmd, namespace):
             'type': _SourceType.PLATFORM_IMAGE
         }
 
+        if "windows" not in source["offer"].lower() and "windows" not in source["sku"].lower():
+            likely_linux = True
+        else:
+            likely_linux = False
+
     # 2 - check if source is a Redhat iso uri. If so a checksum must be provided.
     elif urlparse(namespace.source).scheme and "://" in namespace.source and ".iso" in namespace.source.lower():
         if not namespace.checksum:
@@ -182,6 +199,8 @@ def process_image_template_create_namespace(cmd, namespace):
             'sha256_checksum': namespace.checksum,
             'type': _SourceType.ISO_URI
         }
+        likely_linux = True
+
     # 3 - check if source is a urn alias from the vmImageAliasDoc endpoint. See "az cloud show"
     else:
         from azure.cli.command_modules.vm._actions import load_images_from_aliases_doc
@@ -196,11 +215,21 @@ def process_image_template_create_namespace(cmd, namespace):
                 'type': _SourceType.PLATFORM_IMAGE
             }
 
+        if "windows" not in source["offer"].lower() and "windows" not in source["sku"].lower():
+            likely_linux = True
+
     if not source:
         err = 'Invalid image "{}". Use a valid image URN, ISO URI, or pick a platform image alias from {}.\n' \
               'See vm create -h for more information on specifying an image.'
         raise CLIError(err.format(namespace.source, ", ".join([x['urnAlias'] for x in images])))
 
+    for script in scripts:
+        if script["type"] == _ScriptType.UNKNOWN:
+            try:
+                script["type"] = _ScriptType.SHELL if likely_linux else _ScriptType.POWERSHELL
+                logger.info("For script {}, likely linux is {}".format(script["script"], likely_linux))
+            except NameError:
+                raise CLIError("Unable to infer the type of script {}".format(script["script"]))
 
     namespace.source_dict = source
     namespace.scripts_list = scripts
@@ -259,8 +288,9 @@ def create_image_template(client, resource_group_name, image_template_name, sour
                           checksum=None, location=None, no_wait=False,
                           managed_image_destinations=None, shared_image_destinations=None,
                           source_dict=None, scripts_list=None, destinations_lists=None):
-    from azure.mgmt.imagebuilder.models import ImageTemplate, ImageTemplatePlatformImageSource, ImageTemplateIsoSource,\
-        ImageTemplateShellCustomizer, ImageTemplateManagedImageDistributor, ImageTemplateSharedImageDistributor
+    from azure.mgmt.imagebuilder.models import (ImageTemplate, ImageTemplatePlatformImageSource, ImageTemplateIsoSource,
+                                                ImageTemplateShellCustomizer, ImageTemplatePowerShellCustomizer,
+                                                ImageTemplateManagedImageDistributor, ImageTemplateSharedImageDistributor)  #pylint: disable=line-too-long
 
     template_source, template_scripts, template_destinations = None, [], []
 
@@ -271,9 +301,18 @@ def create_image_template(client, resource_group_name, image_template_name, sour
         template_source = ImageTemplateIsoSource(**source_dict)
 
     # create image template customizer settings
+    # Script structure can be found in _parse_script's function definition
     for script in scripts_list:
         script.pop("is_url")
-        template_scripts.append(ImageTemplateShellCustomizer(**script))
+
+        if script["type"] == _ScriptType.SHELL:
+            template_scripts.append(ImageTemplateShellCustomizer(**script))
+        elif script["type"] == _ScriptType.POWERSHELL:
+            template_scripts.append(ImageTemplatePowerShellCustomizer(**script))
+        else:  # Should never happen
+            logger.debug("Script {} has type {}".format(script["script"], script["type"]))
+            raise CLIError("Script {} has an invalid type.".format(script["script"]))
+
 
     # create image template distribution / destination settings
     for dest_type, id, loc_info in destinations_lists:

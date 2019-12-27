@@ -3,6 +3,9 @@
 Release History
 ===============
 
+2.0.79
+++++++
+
 **AppConfig**
 
 * Add support for importing/exporting feature flags

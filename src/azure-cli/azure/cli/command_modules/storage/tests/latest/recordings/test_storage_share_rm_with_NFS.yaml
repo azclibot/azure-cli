@@ -17,9 +17,10 @@ interactions:
       ParameterSetName:
       - --storage-account -g -n --enabled-protocols --root-squash
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-storage/20.1.0 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: PUT
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003?api-version=2021-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003?api-version=2022-05-01
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003","name":"share000003","type":"Microsoft.Storage/storageAccounts/fileServices/shares","properties":{"enabledProtocols":"NFS","rootSquash":"AllSquash"}}'
@@ -31,9 +32,9 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 11 Apr 2022 14:10:00 GMT
+      - Sun, 14 Aug 2022 16:29:05 GMT
       etag:
-      - '"0x8DA1BC4F7850CC8"'
+      - '"0x8DA7E121B9C9EE8"'
       expires:
       - '-1'
       pragma:
@@ -45,7 +46,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1188'
+      - '1179'
     status:
       code: 201
       message: Created
@@ -63,12 +64,13 @@ interactions:
       ParameterSetName:
       - --storage-account -g -n --root-squash
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-storage/20.1.0 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003?api-version=2021-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003?api-version=2022-05-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003","name":"share000003","type":"Microsoft.Storage/storageAccounts/fileServices/shares","etag":"\"0x8DA1BC4F7850CC8\"","properties":{"leaseStatus":"unlocked","leaseState":"available","signedIdentifiers":[],"accessTier":"Premium","lastModifiedTime":"2022-04-11T14:10:00.0000000Z","shareQuota":100,"enabledProtocols":"NFS","rootSquash":"AllSquash"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003","name":"share000003","type":"Microsoft.Storage/storageAccounts/fileServices/shares","etag":"\"0x8DA7E121B9C9EE8\"","properties":{"leaseStatus":"unlocked","leaseState":"available","signedIdentifiers":[],"accessTier":"Premium","lastModifiedTime":"2022-08-14T16:29:06.0000000Z","shareQuota":100,"enabledProtocols":"NFS","rootSquash":"AllSquash"}}'
     headers:
       cache-control:
       - no-cache
@@ -77,9 +79,9 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 11 Apr 2022 14:10:00 GMT
+      - Sun, 14 Aug 2022 16:29:06 GMT
       etag:
-      - '"0x8DA1BC4F7850CC8"'
+      - '"0x8DA7E121B9C9EE8"'
       expires:
       - '-1'
       pragma:
@@ -116,9 +118,10 @@ interactions:
       ParameterSetName:
       - --storage-account -g -n --root-squash
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-storage/20.1.0 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: PATCH
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003?api-version=2021-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003?api-version=2022-05-01
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003","name":"share000003","type":"Microsoft.Storage/storageAccounts/fileServices/shares","properties":{"accessTier":"Premium","shareQuota":100,"enabledProtocols":"NFS","rootSquash":"NoRootSquash"}}'
@@ -130,9 +133,9 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 11 Apr 2022 14:10:01 GMT
+      - Sun, 14 Aug 2022 16:29:06 GMT
       etag:
-      - '"0x8DA1BC4F8640144"'
+      - '"0x8DA7E121BE33A8F"'
       expires:
       - '-1'
       pragma:
@@ -148,7 +151,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1196'
+      - '1193'
     status:
       code: 200
       message: OK
@@ -166,12 +169,13 @@ interactions:
       ParameterSetName:
       - --storage-account -g -n
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-storage/20.1.0 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003?api-version=2021-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003?api-version=2022-05-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003","name":"share000003","type":"Microsoft.Storage/storageAccounts/fileServices/shares","etag":"\"0x8DA1BC4F8640144\"","properties":{"leaseStatus":"unlocked","leaseState":"available","signedIdentifiers":[],"accessTier":"Premium","lastModifiedTime":"2022-04-11T14:10:02.0000000Z","shareQuota":100,"enabledProtocols":"NFS","rootSquash":"NoRootSquash"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003","name":"share000003","type":"Microsoft.Storage/storageAccounts/fileServices/shares","etag":"\"0x8DA7E121BE33A8F\"","properties":{"leaseStatus":"unlocked","leaseState":"available","signedIdentifiers":[],"accessTier":"Premium","lastModifiedTime":"2022-08-14T16:29:06.0000000Z","shareQuota":100,"enabledProtocols":"NFS","rootSquash":"NoRootSquash"}}'
     headers:
       cache-control:
       - no-cache
@@ -180,9 +184,9 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 11 Apr 2022 14:10:02 GMT
+      - Sun, 14 Aug 2022 16:29:06 GMT
       etag:
-      - '"0x8DA1BC4F8640144"'
+      - '"0x8DA7E121BE33A8F"'
       expires:
       - '-1'
       pragma:
@@ -214,12 +218,13 @@ interactions:
       ParameterSetName:
       - --storage-account -g
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-storage/20.1.0 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares?api-version=2021-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares?api-version=2022-05-01
   response:
     body:
-      string: '{"value":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003","name":"share000003","type":"Microsoft.Storage/storageAccounts/fileServices/shares","etag":"\"0x8DA1BC4F8640144\"","properties":{"leaseStatus":"unlocked","leaseState":"available","accessTier":"Premium","lastModifiedTime":"2022-04-11T14:10:02.0000000Z","shareQuota":100,"enabledProtocols":"NFS","rootSquash":"NoRootSquash"}}]}'
+      string: '{"value":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003","name":"share000003","type":"Microsoft.Storage/storageAccounts/fileServices/shares","etag":"\"0x8DA7E121BE33A8F\"","properties":{"leaseStatus":"unlocked","leaseState":"available","accessTier":"Premium","lastModifiedTime":"2022-08-14T16:29:06.0000000Z","shareQuota":100,"enabledProtocols":"NFS","rootSquash":"NoRootSquash"}}]}'
     headers:
       cache-control:
       - no-cache
@@ -228,7 +233,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 11 Apr 2022 14:10:03 GMT
+      - Sun, 14 Aug 2022 16:29:07 GMT
       expires:
       - '-1'
       pragma:
@@ -262,9 +267,10 @@ interactions:
       ParameterSetName:
       - --storage-account -g -n -y
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-storage/20.1.0 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: DELETE
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003?api-version=2021-09-01&$include=none
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares/share000003?api-version=2022-05-01&$include=none
   response:
     body:
       string: ''
@@ -276,7 +282,7 @@ interactions:
       content-type:
       - text/plain; charset=utf-8
       date:
-      - Mon, 11 Apr 2022 14:10:04 GMT
+      - Sun, 14 Aug 2022 16:29:07 GMT
       expires:
       - '-1'
       pragma:
@@ -288,7 +294,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-deletes:
-      - '14997'
+      - '14993'
     status:
       code: 200
       message: OK
@@ -306,9 +312,10 @@ interactions:
       ParameterSetName:
       - --storage-account -g
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-storage/20.1.0 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares?api-version=2021-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_nfs000001/providers/Microsoft.Storage/storageAccounts/nfs000002/fileServices/default/shares?api-version=2022-05-01
   response:
     body:
       string: '{"value":[]}'
@@ -320,7 +327,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 11 Apr 2022 14:10:05 GMT
+      - Sun, 14 Aug 2022 16:29:06 GMT
       expires:
       - '-1'
       pragma:

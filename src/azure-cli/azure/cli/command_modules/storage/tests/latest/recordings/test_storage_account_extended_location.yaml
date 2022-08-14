@@ -19,9 +19,10 @@ interactions:
       ParameterSetName:
       - -n -g --edge-zone -l --sku
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-storage/20.1.0 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: PUT
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cliedgezone000001/providers/Microsoft.Storage/storageAccounts/edge1000002?api-version=2021-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cliedgezone000001/providers/Microsoft.Storage/storageAccounts/edge1000002?api-version=2022-05-01
   response:
     body:
       string: ''
@@ -33,11 +34,11 @@ interactions:
       content-type:
       - text/plain; charset=utf-8
       date:
-      - Mon, 11 Apr 2022 13:04:09 GMT
+      - Sun, 14 Aug 2022 15:44:14 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/locations/eastus2euap/asyncoperations/b94ebb93-489c-4585-9b7c-9a8b4ec87a72?monitor=true&api-version=2021-09-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/locations/eastus2euap/asyncoperations/e7f31659-e2b9-41e8-9e63-4466a1c47977?monitor=true&api-version=2022-05-01
       pragma:
       - no-cache
       server:
@@ -47,7 +48,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1196'
+      - '1197'
     status:
       code: 202
       message: Accepted
@@ -65,56 +66,13 @@ interactions:
       ParameterSetName:
       - -n -g --edge-zone -l --sku
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-storage/20.1.0 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/locations/eastus2euap/asyncoperations/b94ebb93-489c-4585-9b7c-9a8b4ec87a72?monitor=true&api-version=2021-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/locations/eastus2euap/asyncoperations/e7f31659-e2b9-41e8-9e63-4466a1c47977?monitor=true&api-version=2022-05-01
   response:
     body:
-      string: ''
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '0'
-      content-type:
-      - text/plain; charset=utf-8
-      date:
-      - Mon, 11 Apr 2022 13:04:26 GMT
-      expires:
-      - '-1'
-      location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/locations/eastus2euap/asyncoperations/b94ebb93-489c-4585-9b7c-9a8b4ec87a72?monitor=true&api-version=2021-09-01
-      pragma:
-      - no-cache
-      server:
-      - Microsoft-Azure-Storage-Resource-Provider/1.0,Microsoft-HTTPAPI/2.0 Microsoft-HTTPAPI/2.0
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 202
-      message: Accepted
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - storage account create
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - -n -g --edge-zone -l --sku
-      User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/locations/eastus2euap/asyncoperations/b94ebb93-489c-4585-9b7c-9a8b4ec87a72?monitor=true&api-version=2021-09-01
-  response:
-    body:
-      string: '{"extendedLocation":{"type":"EdgeZone","name":"microsoftrrdclab1"},"sku":{"name":"Premium_LRS","tier":"Premium"},"kind":"StorageV2","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cliedgezone000001/providers/Microsoft.Storage/storageAccounts/edge1000002","name":"edge1000002","type":"Microsoft.Storage/storageAccounts","location":"eastus2euap","tags":{},"properties":{"keyCreationTime":{"key1":"2022-04-11T13:04:07.1675019Z","key2":"2022-04-11T13:04:07.1675019Z"},"primaryExtendedLocation":{"type":"EdgeZone","name":"microsoftrrdclab1"},"privateEndpointConnections":[],"minimumTlsVersion":"TLS1_0","allowBlobPublicAccess":true,"networkAcls":{"bypass":"AzureServices","virtualNetworkRules":[],"ipRules":[],"defaultAction":"Allow"},"supportsHttpsTrafficOnly":true,"encryption":{"services":{"file":{"keyType":"Account","enabled":true,"lastEnabledTime":"2022-04-11T13:04:07.1675019Z"},"blob":{"keyType":"Account","enabled":true,"lastEnabledTime":"2022-04-11T13:04:07.1675019Z"}},"keySource":"Microsoft.Storage"},"accessTier":"Hot","provisioningState":"Succeeded","creationTime":"2022-04-11T13:04:07.0738260Z","primaryEndpoints":{"web":"https://edge1000002.web.microsoftrrdclab1.edgestorage.azure.net/","blob":"https://edge1000002.blob.microsoftrrdclab1.edgestorage.azure.net/"},"primaryLocation":"eastus2euap","statusOfPrimary":"available"}}'
+      string: '{"extendedLocation":{"type":"EdgeZone","name":"microsoftrrdclab1"},"sku":{"name":"Premium_LRS","tier":"Premium"},"kind":"StorageV2","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cliedgezone000001/providers/Microsoft.Storage/storageAccounts/edge1000002","name":"edge1000002","type":"Microsoft.Storage/storageAccounts","location":"eastus2euap","tags":{},"properties":{"keyCreationTime":{"key1":"2022-08-14T15:44:12.6330654Z","key2":"2022-08-14T15:44:12.6330654Z"},"primaryExtendedLocation":{"type":"EdgeZone","name":"microsoftrrdclab1"},"privateEndpointConnections":[],"minimumTlsVersion":"TLS1_0","allowBlobPublicAccess":true,"networkAcls":{"bypass":"AzureServices","virtualNetworkRules":[],"ipRules":[],"defaultAction":"Allow"},"supportsHttpsTrafficOnly":true,"encryption":{"services":{"file":{"keyType":"Account","enabled":true,"lastEnabledTime":"2022-08-14T15:44:13.2737171Z"},"blob":{"keyType":"Account","enabled":true,"lastEnabledTime":"2022-08-14T15:44:13.2737171Z"}},"keySource":"Microsoft.Storage"},"accessTier":"Hot","provisioningState":"Succeeded","creationTime":"2022-08-14T15:44:12.5393166Z","primaryEndpoints":{"web":"https://edge1000002.web.microsoftrrdclab1.edgestorage.azure.net/","blob":"https://edge1000002.blob.microsoftrrdclab1.edgestorage.azure.net/"},"primaryLocation":"eastus2euap","statusOfPrimary":"available"}}'
     headers:
       cache-control:
       - no-cache
@@ -123,7 +81,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 11 Apr 2022 13:04:29 GMT
+      - Sun, 14 Aug 2022 15:44:31 GMT
       expires:
       - '-1'
       pragma:
@@ -155,12 +113,13 @@ interactions:
       ParameterSetName:
       - -n -g --edge-zone --sku
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-resource/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-resource/21.1.0b1 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cliedgezone000001?api-version=2021-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cliedgezone000001","name":"cliedgezone000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2022-04-11T13:04:01Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cliedgezone000001","name":"cliedgezone000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2022-08-14T15:44:11Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -169,7 +128,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 11 Apr 2022 13:04:30 GMT
+      - Sun, 14 Aug 2022 15:44:32 GMT
       expires:
       - '-1'
       pragma:
@@ -203,9 +162,10 @@ interactions:
       ParameterSetName:
       - -n -g --edge-zone --sku
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-storage/20.1.0 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: PUT
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cliedgezone000001/providers/Microsoft.Storage/storageAccounts/edge2000003?api-version=2021-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cliedgezone000001/providers/Microsoft.Storage/storageAccounts/edge2000003?api-version=2022-05-01
   response:
     body:
       string: ''
@@ -217,11 +177,11 @@ interactions:
       content-type:
       - text/plain; charset=utf-8
       date:
-      - Mon, 11 Apr 2022 13:04:36 GMT
+      - Sun, 14 Aug 2022 15:44:34 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/locations/westus/asyncoperations/718d276b-a491-4e24-ace7-e13d80e71d67?monitor=true&api-version=2021-09-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/locations/westus/asyncoperations/ddd36c48-4aa6-4b8e-bb96-3afd90642a60?monitor=true&api-version=2022-05-01
       pragma:
       - no-cache
       server:
@@ -231,7 +191,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1197'
+      - '1195'
     status:
       code: 202
       message: Accepted
@@ -249,12 +209,13 @@ interactions:
       ParameterSetName:
       - -n -g --edge-zone --sku
       User-Agent:
-      - AZURECLI/2.35.0 azsdk-python-azure-mgmt-storage/20.0.0 Python/3.9.6 (Windows-10-10.0.19044-SP0)
+      - AZURECLI/2.39.0 azsdk-python-azure-mgmt-storage/20.1.0 Python/3.10.6 (Linux-5.15.0-1014-azure-x86_64-with-glibc2.31)
+        VSTS_0fb41ef4-5012-48a9-bf39-4ee3de03ee35_build_4949_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/locations/westus/asyncoperations/718d276b-a491-4e24-ace7-e13d80e71d67?monitor=true&api-version=2021-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/locations/westus/asyncoperations/ddd36c48-4aa6-4b8e-bb96-3afd90642a60?monitor=true&api-version=2022-05-01
   response:
     body:
-      string: '{"extendedLocation":{"type":"EdgeZone","name":"microsoftlosangeles1"},"sku":{"name":"Premium_LRS","tier":"Premium"},"kind":"StorageV2","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cliedgezone000001/providers/Microsoft.Storage/storageAccounts/edge2000003","name":"edge2000003","type":"Microsoft.Storage/storageAccounts","location":"westus","tags":{},"properties":{"keyCreationTime":{"key1":"2022-04-11T13:04:35.7846240Z","key2":"2022-04-11T13:04:35.7846240Z"},"primaryExtendedLocation":{"type":"EdgeZone","name":"microsoftlosangeles1"},"privateEndpointConnections":[],"minimumTlsVersion":"TLS1_0","allowBlobPublicAccess":true,"networkAcls":{"bypass":"AzureServices","virtualNetworkRules":[],"ipRules":[],"defaultAction":"Allow"},"supportsHttpsTrafficOnly":true,"encryption":{"services":{"file":{"keyType":"Account","enabled":true,"lastEnabledTime":"2022-04-11T13:04:35.7846240Z"},"blob":{"keyType":"Account","enabled":true,"lastEnabledTime":"2022-04-11T13:04:35.7846240Z"}},"keySource":"Microsoft.Storage"},"accessTier":"Hot","provisioningState":"Succeeded","creationTime":"2022-04-11T13:04:35.6908636Z","primaryEndpoints":{"web":"https://edge2000003.web.microsoftlosangeles1.edgestorage.azure.net/","blob":"https://edge2000003.blob.microsoftlosangeles1.edgestorage.azure.net/"},"primaryLocation":"westus","statusOfPrimary":"available"}}'
+      string: '{"extendedLocation":{"type":"EdgeZone","name":"microsoftlosangeles1"},"sku":{"name":"Premium_LRS","tier":"Premium"},"kind":"StorageV2","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cliedgezone000001/providers/Microsoft.Storage/storageAccounts/edge2000003","name":"edge2000003","type":"Microsoft.Storage/storageAccounts","location":"westus","tags":{},"properties":{"keyCreationTime":{"key1":"2022-08-14T15:44:33.0242946Z","key2":"2022-08-14T15:44:33.0242946Z"},"primaryExtendedLocation":{"type":"EdgeZone","name":"microsoftlosangeles1"},"privateEndpointConnections":[],"minimumTlsVersion":"TLS1_0","allowBlobPublicAccess":true,"networkAcls":{"bypass":"AzureServices","virtualNetworkRules":[],"ipRules":[],"defaultAction":"Allow"},"supportsHttpsTrafficOnly":true,"encryption":{"services":{"file":{"keyType":"Account","enabled":true,"lastEnabledTime":"2022-08-14T15:44:33.0399186Z"},"blob":{"keyType":"Account","enabled":true,"lastEnabledTime":"2022-08-14T15:44:33.0399186Z"}},"keySource":"Microsoft.Storage"},"accessTier":"Hot","provisioningState":"Succeeded","creationTime":"2022-08-14T15:44:32.9149234Z","primaryEndpoints":{"web":"https://edge2000003.web.microsoftlosangeles1.edgestorage.azure.net/","blob":"https://edge2000003.blob.microsoftlosangeles1.edgestorage.azure.net/"},"primaryLocation":"westus","statusOfPrimary":"available"}}'
     headers:
       cache-control:
       - no-cache
@@ -263,7 +224,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 11 Apr 2022 13:04:53 GMT
+      - Sun, 14 Aug 2022 15:44:51 GMT
       expires:
       - '-1'
       pragma:

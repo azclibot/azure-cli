@@ -13,12 +13,13 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001?api-version=2022-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001?api-version=2024-11-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001","name":"img_tmpl_cancel_000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","test":"test_image_builder_cancel","date":"2024-05-14T08:38:19Z","module":"vm"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001","name":"img_tmpl_cancel_000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","test":"test_image_builder_cancel","date":"2025-04-04T16:29:00Z","module":"vm"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -27,7 +28,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 14 May 2024 08:38:22 GMT
+      - Fri, 04 Apr 2025 16:29:01 GMT
       expires:
       - '-1'
       pragma:
@@ -38,8 +39,10 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
       x-msedge-ref:
-      - 'Ref A: 6519E3295F644FAB8BBFDEED1B6EE3F0 Ref B: TYO201151005009 Ref C: 2024-05-14T08:38:22Z'
+      - 'Ref A: D78F534F10B94A5D93A0EEDD150C00CA Ref B: BN1AA2051015027 Ref C: 2025-04-04T16:29:02Z'
     status:
       code: 200
       message: OK
@@ -61,12 +64,13 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1?api-version=2023-01-31
   response:
     body:
-      string: '{"location":"westus","tags":{},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1","name":"ide1","type":"Microsoft.ManagedIdentity/userAssignedIdentities","properties":{"tenantId":"54826b22-38d6-4fb2-bad9-b7b93a3e9c5a","principalId":"79cb8114-fd7e-4279-9170-8f6dee2bfffd","clientId":"0a92be89-7b0f-4b8f-abb6-21bb51bc0113"}}'
+      string: '{"location":"westus","tags":{},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1","name":"ide1","type":"Microsoft.ManagedIdentity/userAssignedIdentities","properties":{"tenantId":"54826b22-38d6-4fb2-bad9-b7b93a3e9c5a","principalId":"2f667f26-f12d-4eb9-884d-61d140ca0ae1","clientId":"9146cbb8-b890-458b-91fb-1779a08a718e"}}'
     headers:
       cache-control:
       - no-cache
@@ -75,7 +79,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 14 May 2024 08:38:25 GMT
+      - Fri, 04 Apr 2025 16:29:03 GMT
       expires:
       - '-1'
       location:
@@ -88,10 +92,14 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus2/aa54614b-33e4-4998-af9b-0a826782e6ac
+      x-ms-ratelimit-remaining-subscription-global-writes:
+      - '2999'
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '199'
       x-msedge-ref:
-      - 'Ref A: CA94B8A319844CD29259D39BDDC55029 Ref B: TYO201100114027 Ref C: 2024-05-14T08:38:22Z'
+      - 'Ref A: A5E12835C851418E838D3E2F6F144478 Ref B: BN1AA2051013037 Ref C: 2025-04-04T16:29:02Z'
     status:
       code: 201
       message: Created
@@ -109,26 +117,27 @@ interactions:
       ParameterSetName:
       - --assignee --role --scope
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22631-SP0) AZURECLI/2.60.0
+      - python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35) AZURECLI/2.71.0
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
-    uri: https://graph.microsoft.com/v1.0/servicePrincipals?$filter=servicePrincipalNames%2Fany%28c%3Ac%20eq%20%270a92be89-7b0f-4b8f-abb6-21bb51bc0113%27%29
+    uri: https://graph.microsoft.com/v1.0/servicePrincipals?$filter=servicePrincipalNames%2Fany%28c%3Ac%20eq%20%279146cbb8-b890-458b-91fb-1779a08a718e%27%29
   response:
     body:
-      string: '{"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#servicePrincipals","value":[{"id":"79cb8114-fd7e-4279-9170-8f6dee2bfffd","deletedDateTime":null,"accountEnabled":true,"alternativeNames":["isExplicit=True","/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1"],"appDisplayName":null,"appDescription":null,"appId":"0a92be89-7b0f-4b8f-abb6-21bb51bc0113","applicationTemplateId":null,"appOwnerOrganizationId":null,"appRoleAssignmentRequired":false,"createdDateTime":"2024-05-14T08:38:24Z","description":null,"disabledByMicrosoftStatus":null,"displayName":"ide1","homepage":null,"loginUrl":null,"logoutUrl":null,"notes":null,"notificationEmailAddresses":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyThumbprint":null,"replyUrls":[],"servicePrincipalNames":["0a92be89-7b0f-4b8f-abb6-21bb51bc0113","https://identity.azure.net/dV+B/WJ8YPFlTSDQFOg3f1qefOVTPrgEViuY2n9G27s="],"servicePrincipalType":"ManagedIdentity","signInAudience":null,"tags":[],"tokenEncryptionKeyId":null,"info":null,"samlSingleSignOnSettings":null,"addIns":[],"appRoles":[],"keyCredentials":[{"customKeyIdentifier":"970896D091F55549E6BE8A71AC713E07A3D8ACA8","displayName":"CN=0a92be89-7b0f-4b8f-abb6-21bb51bc0113,
-        DC=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a","endDateTime":"2024-08-12T08:33:00Z","key":null,"keyId":"22b24766-d066-46e8-80ed-8b19c0f40062","startDateTime":"2024-05-14T08:33:00Z","type":"AsymmetricX509Cert","usage":"Verify"}],"oauth2PermissionScopes":[],"passwordCredentials":[],"resourceSpecificApplicationPermissions":[],"verifiedPublisher":{"displayName":null,"verifiedPublisherId":null,"addedDateTime":null}}]}'
+      string: '{"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#servicePrincipals","value":[{"id":"2f667f26-f12d-4eb9-884d-61d140ca0ae1","deletedDateTime":null,"accountEnabled":true,"alternativeNames":["isExplicit=True","/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1"],"appDisplayName":null,"appDescription":null,"appId":"9146cbb8-b890-458b-91fb-1779a08a718e","applicationTemplateId":null,"appOwnerOrganizationId":null,"appRoleAssignmentRequired":false,"createdDateTime":"2025-04-04T16:29:03Z","description":null,"disabledByMicrosoftStatus":null,"displayName":"ide1","homepage":null,"loginUrl":null,"logoutUrl":null,"managedIdentityResourceId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1","microsoftPolicyGroup":null,"notes":null,"notificationEmailAddresses":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyThumbprint":null,"replyUrls":[],"servicePrincipalNames":["9146cbb8-b890-458b-91fb-1779a08a718e","https://identity.azure.net/jwBg96xGU02SxSPk7HN0eSGv75Xci7DxHsFq0x1069E="],"servicePrincipalType":"ManagedIdentity","signInAudience":null,"tags":[],"tokenEncryptionKeyId":null,"tokensRevocationDateTime":null,"appMetadata":{"version":1,"data":[{"key":"Identity","value":"eyJ2ZXJzaW9uIjoyLCJyZXNvdXJjZUlkIjoiL3N1YnNjcmlwdGlvbnMvMGIxZjY0NzEtMWJmMC00ZGRhLWFlYzMtY2I5MjcyZjA5NTkwL3Jlc291cmNlZ3JvdXBzL2ltZ190bXBsX2NhbmNlbF9mYXNqY3R3Nmxzczc1bXdhcnNkb3Z5eGRnZHR1Z2p2cGt1dmt6dWV0N2RzYWp5Z3Q3dXo2NnhsZGZ5dS9wcm92aWRlcnMvTWljcm9zb2Z0Lk1hbmFnZWRJZGVudGl0eS91c2VyQXNzaWduZWRJZGVudGl0aWVzL2lkZTEiLCJsb2NhdGlvbiI6Indlc3R1cyIsImVuY3J5cHRlZERhdGEiOiJNSUlWdEFZSktvWklodmNOQVFjRG9JSVZwVENDRmFFQ0FRSXhnZ0V5b29JQkxnSUJCRENCOFFSVVRBQUFBQUFBQUFBQkFBQUFTMFJUU3dZQUFBQnJBUUFBQlFBQUFBY0FBQUFwZ1ZVSWUyUFdiTnZDSWxuanpranJJQUFBQUxlNXNBMzVpUmdENG5kaGs5bXVMa3dzUDdvSFdscW96V2pBUG5tMmYtYWlNSUdZQmdrckJnRUVBWUkzU2dFd2dZb0dDaXNHQVFRQmdqZEtBUTB3ZkRCNk1IZ01CRVJUVkZNTWNIVnpkMlZ6ZEMxa2EyUnpMbVJyWkhNdVkyOXlaUzUzYVc1a2IzZHpMbTVsZER0b2RIUndPaTh2YzJOb1pXMWhjeTU0Yld4emIyRndMbTl5Wnk5M2N5OHlNREExTHpBMUwybGtaVzUwYVhSNUwyTnNZV2x0Y3k5dVlXMWxPMjFwY25BdGNISnZaQzFrYlhOcExXUnJaSE13Q3dZSllJWklBV1VEQkFFdEJDakFGdjB6UDhxbk9Kc1RTYmRYODYzSmw1aGJVLWxJdzN0a2ZyOVFEbFZTV1lTN3dEYnJCbWVITUlJVVpBWUpLb1pJaHZjTkFRY0JNQjRHQ1dDR1NBRmxBd1FCTGpBUkJBeWhNNmh0QXBSc09MblMxSTRDQVJDQWdoUTFGMGM1ZkREcWtSYVQ3Zi1IajNfMjRIU3BHWWpFR0RBeVRIMTlrOUJqdExKRFZLRU80N2lzME5jeV9STFBESHZTSmhKclN2eGxkbVNqeWd2TjVRbEc2WnlxUGJiVjVOUEpPZU41anpYUjZUcFlxajNFUkw4VXg4ZVZLQlViZGx1anJzakpVQ0tRdGp2clJ4a0lPeGhmbmEzTDhzbksxMlNBN2dPSXZSNGpGWktWVldDTGlSZDY3dkdCeklzd1B0a0VDTTRwTC05YnVOanlxVHlOdnRPQzY2X1QxVkpjdWY2eDRhOWtRMGxucV9KWUNNdXhtdnVfbkxjNG91aDhRUjhyRGFvcUc1cWFJQm9PdWN6TDRwS09pa2dpZTg3Zk5zMHQyblgzVXp6MEVuYi1XRDFXcFhxTGdDajRhaDR0Q3Q0UFExQ0VWdnJuc1ZSUUpJZDBDYVQ3VkE0SXVyN1I1WXNwZXItM3RaYVZMZjhRcWs4YktBb0h1REU1YWRIWUdBeEtyWDlNQkwzLW1YT2VRakNRazYta3pYdGRIdVJOZ09KdFpfREVsMnFZWDNqc3ZCMEhIVXY2TWs3Zm9ZN2NWNjhpTHE5RUlER2VYWVZtd1hjcGdkNmZHeWpueEViS0FNeDRibXJLbFdnRXpscWp2Vko0dV95SlZzMmZpYzg1NXFrQUJOVGloQTZJanRiN2pRTW5ScmcwOVR0czU1alRBR1Z0Z1VudXlXd1B2bjFSR3RWVmtYM1NmNDJSRER5VzlQWWhvZ3oyQmdqTnNtNFJneDROaWpSTzgwOHV0T1BqZV91WXMwQW9PMFZTNWtKMnlIQWdQSDBqUEoySkNFTElBUGIwNVMxNGMtSzg2MkRfRkc4QWxkUlpyek9FekNGcFZuWktqaGVhdmtIZHFNYU4wcjNfR3Jwbi03YWdVUGxFZWtIX2NiSnpSOWFSbWRROVVGRTM1VVd3YU00R29BZV9GR01uMVNJWVZuVjUxOXE5N0JZS0EyUHVlN0FRV2M2OTUwcTF2Mk9MUVRTUk9RaFM4X2JyNUpla0RNUVNXVUE5Nms4RlZITlo4a09UdmFZWmpvS0xVZ3p3YnJSbTJtZTBQenJlSEtKUHhHRUxpRDlUSWhVZmNxVk9GZVV3NGRyM1JUYUlnR2pua2pvOG0zSERlQnlNOXdULTYyd1lnWXlhRzFXWHl0SkM2bk5qdmFWMnYxSEduRms5TVNzeFZIM1c2andYR3R4MjIta1F4YmlUWGFoZ2dNeGZRLUR2YXM2djJfWjJ1U3JHQ2xzUXNzRy1vWVV1R2V0dFBlMmI3NENPM2ttSWZBWDhlMVJQaEJFTmNwRldnZ0JkMkpySll1aXlMeGRTd21LdU85dzhBczVpTVdxZDJkeFdvRzdfRk4xWHJtZk9YXzhvbTFBX3ZWUHpmb1c2UlpwdG03VXdWaXZWRk5Qc3RwTEVWa1gzTS1yZWVPVWVOWHc0YWw2UV9jUVg2NEE4TlVJWUVxX3FOQm9EWnVXVm9Ea09kREFYTk95ME81ZWdGMWxDTzUyaUpwMHlFTnNVbVFsNnFxX3RVd29NMS1aVnNEVHhsSm5aUzBSbXJ5eU1pdVpqaXRJZ0tTVWR3a2VIdmJnMmR1Vk9QRmFYbU1hV0NqejVTR2s5R3FXbjUyWFRPb1l1eWpobFhiT0g1X1VNN2VtZzYzdkRxcklhSS1aWng0bncydDJkV0JwWUZOWUlpYVhZTFc4SW5HUDFIQmYtYUNQNlc3WHhxb19IR1V4Vy1rbnN0Y09RMGhoQ2ZZSWppY0N5bjRrNERpazhnTWRDYXl2eWZXQnV2UnhfQU1nbzNCcXRyWjRGYnJOVzV3R09JUlh6RWU2MnNIYjJaNzVUUnhLUE9NdktYT3Q0eE04bTk3ektPYVdTbVJUb2dURm9nUktVQlJwNjE3bkpkcE42enZ1QldpSGZlX3JGazZPc19aWFdCZjY0b3ZVc0czMFBaTnJMZWVMQVhSRGF1MW5hT2V4SUw5RGZ5YmdHVm13OE5MZ191b2cySVllSDMtQjZ1bTZpYWI5NXBVSkVmSU9ROTBlVDJPUGg4X0U5T3V3SFFqM3k2dGR6NG9UWW4tNlZncm1VZ0RzSUd3ZmlYUkU5RmVPMEpxaWEwd00yVF9MOUZwQVdYS3ZqSzV2djd4TlJ3RmNpTmxtbWNCbHVzTmRVSkdPVm1vUlc1eEp4TGlPZjMwN1ZrcDFIVV96SFNtemJiUUhtMkVxNFpyQ2RkOEc1WHhfanRlWkI5ZXhncVRxNDVId0hoVmp6ZE5sY2l5X1ZCazQxNlFWNjJLcEJUOWhYSGhKQVFvaTB3ZkxMVGxQUUFfS3VaWjIyTFBlREJoZTZZUzF1S253T0NJR2FDN09RaHVfVVBrNEQ5OGdUbXBHTk1NWTBQdEFkOEx5NTBON05rajdwcFhNU05icWJmVmp6TW1BaXZrT1BxREVwNnR6aGFGV3YxZnZrVURSbThzVHo0VWQ5S1RITGpBa01qbmZWNUdzT3g5bXFDS3ZjODVCdUxOYXRDZW1Ka1BpQXFTWThWQTNmajVyZGF6WU9iZlRpZ2V2T3JZaENNMlE3bWZUc2tvYmJSOVFTQmJmVVUzUmpSazkzby1mTXJhcTRDMXpLZUE0Zy1EX1ByLUlVZ09IREEyX25QM3hoNEN1eDBObURrN3h3OHdYNkdYWU9MYVhjZFg0eDgxNWpWZ09HbzE0cHlKb09UZnJQYVljRWFQckc3ZXpWQnk2RjdRZmVKSjBLQzFvekd1S1cwakNjajh3RExHVmR5bzRLOEhnWlEtSEdKWUxYUlJndnNxVlBCM2N3NGFGcGdzWC1MVVFWZkM3RVJiNV9JYnRRRDRMSDE4RDZkdEJxMHloVnMtRjZaZ0lhNi05QUJIajJmcW5nYktwQXlUOHNOeklVLWp3OUJ6ZnBwQmVYb3MtOFRxSFZNSTA3dWpObkhQa213dGRpX3BiZjBhazFsMW96RnA3WWVhTUVUUk1RVnZPbU0zNlNXVml3TzVhbDEtWE1jZWxtUGdMWG03OVUyZS1xNFFNeUFqUzU2MFZPMzdwZWpHVXV2N1pqWUMtRXA0S0ZaRmpWZmJWNzc5SFJ1WHlybklRS05vekR1RjZxTWdxby12U0lzTlB4S2N1NEFzUkNaTTNFZ29pZlVaeWczX1dDMl9KNVFocFNsbXNObkRLMlowbkV3YU1IZ01Va29IT3R4Q3J6YllEMm5jSmdhY29JN01id0M4QkJsWE41cnpNZEZUcHppcEdNZGxmc2tneG5JTWZ1V1NYWDgyeldwRjBXV2J3cEhidjUzX1VVUVJJaDhMdnlGQ3FlTjhqZGRhbUpJUUJTOU9rWmItUG9LT0ZEVFNiU0RGSDYtMjRpN3h5TVZwNFI5b0dfWDV1QlRValpwdXdpRzdBd0dsbGNjMXVPNXIzNzlpYWR6d2MyTENmWnE3TzJTTzNSMHRhQ0xLQzVxN1g0WC1sWC0xTHluV3JNVzI3dWlFM0hMNW9FcWZwUkpsanduajllVkU0dDVzM044R2pwYWZoR1VXWGo1RkU1RWhwdGRPdF9qZmxJSklFZmV2MVpZR0t5SHFZVHZjTV96YVBMWHNmNi01OWpPdWhBSUJwcnVRbnVQVEFDaXpEdXdaalllV2xoRGFoQmJjNDZsYkFOS2VLNXM3cWVoUkVmNWdHMlpHQ1JpaDVoX01XTEUydTZHc0l1QUlobDVhMWwyWl9OVWIxNHNYQ2JVNmowVFBETGMtSUFZQUJxbVlLakg4MWtQV2VLYzhnS0J3aUhMZFF3NVdHYkhtZGxWb0g3TldCdDZ5ZzcxeHNOZ3JiNVpKOHR4V3dvZkxFay1vWlRLZWd6QmE2T3ZtQUVyeGc4TmxkZU4wUjNySjB4NFdMQVpodGJ6YVJrS28wbEZMVUZBbHBmeWQ3VlNMRzl3YXVMdnBJZXJaU2dVeFRwaUpRdFBHbG5hYVNsT3VYbDVfbDVXVzV5QUZlbkUyRzV3NjU0ZmNldXBCSXdja3dtUU5QSEN5NlRFQ0xCSGxkOG1MaWR5bWo4LUREbjRDc3l1VUpfazZQQUM3ZnZONEZ1b3FheEhURHhGR2lXSkx0WTRIYVNRTHdyVkg5MzBxQks4UGI2RW5KTG81VzhBT2UzWlZ2aF9OazBUOVR3dnl1NVU4dGE3MENjTWNSNlh4bzZidkc4eWpvajFpNlExVjUxVVU4WXB5dTc4MmdfRGhFa0pEbGhZeGUzX2U1TnpwUW0xcXo2R1lDY1EzS08xRnV3a0djNmpfUWtzUVNYb1A2Q3BObkdNVFJ1NmtaZVp4SldHemRMaDEzRng0NzRUU01XTW1RRXlWblJhVEZfeWY3eHZTdF9laHVyd1NVNkVrNkp3eHVDdGlTbzV6azFTUUtsQmNLckJNR2NWOXljelc4NHF3eHR2QmM1MExQdTlLXzFIc3VDVUYxaFo0NkFRLUlkcVdTejZVVmowUmZPY05obUtZWUZHUWVJbF9NaXlXdDN4NzEyRTgxa3JlSklhd19PSTFuWHc1TnZoR3RHYWcwSmdHNE5ETW1PR1BtdHJSc0QzVFNaRmVYeFhJS3JVY3lLUERRQWp1aGh3cno4SVFNNE1YWTl6WUZlUFN5RFVGVWFZVng2X3RXZWNUZEp6Y3BSeFRMUTdTRFp5VklkR0cyQUk5akEtZ0RxVVpaazlvbjF4d05ySFpiVk94dWJaTjdKX2plR192REFHTVJrbUxUdVRxSWRqSGxWdC1lQnF1dG1UTl9LbzlTa1ZlbVNMbjVVWm44WDhjQU5XSUlMZ18wVWpneE51LWg0eXZJS3FpcmluMHZobXE1WVdnekpPbDk1MHY4bTk5TDdPVVhoRkFRQ3VlRUpEOW8wN0kxYmVfYUN1SnpOWEw5Z1lHSTZQQzl2N011TG5zTUg2anZvVWJsT1BCRldtQ1NLRXBDbUZmZ1pRVXF2T0dES3RlRGJxdXltbUxBYmRfRUU1QVp0RGxjZGpFd3BTU0ZGS0dSQVRNSE5LU2s5cVdTcGczX2x6VnhuUzlUOUdIV2JZcWV2aG94UzBrTF9leHNWakVJdFQ3MWJONEhvamdRNVFubEVHMFR6S0VUMGExRlY2QXlnX2RwSE50U1JKd1d5dlhoT1ZpZlhHVlFFVzhJbVhULVhmdXBVOHhGd0o0MmNqSExSTjdVX1VqeTBoclFTc2lIZ1lmU2M5M3lwb3lpbGVzVUh2bHNIR082R1M5T185ZXY1MTJUOTUzS2xPaDNvdVlKdkdySlpkWEI4ckdiVWRqbnV0OERYeG5uazdhX0FIajFKcG8yc1B2OXgzOUtEb2JzLThqUzdKMDE3dWN5NmtKQ3BfVlJpOUFURS1rZUxuMXRUZHlhR1h6NldoN0c1bnVnbTd5VTMzOWtENzFMQlN1TFFGaUR1OXhIRkVkTVR4U2hnR0oyMHYyREpTemg3NTJueHlSb0sxeEV4WHp5bnRGcTFkR1hWV1R3a3dnM0RBbUNGZEhBdzZpTkdXSEFMc2E1ZTRNbVlvQjFTb244dVdncmkxZlB2YkdnUTA0MFh6X3YxSXRwZldTa1QyUWVNeVZKRTRUQ3JqZWR5eDRsNzNRZ0MwY2JnOEd6NXFlLXh2SmY1WjZfSW1RTlR3SUl0Y3l1cnBiaGhiWTFhNnBPSzlSMlBwTEpuZTRuUGJUN3c5VE9ONzF6VXZsMmd4NzQzY0Z4NFA2NVR5UUlReVBId0g5UE5oM2liZ1RudTlGU2hjTXFHZVplN0dfYXR6cy1wSVVZMFp4Q1dtN1pPcWVYeWt1UWVRZjVkN3R3VWs1Z25ZZHhLNlRVdUVtWmd5SC16eWlEWmdYdzZBVTViVWVXcUViZjRRXzdPbjBMRmx2Q3NtY0dCaDVxU3BBV05HX3lpWURDV0VTVHlkekY4LXlKVmswaFd6dzNqaWwwTU93bDFYSGtPdy0wR0VIb3BrOEFxY0c0OGc1b3YzX3JqUjE3b2Z0SG5scm50eFVWTEFjZWVpdEgzTmdfRVduWlhSN1lWVU1naXJKaEpjeC1pYlgwa3ZhMG4tWWZubXBqak1sWnJrZ1RubjJrRHVOcm1RR3JmcnRPM1FIWHZ1MENTWExyOEN4OG41c3p6dFBGT0tFdVVtSzNMMkFETktfU0tNQ1V6NXROVnU0clU3MnZhWDdfcmtHOFY5YmhIejdVUUNLNy10MUJjdGlZMkFLRl85ZGhuQnVFYlNxMHJXUWtkZHVYaVdqSGRLSlhSSldxa0k4V09OcUFlcHA0ZVVrRElMWHp6S3FNdTI2bXVnVDMzWnJQcnYzSFlsZGl4UXRJY0g0VjV4dEVybHFTSWl4T3lXbEdkemdsX3BCdnRfZkJlZ1k0cFY3ZGo0NjRMWnh4YkcydFk5UnpvX1hxY1lMY3dRVnMzR2pTZk04WGh0M0lneVJVMkZiR0JOUTNCYmM4cXZlTmE0WFlzVGQzR1YyRG5CbE5jdS1ZODhEeXBPb0lFc1o3VXNlSnR3ZXZ5d3N1RXczMFJ4RFk4Z0JzaUJJMV9wSG9RcHdJUldiMXdKbkJCRFlZb3FIVHh4VmtMa0hweU9xWU9UYzFyU0hWXzMxbTN4eFdrWk1wbjUwdXh0Z3VSV2dtZXhFQS03OHRMRTAxWXpwcU5MekhSZkN1Z29iWHBKUG5Ic3FkNUxiS2NESW1jUllVSy1icDI0R09SWnJIeEY2NXIyejJHNWVrNEhDeTdESm96OGpnMU84azdqRHZ4VjFpcjlVWVlEenM2ZXZzaWRteVJuM1pMZi1VTkQ1eWRwdUprUVZLV29ZZFZfbS02NWN3a3BYOEFxdWtHblpIQ3dZTHdac3lqWXFBVlBvYnp0a3AyM01Zakw1TEgxX3ZrTl9qSEUzSnJQNC1ROVB1b3ZpMC1FbkU4dnB5TC1PZHhXTVhDUDZ2YlVoa19XMl9BZm9HbVJuY0RYaHJJZTRqT1AxSm9zT3I5V1NZUXo4MW1BR3o1ZUdFWTlxaFpyUFduUjRnRkhnelUya3hBU1hrSDRwUUF1aWhYYjZFMW92LU04ME10WURSSWFtVk1MR0w3dGlvaFo3eUtoX1YyLXFXNWxfclMxcTdPZXNXTnJuNWRjSEhEYVo1QjRjUEQtalBQU2lEV2xIaFJVUjh2SEgtODNfYlZTdWVkcVdWaUtOT2ppd3pId0M5SjRETk1ocGV6T3ZjcElVOEZrV0tRNmlYMUttaWF4am5QY1ZlUXlHb21UZEE1RDVlMVRDM1V1VUJTUk9PZTJBYUN2SXAxeW1COXhHSnQ0YTZ0cXZNMDlsTWVkX1JGdk1wRUJDNU9qamhJcF9DTGpjWlp0eTVHSFdXRG5vWkNod2FObThTcmFWQm5FQW03Q3hsSkFkeU5aZGZXcnBMZXg4QU5vRXE2aS1wRDI4WVZtVGNLSENqbGtLcXVhTVlTTFVucU1QUXlCVVB3eEtXY1hZQm9QNGNtYkFYdDRoOHZyZlpPUk5xUllCQmxVSE1vV0l0WlJwMjYtX2Y3VmdaOWoxVDUxeXJrb1c1blp0QWJ3bFVEdU5tR09ybEhCdUdIOWV5dS1lWGVwMTFYNHZuV1Z2REJPNHdZZ3dTRzhhXy1PSmVyc18xSS1XTVN5MGlsajN1ZjFUeDBwVi13U3ItdERVS0x2dzFUcDhKUkFNZ1UxMnBoanNtUXhwb19mQnRVTjh3bWZkbkJmdUxiU0NFblpldnd1U19rM1l6eWVOUjI4dHNLNXBnSHdxdEY2b25ZQkNxeFExck83RXZuOElHdHJweGQ1T3B3Tkd2cEYyQVl6ZWRCTUdYcjc3TEdia0ppMVp2ajdwazhlUTJ0cHYyNTdqbVZHd2g4SndhaXR1RllSdXo1bF9hYkhxTWI0TF8tT29hVkRIV1U3X21KTUFfWWkzeUw5OTdwMFBzM0JmR3dqcVZqdml1ZUhNTGpRZ05uS1Z0TkJLNWlpRWVMeTBobEdNR0FpSXZ2SVpnbVk1aWFKM2lCNUxCd0pSZ3JFWFhOeGhyUW42TlJRd3JpRThMQW9aUVlLS1YwMnpZN284LVV5UHZRUzJqWUFYalgwWlF0VVdCTFJaVjlGdENsbGlhR0ZramRfUjIzVFEyeGc3Umx5NGNaeFRsY3lPWVZWQ3ZBRnRhcjVFcGZOZm9HVXY5eG9zOS1iNUpoUF9CdWgwdnpDT1FlV1BfLWtHaWROZWZZNGY0ZFdMY1JyZ1pUZk5XWUd0bHlqenlBUEJBTEpDVTBJNWkzRFZGOFp2U2cxdW5NckpxZjJaaVllMU1QMmtpSmdGNnpKU1FjTjllZGFBSkFic3Q3TU5TMTk4R3BZeHNacWdpdVVzUUhYREliOXhKRTlHWUUzRHdESWoxVUNmVUlJRmd6YnFZdlU2VEpfNlRfMmF1NVk4aC1oc195Mk1vb3JKM19HSWVwQkJjTWs2Y0tvbkM5emJnd1JPZV9TLVdmS1FkaUx2NGRyM1pacVJFT2tpd2tzYjBkNW52czBoT0hSLURHOUlyc1BiQ2JEYjlGWU5TX3dvSldLTWZQWmVnRUZkTEUtRTh6cTRfNVdIWnhXVGlpWjhUYzlhZl9KQ3d4MTJMNEZRQ3hSUjRsSEJGQzhGYldnNE1RY1dmTEE0ZDdfTnljWTdjd1g1M2xrRTh4RktMUnlTMmpqa25HeHNFdV9xcl9CcDg3OUlSRU1ya0wwMk5TdU9KQzFyaUhSUUtYUnpxTm80Q0VrMy1zUno1NDFXZ1RlUFRKdlZZX0Rzd0V1b2tYUElhQTBWLVZLTWw5OUpUOW1OeVJ6X1lLR3BRMXR0aE11dlVMbkVOdExKMk9qR3VpWmF1ZzlPMUptZkNicmU4dE1sTllvODJHa1k4d3hmRkFmMzFUQXFVZTd3eVZSMHc1QWxlMloxRWlDNGpjU3JjSWRqMnVzZFY4THRpNDlhbmlXVDF6RmRteHQ0UmVldXQxY1FFeHJaQkczTFlsd0k2Wm9pd3VUU0hHdVFUYnk2QktNZzk0VXVCOTAxYy03LXBjLVJmUTlQWFoyalRjUW1GN28wdnI2cmR0NnRpcWpqMVkzSng5WHQ5S21FS1NDZHFDZ2VScllyVjhRUGMyR3o2VzRvamt0RzBkc1NlUEdNUUZ0ODZyODFEbWtOb1pEclp3TGF0MzVES202RnRvQ09PX0VnIiwiZGF0YUVuY3J5cHRpb25LZXkiOm51bGwsInRhZ3MiOiJ7fSIsImtla2lkIjpudWxsLCJpdiI6bnVsbH0="}]},"info":null,"samlSingleSignOnSettings":null,"addIns":[],"appRoles":[],"keyCredentials":[{"customKeyIdentifier":"D39E213A0E1F6BDB586789EC155D42350CAEE09D","displayName":"CN=9146cbb8-b890-458b-91fb-1779a08a718e,
+        DC=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a","endDateTime":"2025-07-03T16:24:00Z","key":null,"keyId":"4c3535a3-affe-4ef7-82f0-39849a5a98fe","startDateTime":"2025-04-04T16:24:00Z","type":"AsymmetricX509Cert","usage":"Verify"}],"oauth2PermissionScopes":[],"passwordCredentials":[],"resourceSpecificApplicationPermissions":[],"verifiedPublisher":{"displayName":null,"verifiedPublisherId":null,"addedDateTime":null}}]}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1717'
+      - '12360'
       content-type:
       - application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
       date:
-      - Tue, 14 May 2024 08:39:11 GMT
+      - Fri, 04 Apr 2025 16:29:48 GMT
       odata-version:
       - '4.0'
       request-id:
-      - 32a849aa-381d-426f-96a2-7bfbe3c18465
+      - 87777860-dc8a-4e01-aa25-f8f731f3506d
       strict-transport-security:
       - max-age=31536000
       transfer-encoding:
@@ -136,7 +145,7 @@ interactions:
       vary:
       - Accept-Encoding
       x-ms-ags-diagnostic:
-      - '{"ServerInfo":{"DataCenter":"Japan East","Slice":"E","Ring":"5","ScaleUnit":"002","RoleInstance":"TY2PEPF00005FC4"}}'
+      - '{"ServerInfo":{"DataCenter":"East US 2","Slice":"E","Ring":"5","ScaleUnit":"005","RoleInstance":"BN2PEPF0000512D"}}'
       x-ms-resource-unit:
       - '1'
     status:
@@ -156,43 +165,46 @@ interactions:
       ParameterSetName:
       - --assignee --role --scope
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Authorization/roleDefinitions?$filter=roleName%20eq%20%27Contributor%27&api-version=2022-05-01-preview
   response:
     body:
       string: '{"value":[{"properties":{"roleName":"Contributor","type":"BuiltInRole","description":"Grants
         full access to manage all resources, but does not allow you to assign roles
-        in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.","assignableScopes":["/"],"permissions":[{"actions":["*"],"notActions":["Microsoft.Authorization/*/Delete","Microsoft.Authorization/*/Write","Microsoft.Authorization/elevateAccess/Action","Microsoft.Blueprint/blueprintAssignments/write","Microsoft.Blueprint/blueprintAssignments/delete","Microsoft.Compute/galleries/share/action","Microsoft.Purview/consents/write","Microsoft.Purview/consents/delete"],"dataActions":[],"notDataActions":[]}],"createdOn":"2015-02-02T21:55:09.8806423Z","updatedOn":"2023-07-05T20:08:05.4086949Z","createdBy":null,"updatedBy":null},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c","type":"Microsoft.Authorization/roleDefinitions","name":"b24988ac-6180-42a0-ab88-20f7382dd24c"}]}'
+        in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.","assignableScopes":["/"],"permissions":[{"actions":["*"],"notActions":["Microsoft.Authorization/*/Delete","Microsoft.Authorization/*/Write","Microsoft.Authorization/elevateAccess/Action","Microsoft.Blueprint/blueprintAssignments/write","Microsoft.Blueprint/blueprintAssignments/delete","Microsoft.Compute/galleries/share/action","Microsoft.Purview/consents/write","Microsoft.Purview/consents/delete","Microsoft.Resources/deploymentStacks/manageDenySetting/action","Microsoft.Subscription/cancel/action","Microsoft.Subscription/enable/action"],"dataActions":[],"notDataActions":[]}],"createdOn":"2015-02-02T21:55:09.8806423Z","updatedOn":"2024-11-20T20:16:17.1646587Z","createdBy":null,"updatedBy":null},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c","type":"Microsoft.Authorization/roleDefinitions","name":"b24988ac-6180-42a0-ab88-20f7382dd24c"}]}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1055'
+      - '1197'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 14 May 2024 08:39:11 GMT
+      - Fri, 04 Apr 2025 16:29:48 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
-      set-cookie:
-      - x-ms-gateway-slice=Production; path=/; secure; samesite=none; httponly
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       x-cache:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/southcentralus/57e93a38-7b99-47cc-aebd-a4d2e2994d46
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
       x-msedge-ref:
-      - 'Ref A: BF5958FC3969456AA2234B8ED4AAAE61 Ref B: TYO201151001060 Ref C: 2024-05-14T08:39:12Z'
+      - 'Ref A: 425D8607C5A44050A0A30B0A5BEF6F94 Ref B: BN1AA2051013047 Ref C: 2025-04-04T16:29:49Z'
     status:
       code: 200
       message: OK
 - request:
     body: '{"properties": {"roleDefinitionId": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
-      "principalId": "79cb8114-fd7e-4279-9170-8f6dee2bfffd", "principalType": "ServicePrincipal"}}'
+      "principalId": "2f667f26-f12d-4eb9-884d-61d140ca0ae1", "principalType": "ServicePrincipal"}}'
     headers:
       Accept:
       - application/json
@@ -206,17 +218,16 @@ interactions:
       - '270'
       Content-Type:
       - application/json
-      Cookie:
-      - x-ms-gateway-slice=Production
       ParameterSetName:
       - --assignee --role --scope
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Authorization/roleAssignments/88888888-0000-0000-0000-000000000001?api-version=2022-04-01
   response:
     body:
-      string: '{"properties":{"roleDefinitionId":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c","principalId":"79cb8114-fd7e-4279-9170-8f6dee2bfffd","principalType":"ServicePrincipal","scope":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001","condition":null,"conditionVersion":null,"createdOn":"2024-05-14T08:39:12.8583166Z","updatedOn":"2024-05-14T08:39:13.8123255Z","createdBy":null,"updatedBy":"d44a2991-98c6-47c3-b59b-2b30d72cfcc2","delegatedManagedIdentityResourceId":null,"description":null},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Authorization/roleAssignments/88888888-0000-0000-0000-000000000001","type":"Microsoft.Authorization/roleAssignments","name":"88888888-0000-0000-0000-000000000001"}'
+      string: '{"properties":{"roleDefinitionId":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c","principalId":"2f667f26-f12d-4eb9-884d-61d140ca0ae1","principalType":"ServicePrincipal","scope":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001","condition":null,"conditionVersion":null,"createdOn":"2025-04-04T16:29:49.6766499Z","updatedOn":"2025-04-04T16:29:50.1136580Z","createdBy":null,"updatedBy":"55e73ff3-85c1-4e75-84df-a7a86a55f067","delegatedManagedIdentityResourceId":null,"description":null},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Authorization/roleAssignments/88888888-0000-0000-0000-000000000001","type":"Microsoft.Authorization/roleAssignments","name":"88888888-0000-0000-0000-000000000001"}'
     headers:
       cache-control:
       - no-cache
@@ -225,7 +236,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 14 May 2024 08:39:14 GMT
+      - Fri, 04 Apr 2025 16:29:53 GMT
       expires:
       - '-1'
       pragma:
@@ -236,10 +247,14 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/southcentralus/633cea99-d0a4-4176-a493-252f87ca553b
+      x-ms-ratelimit-remaining-subscription-global-writes:
+      - '2999'
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '199'
       x-msedge-ref:
-      - 'Ref A: A7DA07781CAF4684B6CBB802C4B406D0 Ref B: TYO201151001060 Ref C: 2024-05-14T08:39:12Z'
+      - 'Ref A: F49133F7A74945BF9C629214FCFE8449 Ref B: BN1AA2051013047 Ref C: 2025-04-04T16:29:49Z'
     status:
       code: 201
       message: Created
@@ -257,21 +272,22 @@ interactions:
       ParameterSetName:
       - -g -n --image-source --managed-image-destinations --identity
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001?api-version=2022-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001?api-version=2024-11-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001","name":"img_tmpl_cancel_000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","test":"test_image_builder_cancel","date":"2024-05-14T08:38:19Z","module":"vm","Creator":"aaa@foo.com","DateCreated":"2024-05-14T08:38:24Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001","name":"img_tmpl_cancel_000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","test":"test_image_builder_cancel","date":"2025-04-04T16:29:00Z","module":"vm","DateCreated":"2025-04-04T16:29:02Z","Creator":"05e98f05-c170-4236-968f-5bf6b5884bfc"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '447'
+      - '457'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 14 May 2024 08:39:15 GMT
+      - Fri, 04 Apr 2025 16:29:54 GMT
       expires:
       - '-1'
       pragma:
@@ -282,8 +298,10 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
       x-msedge-ref:
-      - 'Ref A: 0CF4BFB95ADA4F73A5546DA33940BC87 Ref B: TYO201151006009 Ref C: 2024-05-14T08:39:16Z'
+      - 'Ref A: F2CED1A9B0E34EF08E0DBA1C84637745 Ref B: BN1AA2051015053 Ref C: 2025-04-04T16:29:54Z'
     status:
       code: 200
       message: OK
@@ -301,583 +319,146 @@ interactions:
       ParameterSetName:
       - -g -n --image-source --managed-image-destinations --identity
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/locations?api-version=2022-12-01
   response:
     body:
-      string: "{\"value\":[{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus\"\
-        ,\"name\":\"eastus\",\"type\":\"Region\",\"displayName\":\"East US\",\"regionalDisplayName\"\
-        :\"(US) East US\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\"\
-        :\"Recommended\",\"geography\":\"United States\",\"geographyGroup\":\"US\"\
-        ,\"longitude\":\"-79.8164\",\"latitude\":\"37.3719\",\"physicalLocation\"\
-        :\"Virginia\",\"pairedRegion\":[{\"name\":\"westus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"eastus-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"eastus-az1\"},{\"\
-        logicalZone\":\"3\",\"physicalZone\":\"eastus-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus2\"\
-        ,\"name\":\"eastus2\",\"type\":\"Region\",\"displayName\":\"East US 2\",\"\
-        regionalDisplayName\":\"(US) East US 2\",\"metadata\":{\"regionType\":\"Physical\"\
-        ,\"regionCategory\":\"Recommended\",\"geography\":\"United States\",\"geographyGroup\"\
-        :\"US\",\"longitude\":\"-78.3889\",\"latitude\":\"36.6681\",\"physicalLocation\"\
-        :\"Virginia\",\"pairedRegion\":[{\"name\":\"centralus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centralus\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"eastus2-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"eastus2-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"eastus2-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralus\"\
-        ,\"name\":\"southcentralus\",\"type\":\"Region\",\"displayName\":\"South Central\
-        \ US\",\"regionalDisplayName\":\"(US) South Central US\",\"metadata\":{\"\
-        regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\"\
-        :\"United States\",\"geographyGroup\":\"US\",\"longitude\":\"-98.5\",\"latitude\"\
-        :\"29.4167\",\"physicalLocation\":\"Texas\",\"pairedRegion\":[{\"name\":\"\
-        northcentralus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/northcentralus\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"southcentralus-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"southcentralus-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"southcentralus-az2\"}]},{\"id\"\
-        :\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus2\"\
-        ,\"name\":\"westus2\",\"type\":\"Region\",\"displayName\":\"West US 2\",\"\
-        regionalDisplayName\":\"(US) West US 2\",\"metadata\":{\"regionType\":\"Physical\"\
-        ,\"regionCategory\":\"Recommended\",\"geography\":\"United States\",\"geographyGroup\"\
-        :\"US\",\"longitude\":\"-119.852\",\"latitude\":\"47.233\",\"physicalLocation\"\
-        :\"Washington\",\"pairedRegion\":[{\"name\":\"westcentralus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westcentralus\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"westus2-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"westus2-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"westus2-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus3\"\
-        ,\"name\":\"westus3\",\"type\":\"Region\",\"displayName\":\"West US 3\",\"\
-        regionalDisplayName\":\"(US) West US 3\",\"metadata\":{\"regionType\":\"Physical\"\
-        ,\"regionCategory\":\"Recommended\",\"geography\":\"United States\",\"geographyGroup\"\
-        :\"US\",\"longitude\":\"-112.074036\",\"latitude\":\"33.448376\",\"physicalLocation\"\
-        :\"Phoenix\",\"pairedRegion\":[{\"name\":\"eastus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"westus3-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"westus3-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"westus3-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiaeast\"\
-        ,\"name\":\"australiaeast\",\"type\":\"Region\",\"displayName\":\"Australia\
-        \ East\",\"regionalDisplayName\":\"(Asia Pacific) Australia East\",\"metadata\"\
-        :{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\"\
-        :\"Australia\",\"geographyGroup\":\"Asia Pacific\",\"longitude\":\"151.2094\"\
-        ,\"latitude\":\"-33.86\",\"physicalLocation\":\"New South Wales\",\"pairedRegion\"\
-        :[{\"name\":\"australiasoutheast\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiasoutheast\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"australiaeast-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"australiaeast-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"australiaeast-az2\"}]},{\"id\"\
-        :\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southeastasia\"\
-        ,\"name\":\"southeastasia\",\"type\":\"Region\",\"displayName\":\"Southeast\
-        \ Asia\",\"regionalDisplayName\":\"(Asia Pacific) Southeast Asia\",\"metadata\"\
-        :{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\"\
-        :\"Asia Pacific\",\"geographyGroup\":\"Asia Pacific\",\"longitude\":\"103.833\"\
-        ,\"latitude\":\"1.283\",\"physicalLocation\":\"Singapore\",\"pairedRegion\"\
-        :[{\"name\":\"eastasia\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastasia\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"southeastasia-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"southeastasia-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"southeastasia-az2\"}]},{\"id\"\
-        :\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/northeurope\"\
-        ,\"name\":\"northeurope\",\"type\":\"Region\",\"displayName\":\"North Europe\"\
-        ,\"regionalDisplayName\":\"(Europe) North Europe\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Europe\"\
-        ,\"geographyGroup\":\"Europe\",\"longitude\":\"-6.2597\",\"latitude\":\"53.3478\"\
-        ,\"physicalLocation\":\"Ireland\",\"pairedRegion\":[{\"name\":\"westeurope\"\
-        ,\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westeurope\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"northeurope-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"northeurope-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"northeurope-az2\"}]},{\"id\":\"\
-        /subscriptions/00000000-0000-0000-0000-000000000000/locations/swedencentral\"\
-        ,\"name\":\"swedencentral\",\"type\":\"Region\",\"displayName\":\"Sweden Central\"\
-        ,\"regionalDisplayName\":\"(Europe) Sweden Central\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Sweden\"\
-        ,\"geographyGroup\":\"Europe\",\"longitude\":\"17.14127\",\"latitude\":\"\
-        60.67488\",\"physicalLocation\":\"G\xE4vle\",\"pairedRegion\":[{\"name\":\"\
-        swedensouth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/swedensouth\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"swedencentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"swedencentral-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"swedencentral-az2\"}]},{\"id\"\
-        :\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uksouth\"\
-        ,\"name\":\"uksouth\",\"type\":\"Region\",\"displayName\":\"UK South\",\"\
-        regionalDisplayName\":\"(Europe) UK South\",\"metadata\":{\"regionType\":\"\
-        Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"United Kingdom\"\
-        ,\"geographyGroup\":\"Europe\",\"longitude\":\"-0.799\",\"latitude\":\"50.941\"\
-        ,\"physicalLocation\":\"London\",\"pairedRegion\":[{\"name\":\"ukwest\",\"\
-        id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/ukwest\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"uksouth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"uksouth-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"uksouth-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westeurope\"\
-        ,\"name\":\"westeurope\",\"type\":\"Region\",\"displayName\":\"West Europe\"\
-        ,\"regionalDisplayName\":\"(Europe) West Europe\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Europe\"\
-        ,\"geographyGroup\":\"Europe\",\"longitude\":\"4.9\",\"latitude\":\"52.3667\"\
-        ,\"physicalLocation\":\"Netherlands\",\"pairedRegion\":[{\"name\":\"northeurope\"\
-        ,\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/northeurope\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"westeurope-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"westeurope-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"westeurope-az2\"}]},{\"id\":\"\
-        /subscriptions/00000000-0000-0000-0000-000000000000/locations/centralus\"\
-        ,\"name\":\"centralus\",\"type\":\"Region\",\"displayName\":\"Central US\"\
-        ,\"regionalDisplayName\":\"(US) Central US\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"United States\"\
-        ,\"geographyGroup\":\"US\",\"longitude\":\"-93.6208\",\"latitude\":\"41.5908\"\
-        ,\"physicalLocation\":\"Iowa\",\"pairedRegion\":[{\"name\":\"eastus2\",\"\
-        id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus2\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"centralus-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"centralus-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"centralus-az2\"}]},{\"id\":\"\
-        /subscriptions/00000000-0000-0000-0000-000000000000/locations/southafricanorth\"\
-        ,\"name\":\"southafricanorth\",\"type\":\"Region\",\"displayName\":\"South\
-        \ Africa North\",\"regionalDisplayName\":\"(Africa) South Africa North\",\"\
-        metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\"\
-        ,\"geography\":\"South Africa\",\"geographyGroup\":\"Africa\",\"longitude\"\
-        :\"28.21837\",\"latitude\":\"-25.73134\",\"physicalLocation\":\"Johannesburg\"\
-        ,\"pairedRegion\":[{\"name\":\"southafricawest\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southafricawest\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"southafricanorth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"southafricanorth-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"southafricanorth-az2\"}]},{\"\
-        id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centralindia\"\
-        ,\"name\":\"centralindia\",\"type\":\"Region\",\"displayName\":\"Central India\"\
-        ,\"regionalDisplayName\":\"(Asia Pacific) Central India\",\"metadata\":{\"\
-        regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\"\
-        :\"India\",\"geographyGroup\":\"Asia Pacific\",\"longitude\":\"73.9197\",\"\
-        latitude\":\"18.5822\",\"physicalLocation\":\"Pune\",\"pairedRegion\":[{\"\
-        name\":\"southindia\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southindia\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"centralindia-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"centralindia-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"centralindia-az2\"}]},{\"id\"\
-        :\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastasia\"\
-        ,\"name\":\"eastasia\",\"type\":\"Region\",\"displayName\":\"East Asia\",\"\
-        regionalDisplayName\":\"(Asia Pacific) East Asia\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Asia Pacific\"\
-        ,\"geographyGroup\":\"Asia Pacific\",\"longitude\":\"114.188\",\"latitude\"\
-        :\"22.267\",\"physicalLocation\":\"Hong Kong\",\"pairedRegion\":[{\"name\"\
-        :\"southeastasia\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southeastasia\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"eastasia-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"eastasia-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"eastasia-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/japaneast\"\
-        ,\"name\":\"japaneast\",\"type\":\"Region\",\"displayName\":\"Japan East\"\
-        ,\"regionalDisplayName\":\"(Asia Pacific) Japan East\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Japan\",\"\
-        geographyGroup\":\"Asia Pacific\",\"longitude\":\"139.77\",\"latitude\":\"\
-        35.68\",\"physicalLocation\":\"Tokyo, Saitama\",\"pairedRegion\":[{\"name\"\
-        :\"japanwest\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/japanwest\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"japaneast-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"japaneast-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"japaneast-az2\"}]},{\"id\":\"\
-        /subscriptions/00000000-0000-0000-0000-000000000000/locations/koreacentral\"\
-        ,\"name\":\"koreacentral\",\"type\":\"Region\",\"displayName\":\"Korea Central\"\
-        ,\"regionalDisplayName\":\"(Asia Pacific) Korea Central\",\"metadata\":{\"\
-        regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\"\
-        :\"Korea\",\"geographyGroup\":\"Asia Pacific\",\"longitude\":\"126.978\",\"\
-        latitude\":\"37.5665\",\"physicalLocation\":\"Seoul\",\"pairedRegion\":[{\"\
-        name\":\"koreasouth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/koreasouth\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"koreacentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"koreacentral-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"koreacentral-az2\"}]},{\"id\"\
-        :\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/canadacentral\"\
-        ,\"name\":\"canadacentral\",\"type\":\"Region\",\"displayName\":\"Canada Central\"\
-        ,\"regionalDisplayName\":\"(Canada) Canada Central\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Canada\"\
-        ,\"geographyGroup\":\"Canada\",\"longitude\":\"-79.383\",\"latitude\":\"43.653\"\
-        ,\"physicalLocation\":\"Toronto\",\"pairedRegion\":[{\"name\":\"canadaeast\"\
-        ,\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/canadaeast\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"canadacentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"canadacentral-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"canadacentral-az2\"}]},{\"id\"\
-        :\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/francecentral\"\
-        ,\"name\":\"francecentral\",\"type\":\"Region\",\"displayName\":\"France Central\"\
-        ,\"regionalDisplayName\":\"(Europe) France Central\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"France\"\
-        ,\"geographyGroup\":\"Europe\",\"longitude\":\"2.373\",\"latitude\":\"46.3772\"\
-        ,\"physicalLocation\":\"Paris\",\"pairedRegion\":[{\"name\":\"francesouth\"\
-        ,\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/francesouth\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"francecentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"francecentral-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"francecentral-az2\"}]},{\"id\"\
-        :\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/germanywestcentral\"\
-        ,\"name\":\"germanywestcentral\",\"type\":\"Region\",\"displayName\":\"Germany\
-        \ West Central\",\"regionalDisplayName\":\"(Europe) Germany West Central\"\
-        ,\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\"\
-        ,\"geography\":\"Germany\",\"geographyGroup\":\"Europe\",\"longitude\":\"\
-        8.682127\",\"latitude\":\"50.110924\",\"physicalLocation\":\"Frankfurt\",\"\
-        pairedRegion\":[{\"name\":\"germanynorth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/germanynorth\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"germanywestcentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"germanywestcentral-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"germanywestcentral-az2\"}]},{\"\
-        id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/italynorth\"\
-        ,\"name\":\"italynorth\",\"type\":\"Region\",\"displayName\":\"Italy North\"\
-        ,\"regionalDisplayName\":\"(Europe) Italy North\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Italy\",\"\
-        geographyGroup\":\"Europe\",\"longitude\":\"9.18109\",\"latitude\":\"45.46888\"\
-        ,\"physicalLocation\":\"Milan\",\"pairedRegion\":[]},\"availabilityZoneMappings\"\
-        :[{\"logicalZone\":\"1\",\"physicalZone\":\"italynorth-az3\"},{\"logicalZone\"\
-        :\"2\",\"physicalZone\":\"italynorth-az1\"},{\"logicalZone\":\"3\",\"physicalZone\"\
-        :\"italynorth-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/norwayeast\"\
-        ,\"name\":\"norwayeast\",\"type\":\"Region\",\"displayName\":\"Norway East\"\
-        ,\"regionalDisplayName\":\"(Europe) Norway East\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Norway\"\
-        ,\"geographyGroup\":\"Europe\",\"longitude\":\"10.752245\",\"latitude\":\"\
-        59.913868\",\"physicalLocation\":\"Norway\",\"pairedRegion\":[{\"name\":\"\
-        norwaywest\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/norwaywest\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"norwayeast-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"norwayeast-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"norwayeast-az2\"}]},{\"id\":\"\
-        /subscriptions/00000000-0000-0000-0000-000000000000/locations/polandcentral\"\
-        ,\"name\":\"polandcentral\",\"type\":\"Region\",\"displayName\":\"Poland Central\"\
-        ,\"regionalDisplayName\":\"(Europe) Poland Central\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Poland\"\
-        ,\"geographyGroup\":\"Europe\",\"longitude\":\"21.01666\",\"latitude\":\"\
-        52.23334\",\"physicalLocation\":\"Warsaw\",\"pairedRegion\":[]},\"availabilityZoneMappings\"\
-        :[{\"logicalZone\":\"1\",\"physicalZone\":\"polandcentral-az3\"},{\"logicalZone\"\
-        :\"2\",\"physicalZone\":\"polandcentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\"\
-        :\"polandcentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/switzerlandnorth\"\
-        ,\"name\":\"switzerlandnorth\",\"type\":\"Region\",\"displayName\":\"Switzerland\
-        \ North\",\"regionalDisplayName\":\"(Europe) Switzerland North\",\"metadata\"\
-        :{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\"\
-        :\"Switzerland\",\"geographyGroup\":\"Europe\",\"longitude\":\"8.564572\"\
-        ,\"latitude\":\"47.451542\",\"physicalLocation\":\"Zurich\",\"pairedRegion\"\
-        :[{\"name\":\"switzerlandwest\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/switzerlandwest\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"switzerlandnorth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"switzerlandnorth-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"switzerlandnorth-az2\"}]},{\"\
-        id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/mexicocentral\"\
-        ,\"name\":\"mexicocentral\",\"type\":\"Region\",\"displayName\":\"Mexico Central\"\
-        ,\"regionalDisplayName\":\"(Mexico) Mexico Central\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Mexico\"\
-        ,\"geographyGroup\":\"Mexico\",\"longitude\":\"-100.389888\",\"latitude\"\
-        :\"20.588818\",\"physicalLocation\":\"Quer\xE9taro State\",\"pairedRegion\"\
-        :[]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"mexicocentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"mexicocentral-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"mexicocentral-az2\"}]},{\"id\"\
-        :\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uaenorth\"\
-        ,\"name\":\"uaenorth\",\"type\":\"Region\",\"displayName\":\"UAE North\",\"\
-        regionalDisplayName\":\"(Middle East) UAE North\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"UAE\",\"\
-        geographyGroup\":\"Middle East\",\"longitude\":\"55.316666\",\"latitude\"\
-        :\"25.266666\",\"physicalLocation\":\"Dubai\",\"pairedRegion\":[{\"name\"\
-        :\"uaecentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uaecentral\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"uaenorth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"uaenorth-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"uaenorth-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazilsouth\"\
-        ,\"name\":\"brazilsouth\",\"type\":\"Region\",\"displayName\":\"Brazil South\"\
-        ,\"regionalDisplayName\":\"(South America) Brazil South\",\"metadata\":{\"\
-        regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\"\
-        :\"Brazil\",\"geographyGroup\":\"South America\",\"longitude\":\"-46.633\"\
-        ,\"latitude\":\"-23.55\",\"physicalLocation\":\"Sao Paulo State\",\"pairedRegion\"\
-        :[{\"name\":\"southcentralus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralus\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"brazilsouth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"brazilsouth-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"brazilsouth-az2\"}]},{\"id\":\"\
-        /subscriptions/00000000-0000-0000-0000-000000000000/locations/israelcentral\"\
-        ,\"name\":\"israelcentral\",\"type\":\"Region\",\"displayName\":\"Israel Central\"\
-        ,\"regionalDisplayName\":\"(Middle East) Israel Central\",\"metadata\":{\"\
-        regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\"\
-        :\"Israel\",\"geographyGroup\":\"Middle East\",\"longitude\":\"33.4506633\"\
-        ,\"latitude\":\"31.2655698\",\"physicalLocation\":\"Israel\",\"pairedRegion\"\
-        :[]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"israelcentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"israelcentral-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"israelcentral-az2\"}]},{\"id\"\
-        :\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/qatarcentral\"\
-        ,\"name\":\"qatarcentral\",\"type\":\"Region\",\"displayName\":\"Qatar Central\"\
-        ,\"regionalDisplayName\":\"(Middle East) Qatar Central\",\"metadata\":{\"\
-        regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\"\
-        :\"Qatar\",\"geographyGroup\":\"Middle East\",\"longitude\":\"51.439327\"\
-        ,\"latitude\":\"25.551462\",\"physicalLocation\":\"Doha\",\"pairedRegion\"\
-        :[]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"qatarcentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"qatarcentral-az1\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"qatarcentral-az2\"}]},{\"id\"\
-        :\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centralusstage\"\
-        ,\"name\":\"centralusstage\",\"type\":\"Region\",\"displayName\":\"Central\
-        \ US (Stage)\",\"regionalDisplayName\":\"(US) Central US (Stage)\",\"metadata\"\
-        :{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"\
-        usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastusstage\"\
-        ,\"name\":\"eastusstage\",\"type\":\"Region\",\"displayName\":\"East US (Stage)\"\
-        ,\"regionalDisplayName\":\"(US) East US (Stage)\",\"metadata\":{\"regionType\"\
-        :\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"usa\",\"geographyGroup\"\
-        :\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus2stage\"\
-        ,\"name\":\"eastus2stage\",\"type\":\"Region\",\"displayName\":\"East US 2\
-        \ (Stage)\",\"regionalDisplayName\":\"(US) East US 2 (Stage)\",\"metadata\"\
-        :{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"\
-        usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/northcentralusstage\"\
-        ,\"name\":\"northcentralusstage\",\"type\":\"Region\",\"displayName\":\"North\
-        \ Central US (Stage)\",\"regionalDisplayName\":\"(US) North Central US (Stage)\"\
-        ,\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"\
-        geography\":\"usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralusstage\"\
-        ,\"name\":\"southcentralusstage\",\"type\":\"Region\",\"displayName\":\"South\
-        \ Central US (Stage)\",\"regionalDisplayName\":\"(US) South Central US (Stage)\"\
-        ,\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"\
-        geography\":\"usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westusstage\"\
-        ,\"name\":\"westusstage\",\"type\":\"Region\",\"displayName\":\"West US (Stage)\"\
-        ,\"regionalDisplayName\":\"(US) West US (Stage)\",\"metadata\":{\"regionType\"\
-        :\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"usa\",\"geographyGroup\"\
-        :\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus2stage\"\
-        ,\"name\":\"westus2stage\",\"type\":\"Region\",\"displayName\":\"West US 2\
-        \ (Stage)\",\"regionalDisplayName\":\"(US) West US 2 (Stage)\",\"metadata\"\
-        :{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"\
-        usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/asia\"\
-        ,\"name\":\"asia\",\"type\":\"Region\",\"displayName\":\"Asia\",\"regionalDisplayName\"\
-        :\"Asia\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"\
-        }},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/asiapacific\"\
-        ,\"name\":\"asiapacific\",\"type\":\"Region\",\"displayName\":\"Asia Pacific\"\
-        ,\"regionalDisplayName\":\"Asia Pacific\",\"metadata\":{\"regionType\":\"\
-        Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australia\"\
-        ,\"name\":\"australia\",\"type\":\"Region\",\"displayName\":\"Australia\"\
-        ,\"regionalDisplayName\":\"Australia\",\"metadata\":{\"regionType\":\"Logical\"\
-        ,\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazil\"\
-        ,\"name\":\"brazil\",\"type\":\"Region\",\"displayName\":\"Brazil\",\"regionalDisplayName\"\
-        :\"Brazil\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/canada\"\
-        ,\"name\":\"canada\",\"type\":\"Region\",\"displayName\":\"Canada\",\"regionalDisplayName\"\
-        :\"Canada\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/europe\"\
-        ,\"name\":\"europe\",\"type\":\"Region\",\"displayName\":\"Europe\",\"regionalDisplayName\"\
-        :\"Europe\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/france\"\
-        ,\"name\":\"france\",\"type\":\"Region\",\"displayName\":\"France\",\"regionalDisplayName\"\
-        :\"France\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/germany\"\
-        ,\"name\":\"germany\",\"type\":\"Region\",\"displayName\":\"Germany\",\"regionalDisplayName\"\
-        :\"Germany\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/global\"\
-        ,\"name\":\"global\",\"type\":\"Region\",\"displayName\":\"Global\",\"regionalDisplayName\"\
-        :\"Global\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/india\"\
-        ,\"name\":\"india\",\"type\":\"Region\",\"displayName\":\"India\",\"regionalDisplayName\"\
-        :\"India\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/israel\"\
-        ,\"name\":\"israel\",\"type\":\"Region\",\"displayName\":\"Israel\",\"regionalDisplayName\"\
-        :\"Israel\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/italy\"\
-        ,\"name\":\"italy\",\"type\":\"Region\",\"displayName\":\"Italy\",\"regionalDisplayName\"\
-        :\"Italy\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/japan\"\
-        ,\"name\":\"japan\",\"type\":\"Region\",\"displayName\":\"Japan\",\"regionalDisplayName\"\
-        :\"Japan\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/korea\"\
-        ,\"name\":\"korea\",\"type\":\"Region\",\"displayName\":\"Korea\",\"regionalDisplayName\"\
-        :\"Korea\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/newzealand\"\
-        ,\"name\":\"newzealand\",\"type\":\"Region\",\"displayName\":\"New Zealand\"\
-        ,\"regionalDisplayName\":\"New Zealand\",\"metadata\":{\"regionType\":\"Logical\"\
-        ,\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/norway\"\
-        ,\"name\":\"norway\",\"type\":\"Region\",\"displayName\":\"Norway\",\"regionalDisplayName\"\
-        :\"Norway\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/poland\"\
-        ,\"name\":\"poland\",\"type\":\"Region\",\"displayName\":\"Poland\",\"regionalDisplayName\"\
-        :\"Poland\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/qatar\"\
-        ,\"name\":\"qatar\",\"type\":\"Region\",\"displayName\":\"Qatar\",\"regionalDisplayName\"\
-        :\"Qatar\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/singapore\"\
-        ,\"name\":\"singapore\",\"type\":\"Region\",\"displayName\":\"Singapore\"\
-        ,\"regionalDisplayName\":\"Singapore\",\"metadata\":{\"regionType\":\"Logical\"\
-        ,\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southafrica\"\
-        ,\"name\":\"southafrica\",\"type\":\"Region\",\"displayName\":\"South Africa\"\
-        ,\"regionalDisplayName\":\"South Africa\",\"metadata\":{\"regionType\":\"\
-        Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/sweden\"\
-        ,\"name\":\"sweden\",\"type\":\"Region\",\"displayName\":\"Sweden\",\"regionalDisplayName\"\
-        :\"Sweden\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"\
-        Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/switzerland\"\
-        ,\"name\":\"switzerland\",\"type\":\"Region\",\"displayName\":\"Switzerland\"\
-        ,\"regionalDisplayName\":\"Switzerland\",\"metadata\":{\"regionType\":\"Logical\"\
-        ,\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uae\"\
-        ,\"name\":\"uae\",\"type\":\"Region\",\"displayName\":\"United Arab Emirates\"\
-        ,\"regionalDisplayName\":\"United Arab Emirates\",\"metadata\":{\"regionType\"\
-        :\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uk\"\
-        ,\"name\":\"uk\",\"type\":\"Region\",\"displayName\":\"United Kingdom\",\"\
-        regionalDisplayName\":\"United Kingdom\",\"metadata\":{\"regionType\":\"Logical\"\
-        ,\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/unitedstates\"\
-        ,\"name\":\"unitedstates\",\"type\":\"Region\",\"displayName\":\"United States\"\
-        ,\"regionalDisplayName\":\"United States\",\"metadata\":{\"regionType\":\"\
-        Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/unitedstateseuap\"\
-        ,\"name\":\"unitedstateseuap\",\"type\":\"Region\",\"displayName\":\"United\
-        \ States EUAP\",\"regionalDisplayName\":\"United States EUAP\",\"metadata\"\
-        :{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastasiastage\"\
-        ,\"name\":\"eastasiastage\",\"type\":\"Region\",\"displayName\":\"East Asia\
-        \ (Stage)\",\"regionalDisplayName\":\"(Asia Pacific) East Asia (Stage)\",\"\
-        metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\"\
-        :\"asia\",\"geographyGroup\":\"Asia Pacific\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southeastasiastage\"\
-        ,\"name\":\"southeastasiastage\",\"type\":\"Region\",\"displayName\":\"Southeast\
-        \ Asia (Stage)\",\"regionalDisplayName\":\"(Asia Pacific) Southeast Asia (Stage)\"\
-        ,\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"\
-        geography\":\"asia\",\"geographyGroup\":\"Asia Pacific\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazilus\"\
-        ,\"name\":\"brazilus\",\"type\":\"Region\",\"displayName\":\"Brazil US\",\"\
-        regionalDisplayName\":\"(South America) Brazil US\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Brazil\",\"geographyGroup\"\
-        :\"South America\",\"longitude\":\"0\",\"latitude\":\"0\",\"physicalLocation\"\
-        :\"\",\"pairedRegion\":[{\"name\":\"brazilsoutheast\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazilsoutheast\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastusstg\"\
-        ,\"name\":\"eastusstg\",\"type\":\"Region\",\"displayName\":\"East US STG\"\
-        ,\"regionalDisplayName\":\"(US) East US STG\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Stage (US)\",\"\
-        geographyGroup\":\"US\",\"longitude\":\"-79.8164\",\"latitude\":\"37.3719\"\
-        ,\"physicalLocation\":\"Virginia\",\"pairedRegion\":[{\"name\":\"southcentralusstg\"\
-        ,\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralusstg\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/northcentralus\"\
-        ,\"name\":\"northcentralus\",\"type\":\"Region\",\"displayName\":\"North Central\
-        \ US\",\"regionalDisplayName\":\"(US) North Central US\",\"metadata\":{\"\
-        regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"United\
-        \ States\",\"geographyGroup\":\"US\",\"longitude\":\"-87.6278\",\"latitude\"\
-        :\"41.8819\",\"physicalLocation\":\"Illinois\",\"pairedRegion\":[{\"name\"\
-        :\"southcentralus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralus\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus\"\
-        ,\"name\":\"westus\",\"type\":\"Region\",\"displayName\":\"West US\",\"regionalDisplayName\"\
-        :\"(US) West US\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\"\
-        :\"Other\",\"geography\":\"United States\",\"geographyGroup\":\"US\",\"longitude\"\
-        :\"-122.417\",\"latitude\":\"37.783\",\"physicalLocation\":\"California\"\
-        ,\"pairedRegion\":[{\"name\":\"eastus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/japanwest\"\
-        ,\"name\":\"japanwest\",\"type\":\"Region\",\"displayName\":\"Japan West\"\
-        ,\"regionalDisplayName\":\"(Asia Pacific) Japan West\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Japan\",\"geographyGroup\"\
-        :\"Asia Pacific\",\"longitude\":\"135.5022\",\"latitude\":\"34.6939\",\"physicalLocation\"\
-        :\"Osaka\",\"pairedRegion\":[{\"name\":\"japaneast\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/japaneast\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/jioindiawest\"\
-        ,\"name\":\"jioindiawest\",\"type\":\"Region\",\"displayName\":\"Jio India\
-        \ West\",\"regionalDisplayName\":\"(Asia Pacific) Jio India West\",\"metadata\"\
-        :{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"\
-        India\",\"geographyGroup\":\"Asia Pacific\",\"longitude\":\"70.05773\",\"\
-        latitude\":\"22.470701\",\"physicalLocation\":\"Jamnagar\",\"pairedRegion\"\
-        :[{\"name\":\"jioindiacentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/jioindiacentral\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centraluseuap\"\
-        ,\"name\":\"centraluseuap\",\"type\":\"Region\",\"displayName\":\"Central\
-        \ US EUAP\",\"regionalDisplayName\":\"(US) Central US EUAP\",\"metadata\"\
-        :{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"\
-        Canary (US)\",\"geographyGroup\":\"US\",\"longitude\":\"-93.6208\",\"latitude\"\
-        :\"41.5908\",\"physicalLocation\":\"\",\"pairedRegion\":[{\"name\":\"eastus2euap\"\
-        ,\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus2euap\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"centraluseuap-az1\"},{\"logicalZone\":\"2\",\"physicalZone\":\"centraluseuap-az2\"\
-        }]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus2euap\"\
-        ,\"name\":\"eastus2euap\",\"type\":\"Region\",\"displayName\":\"East US 2\
-        \ EUAP\",\"regionalDisplayName\":\"(US) East US 2 EUAP\",\"metadata\":{\"\
-        regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Canary\
-        \ (US)\",\"geographyGroup\":\"US\",\"longitude\":\"-78.3889\",\"latitude\"\
-        :\"36.6681\",\"physicalLocation\":\"\",\"pairedRegion\":[{\"name\":\"centraluseuap\"\
-        ,\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centraluseuap\"\
-        }]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\"\
-        :\"eastus2euap-az1\"},{\"logicalZone\":\"2\",\"physicalZone\":\"eastus2euap-az2\"\
-        },{\"logicalZone\":\"3\",\"physicalZone\":\"eastus2euap-az3\"}]},{\"id\":\"\
-        /subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralusstg\"\
-        ,\"name\":\"southcentralusstg\",\"type\":\"Region\",\"displayName\":\"South\
-        \ Central US STG\",\"regionalDisplayName\":\"(US) South Central US STG\",\"\
-        metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\"\
-        :\"Stage (US)\",\"geographyGroup\":\"US\",\"longitude\":\"-98.5\",\"latitude\"\
-        :\"29.4167\",\"physicalLocation\":\"Texas\",\"pairedRegion\":[{\"name\":\"\
-        eastusstg\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastusstg\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westcentralus\"\
-        ,\"name\":\"westcentralus\",\"type\":\"Region\",\"displayName\":\"West Central\
-        \ US\",\"regionalDisplayName\":\"(US) West Central US\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"United States\"\
-        ,\"geographyGroup\":\"US\",\"longitude\":\"-110.234\",\"latitude\":\"40.89\"\
-        ,\"physicalLocation\":\"Wyoming\",\"pairedRegion\":[{\"name\":\"westus2\"\
-        ,\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus2\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southafricawest\"\
-        ,\"name\":\"southafricawest\",\"type\":\"Region\",\"displayName\":\"South\
-        \ Africa West\",\"regionalDisplayName\":\"(Africa) South Africa West\",\"\
-        metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\"\
-        :\"South Africa\",\"geographyGroup\":\"Africa\",\"longitude\":\"18.843266\"\
-        ,\"latitude\":\"-34.075691\",\"physicalLocation\":\"Cape Town\",\"pairedRegion\"\
-        :[{\"name\":\"southafricanorth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southafricanorth\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiacentral\"\
-        ,\"name\":\"australiacentral\",\"type\":\"Region\",\"displayName\":\"Australia\
-        \ Central\",\"regionalDisplayName\":\"(Asia Pacific) Australia Central\",\"\
-        metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\"\
-        :\"Australia\",\"geographyGroup\":\"Asia Pacific\",\"longitude\":\"149.1244\"\
-        ,\"latitude\":\"-35.3075\",\"physicalLocation\":\"Canberra\",\"pairedRegion\"\
-        :[{\"name\":\"australiacentral2\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiacentral2\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiacentral2\"\
-        ,\"name\":\"australiacentral2\",\"type\":\"Region\",\"displayName\":\"Australia\
-        \ Central 2\",\"regionalDisplayName\":\"(Asia Pacific) Australia Central 2\"\
-        ,\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"\
-        geography\":\"Australia\",\"geographyGroup\":\"Asia Pacific\",\"longitude\"\
-        :\"149.1244\",\"latitude\":\"-35.3075\",\"physicalLocation\":\"Canberra\"\
-        ,\"pairedRegion\":[{\"name\":\"australiacentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiacentral\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiasoutheast\"\
-        ,\"name\":\"australiasoutheast\",\"type\":\"Region\",\"displayName\":\"Australia\
-        \ Southeast\",\"regionalDisplayName\":\"(Asia Pacific) Australia Southeast\"\
-        ,\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"\
-        geography\":\"Australia\",\"geographyGroup\":\"Asia Pacific\",\"longitude\"\
-        :\"144.9631\",\"latitude\":\"-37.8136\",\"physicalLocation\":\"Victoria\"\
-        ,\"pairedRegion\":[{\"name\":\"australiaeast\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiaeast\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/jioindiacentral\"\
-        ,\"name\":\"jioindiacentral\",\"type\":\"Region\",\"displayName\":\"Jio India\
-        \ Central\",\"regionalDisplayName\":\"(Asia Pacific) Jio India Central\",\"\
-        metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\"\
-        :\"India\",\"geographyGroup\":\"Asia Pacific\",\"longitude\":\"79.08886\"\
-        ,\"latitude\":\"21.146633\",\"physicalLocation\":\"Nagpur\",\"pairedRegion\"\
-        :[{\"name\":\"jioindiawest\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/jioindiawest\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/koreasouth\"\
-        ,\"name\":\"koreasouth\",\"type\":\"Region\",\"displayName\":\"Korea South\"\
-        ,\"regionalDisplayName\":\"(Asia Pacific) Korea South\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Korea\",\"geographyGroup\"\
-        :\"Asia Pacific\",\"longitude\":\"129.0756\",\"latitude\":\"35.1796\",\"physicalLocation\"\
-        :\"Busan\",\"pairedRegion\":[{\"name\":\"koreacentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/koreacentral\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southindia\"\
-        ,\"name\":\"southindia\",\"type\":\"Region\",\"displayName\":\"South India\"\
-        ,\"regionalDisplayName\":\"(Asia Pacific) South India\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"India\",\"geographyGroup\"\
-        :\"Asia Pacific\",\"longitude\":\"80.1636\",\"latitude\":\"12.9822\",\"physicalLocation\"\
-        :\"Chennai\",\"pairedRegion\":[{\"name\":\"centralindia\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centralindia\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westindia\"\
-        ,\"name\":\"westindia\",\"type\":\"Region\",\"displayName\":\"West India\"\
-        ,\"regionalDisplayName\":\"(Asia Pacific) West India\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"India\",\"geographyGroup\"\
-        :\"Asia Pacific\",\"longitude\":\"72.868\",\"latitude\":\"19.088\",\"physicalLocation\"\
-        :\"Mumbai\",\"pairedRegion\":[{\"name\":\"southindia\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southindia\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/canadaeast\"\
-        ,\"name\":\"canadaeast\",\"type\":\"Region\",\"displayName\":\"Canada East\"\
-        ,\"regionalDisplayName\":\"(Canada) Canada East\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Canada\",\"geographyGroup\"\
-        :\"Canada\",\"longitude\":\"-71.217\",\"latitude\":\"46.817\",\"physicalLocation\"\
-        :\"Quebec\",\"pairedRegion\":[{\"name\":\"canadacentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/canadacentral\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/francesouth\"\
-        ,\"name\":\"francesouth\",\"type\":\"Region\",\"displayName\":\"France South\"\
-        ,\"regionalDisplayName\":\"(Europe) France South\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"France\",\"geographyGroup\"\
-        :\"Europe\",\"longitude\":\"2.1972\",\"latitude\":\"43.8345\",\"physicalLocation\"\
-        :\"Marseille\",\"pairedRegion\":[{\"name\":\"francecentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/francecentral\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/germanynorth\"\
-        ,\"name\":\"germanynorth\",\"type\":\"Region\",\"displayName\":\"Germany North\"\
-        ,\"regionalDisplayName\":\"(Europe) Germany North\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Germany\",\"geographyGroup\"\
-        :\"Europe\",\"longitude\":\"8.806422\",\"latitude\":\"53.073635\",\"physicalLocation\"\
-        :\"Berlin\",\"pairedRegion\":[{\"name\":\"germanywestcentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/germanywestcentral\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/norwaywest\"\
-        ,\"name\":\"norwaywest\",\"type\":\"Region\",\"displayName\":\"Norway West\"\
-        ,\"regionalDisplayName\":\"(Europe) Norway West\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Norway\",\"geographyGroup\"\
-        :\"Europe\",\"longitude\":\"5.733107\",\"latitude\":\"58.969975\",\"physicalLocation\"\
-        :\"Norway\",\"pairedRegion\":[{\"name\":\"norwayeast\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/norwayeast\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/switzerlandwest\"\
-        ,\"name\":\"switzerlandwest\",\"type\":\"Region\",\"displayName\":\"Switzerland\
-        \ West\",\"regionalDisplayName\":\"(Europe) Switzerland West\",\"metadata\"\
-        :{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"\
-        Switzerland\",\"geographyGroup\":\"Europe\",\"longitude\":\"6.143158\",\"\
-        latitude\":\"46.204391\",\"physicalLocation\":\"Geneva\",\"pairedRegion\"\
-        :[{\"name\":\"switzerlandnorth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/switzerlandnorth\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/ukwest\"\
-        ,\"name\":\"ukwest\",\"type\":\"Region\",\"displayName\":\"UK West\",\"regionalDisplayName\"\
-        :\"(Europe) UK West\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\"\
-        :\"Other\",\"geography\":\"United Kingdom\",\"geographyGroup\":\"Europe\"\
-        ,\"longitude\":\"-3.084\",\"latitude\":\"53.427\",\"physicalLocation\":\"\
-        Cardiff\",\"pairedRegion\":[{\"name\":\"uksouth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uksouth\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uaecentral\"\
-        ,\"name\":\"uaecentral\",\"type\":\"Region\",\"displayName\":\"UAE Central\"\
-        ,\"regionalDisplayName\":\"(Middle East) UAE Central\",\"metadata\":{\"regionType\"\
-        :\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"UAE\",\"geographyGroup\"\
-        :\"Middle East\",\"longitude\":\"54.366669\",\"latitude\":\"24.466667\",\"\
-        physicalLocation\":\"Abu Dhabi\",\"pairedRegion\":[{\"name\":\"uaenorth\"\
-        ,\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uaenorth\"\
-        }]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazilsoutheast\"\
-        ,\"name\":\"brazilsoutheast\",\"type\":\"Region\",\"displayName\":\"Brazil\
-        \ Southeast\",\"regionalDisplayName\":\"(South America) Brazil Southeast\"\
-        ,\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"\
-        geography\":\"Brazil\",\"geographyGroup\":\"South America\",\"longitude\"\
-        :\"-43.2075\",\"latitude\":\"-22.90278\",\"physicalLocation\":\"Rio\",\"pairedRegion\"\
-        :[{\"name\":\"brazilsouth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazilsouth\"\
-        }]}}]}"
+      string: "{\"value\":[{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus\",\"name\":\"eastus\",\"type\":\"Region\",\"displayName\":\"East
+        US\",\"regionalDisplayName\":\"(US) East US\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"United
+        States\",\"geographyGroup\":\"US\",\"longitude\":\"-79.8164\",\"latitude\":\"37.3719\",\"physicalLocation\":\"Virginia\",\"pairedRegion\":[{\"name\":\"westus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"eastus-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"eastus-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"eastus-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralus\",\"name\":\"southcentralus\",\"type\":\"Region\",\"displayName\":\"South
+        Central US\",\"regionalDisplayName\":\"(US) South Central US\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"United
+        States\",\"geographyGroup\":\"US\",\"longitude\":\"-98.5\",\"latitude\":\"29.4167\",\"physicalLocation\":\"Texas\",\"pairedRegion\":[{\"name\":\"northcentralus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/northcentralus\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"southcentralus-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"southcentralus-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"southcentralus-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus2\",\"name\":\"westus2\",\"type\":\"Region\",\"displayName\":\"West
+        US 2\",\"regionalDisplayName\":\"(US) West US 2\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"United
+        States\",\"geographyGroup\":\"US\",\"longitude\":\"-119.852\",\"latitude\":\"47.233\",\"physicalLocation\":\"Washington\",\"pairedRegion\":[{\"name\":\"westcentralus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westcentralus\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"westus2-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"westus2-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"westus2-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus3\",\"name\":\"westus3\",\"type\":\"Region\",\"displayName\":\"West
+        US 3\",\"regionalDisplayName\":\"(US) West US 3\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"United
+        States\",\"geographyGroup\":\"US\",\"longitude\":\"-112.074036\",\"latitude\":\"33.448376\",\"physicalLocation\":\"Phoenix\",\"pairedRegion\":[{\"name\":\"eastus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"westus3-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"westus3-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"westus3-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiaeast\",\"name\":\"australiaeast\",\"type\":\"Region\",\"displayName\":\"Australia
+        East\",\"regionalDisplayName\":\"(Asia Pacific) Australia East\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Australia\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"151.2094\",\"latitude\":\"-33.86\",\"physicalLocation\":\"New
+        South Wales\",\"pairedRegion\":[{\"name\":\"australiasoutheast\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiasoutheast\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"australiaeast-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"australiaeast-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"australiaeast-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southeastasia\",\"name\":\"southeastasia\",\"type\":\"Region\",\"displayName\":\"Southeast
+        Asia\",\"regionalDisplayName\":\"(Asia Pacific) Southeast Asia\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Asia
+        Pacific\",\"geographyGroup\":\"Asia Pacific\",\"longitude\":\"103.833\",\"latitude\":\"1.283\",\"physicalLocation\":\"Singapore\",\"pairedRegion\":[{\"name\":\"eastasia\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastasia\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"southeastasia-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"southeastasia-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"southeastasia-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/northeurope\",\"name\":\"northeurope\",\"type\":\"Region\",\"displayName\":\"North
+        Europe\",\"regionalDisplayName\":\"(Europe) North Europe\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Europe\",\"geographyGroup\":\"Europe\",\"longitude\":\"-6.2597\",\"latitude\":\"53.3478\",\"physicalLocation\":\"Ireland\",\"pairedRegion\":[{\"name\":\"westeurope\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westeurope\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"northeurope-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"northeurope-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"northeurope-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/swedencentral\",\"name\":\"swedencentral\",\"type\":\"Region\",\"displayName\":\"Sweden
+        Central\",\"regionalDisplayName\":\"(Europe) Sweden Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Sweden\",\"geographyGroup\":\"Europe\",\"longitude\":\"17.14127\",\"latitude\":\"60.67488\",\"physicalLocation\":\"G\xE4vle\",\"pairedRegion\":[{\"name\":\"swedensouth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/swedensouth\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"swedencentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"swedencentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"swedencentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uksouth\",\"name\":\"uksouth\",\"type\":\"Region\",\"displayName\":\"UK
+        South\",\"regionalDisplayName\":\"(Europe) UK South\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"United
+        Kingdom\",\"geographyGroup\":\"Europe\",\"longitude\":\"-0.799\",\"latitude\":\"50.941\",\"physicalLocation\":\"London\",\"pairedRegion\":[{\"name\":\"ukwest\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/ukwest\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"uksouth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"uksouth-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"uksouth-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westeurope\",\"name\":\"westeurope\",\"type\":\"Region\",\"displayName\":\"West
+        Europe\",\"regionalDisplayName\":\"(Europe) West Europe\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Europe\",\"geographyGroup\":\"Europe\",\"longitude\":\"4.9\",\"latitude\":\"52.3667\",\"physicalLocation\":\"Netherlands\",\"pairedRegion\":[{\"name\":\"northeurope\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/northeurope\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"westeurope-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"westeurope-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"westeurope-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centralus\",\"name\":\"centralus\",\"type\":\"Region\",\"displayName\":\"Central
+        US\",\"regionalDisplayName\":\"(US) Central US\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"United
+        States\",\"geographyGroup\":\"US\",\"longitude\":\"-93.6208\",\"latitude\":\"41.5908\",\"physicalLocation\":\"Iowa\",\"pairedRegion\":[{\"name\":\"eastus2\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus2\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"centralus-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"centralus-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"centralus-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southafricanorth\",\"name\":\"southafricanorth\",\"type\":\"Region\",\"displayName\":\"South
+        Africa North\",\"regionalDisplayName\":\"(Africa) South Africa North\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"South
+        Africa\",\"geographyGroup\":\"Africa\",\"longitude\":\"28.21837\",\"latitude\":\"-25.73134\",\"physicalLocation\":\"Johannesburg\",\"pairedRegion\":[{\"name\":\"southafricawest\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southafricawest\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"southafricanorth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"southafricanorth-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"southafricanorth-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centralindia\",\"name\":\"centralindia\",\"type\":\"Region\",\"displayName\":\"Central
+        India\",\"regionalDisplayName\":\"(Asia Pacific) Central India\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"India\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"73.9197\",\"latitude\":\"18.5822\",\"physicalLocation\":\"Pune\",\"pairedRegion\":[{\"name\":\"southindia\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southindia\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"centralindia-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"centralindia-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"centralindia-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastasia\",\"name\":\"eastasia\",\"type\":\"Region\",\"displayName\":\"East
+        Asia\",\"regionalDisplayName\":\"(Asia Pacific) East Asia\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Asia
+        Pacific\",\"geographyGroup\":\"Asia Pacific\",\"longitude\":\"114.188\",\"latitude\":\"22.267\",\"physicalLocation\":\"Hong
+        Kong\",\"pairedRegion\":[{\"name\":\"southeastasia\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southeastasia\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"eastasia-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"eastasia-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"eastasia-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/indonesiacentral\",\"name\":\"indonesiacentral\",\"type\":\"Region\",\"displayName\":\"Indonesia
+        Central\",\"regionalDisplayName\":\"(Asia Pacific) Indonesia Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Indonesia\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"106.816666\",\"latitude\":\"-6.2\",\"physicalLocation\":\"Jakarta\",\"pairedRegion\":[]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"indonesiacentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"indonesiacentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"indonesiacentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/japaneast\",\"name\":\"japaneast\",\"type\":\"Region\",\"displayName\":\"Japan
+        East\",\"regionalDisplayName\":\"(Asia Pacific) Japan East\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Japan\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"139.77\",\"latitude\":\"35.68\",\"physicalLocation\":\"Tokyo,
+        Saitama\",\"pairedRegion\":[{\"name\":\"japanwest\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/japanwest\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"japaneast-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"japaneast-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"japaneast-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/japanwest\",\"name\":\"japanwest\",\"type\":\"Region\",\"displayName\":\"Japan
+        West\",\"regionalDisplayName\":\"(Asia Pacific) Japan West\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Japan\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"135.5022\",\"latitude\":\"34.6939\",\"physicalLocation\":\"Osaka\",\"pairedRegion\":[{\"name\":\"japaneast\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/japaneast\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"japanwest-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"japanwest-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"japanwest-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/koreacentral\",\"name\":\"koreacentral\",\"type\":\"Region\",\"displayName\":\"Korea
+        Central\",\"regionalDisplayName\":\"(Asia Pacific) Korea Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Korea\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"126.978\",\"latitude\":\"37.5665\",\"physicalLocation\":\"Seoul\",\"pairedRegion\":[{\"name\":\"koreasouth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/koreasouth\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"koreacentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"koreacentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"koreacentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/newzealandnorth\",\"name\":\"newzealandnorth\",\"type\":\"Region\",\"displayName\":\"New
+        Zealand North\",\"regionalDisplayName\":\"(Asia Pacific) New Zealand North\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"New
+        Zealand\",\"geographyGroup\":\"Asia Pacific\",\"longitude\":\"174.76349\",\"latitude\":\"-36.84853\",\"physicalLocation\":\"Auckland\",\"pairedRegion\":[]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"newzealandnorth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"newzealandnorth-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"newzealandnorth-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/canadacentral\",\"name\":\"canadacentral\",\"type\":\"Region\",\"displayName\":\"Canada
+        Central\",\"regionalDisplayName\":\"(Canada) Canada Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Canada\",\"geographyGroup\":\"Canada\",\"longitude\":\"-79.383\",\"latitude\":\"43.653\",\"physicalLocation\":\"Toronto\",\"pairedRegion\":[{\"name\":\"canadaeast\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/canadaeast\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"canadacentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"canadacentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"canadacentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/francecentral\",\"name\":\"francecentral\",\"type\":\"Region\",\"displayName\":\"France
+        Central\",\"regionalDisplayName\":\"(Europe) France Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"France\",\"geographyGroup\":\"Europe\",\"longitude\":\"2.373\",\"latitude\":\"46.3772\",\"physicalLocation\":\"Paris\",\"pairedRegion\":[{\"name\":\"francesouth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/francesouth\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"francecentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"francecentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"francecentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/germanywestcentral\",\"name\":\"germanywestcentral\",\"type\":\"Region\",\"displayName\":\"Germany
+        West Central\",\"regionalDisplayName\":\"(Europe) Germany West Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Germany\",\"geographyGroup\":\"Europe\",\"longitude\":\"8.682127\",\"latitude\":\"50.110924\",\"physicalLocation\":\"Frankfurt\",\"pairedRegion\":[{\"name\":\"germanynorth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/germanynorth\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"germanywestcentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"germanywestcentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"germanywestcentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/italynorth\",\"name\":\"italynorth\",\"type\":\"Region\",\"displayName\":\"Italy
+        North\",\"regionalDisplayName\":\"(Europe) Italy North\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Italy\",\"geographyGroup\":\"Europe\",\"longitude\":\"9.18109\",\"latitude\":\"45.46888\",\"physicalLocation\":\"Milan\",\"pairedRegion\":[]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"italynorth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"italynorth-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"italynorth-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/norwayeast\",\"name\":\"norwayeast\",\"type\":\"Region\",\"displayName\":\"Norway
+        East\",\"regionalDisplayName\":\"(Europe) Norway East\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Norway\",\"geographyGroup\":\"Europe\",\"longitude\":\"10.752245\",\"latitude\":\"59.913868\",\"physicalLocation\":\"Norway\",\"pairedRegion\":[{\"name\":\"norwaywest\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/norwaywest\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"norwayeast-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"norwayeast-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"norwayeast-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/polandcentral\",\"name\":\"polandcentral\",\"type\":\"Region\",\"displayName\":\"Poland
+        Central\",\"regionalDisplayName\":\"(Europe) Poland Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Poland\",\"geographyGroup\":\"Europe\",\"longitude\":\"21.01666\",\"latitude\":\"52.23334\",\"physicalLocation\":\"Warsaw\",\"pairedRegion\":[]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"polandcentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"polandcentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"polandcentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/spaincentral\",\"name\":\"spaincentral\",\"type\":\"Region\",\"displayName\":\"Spain
+        Central\",\"regionalDisplayName\":\"(Europe) Spain Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Spain\",\"geographyGroup\":\"Europe\",\"longitude\":\"3.4209\",\"latitude\":\"40.4259\",\"physicalLocation\":\"Madrid\",\"pairedRegion\":[]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"spaincentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"spaincentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"spaincentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/switzerlandnorth\",\"name\":\"switzerlandnorth\",\"type\":\"Region\",\"displayName\":\"Switzerland
+        North\",\"regionalDisplayName\":\"(Europe) Switzerland North\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Switzerland\",\"geographyGroup\":\"Europe\",\"longitude\":\"8.564572\",\"latitude\":\"47.451542\",\"physicalLocation\":\"Zurich\",\"pairedRegion\":[{\"name\":\"switzerlandwest\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/switzerlandwest\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"switzerlandnorth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"switzerlandnorth-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"switzerlandnorth-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/mexicocentral\",\"name\":\"mexicocentral\",\"type\":\"Region\",\"displayName\":\"Mexico
+        Central\",\"regionalDisplayName\":\"(Mexico) Mexico Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Mexico\",\"geographyGroup\":\"Mexico\",\"longitude\":\"-100.389888\",\"latitude\":\"20.588818\",\"physicalLocation\":\"Quer\xE9taro
+        State\",\"pairedRegion\":[]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"mexicocentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"mexicocentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"mexicocentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uaenorth\",\"name\":\"uaenorth\",\"type\":\"Region\",\"displayName\":\"UAE
+        North\",\"regionalDisplayName\":\"(Middle East) UAE North\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"UAE\",\"geographyGroup\":\"Middle
+        East\",\"longitude\":\"55.316666\",\"latitude\":\"25.266666\",\"physicalLocation\":\"Dubai\",\"pairedRegion\":[{\"name\":\"uaecentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uaecentral\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"uaenorth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"uaenorth-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"uaenorth-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazilsouth\",\"name\":\"brazilsouth\",\"type\":\"Region\",\"displayName\":\"Brazil
+        South\",\"regionalDisplayName\":\"(South America) Brazil South\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Brazil\",\"geographyGroup\":\"South
+        America\",\"longitude\":\"-46.633\",\"latitude\":\"-23.55\",\"physicalLocation\":\"Sao
+        Paulo State\",\"pairedRegion\":[{\"name\":\"southcentralus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralus\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"brazilsouth-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"brazilsouth-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"brazilsouth-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/israelcentral\",\"name\":\"israelcentral\",\"type\":\"Region\",\"displayName\":\"Israel
+        Central\",\"regionalDisplayName\":\"(Middle East) Israel Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Israel\",\"geographyGroup\":\"Middle
+        East\",\"longitude\":\"33.4506633\",\"latitude\":\"31.2655698\",\"physicalLocation\":\"Israel\",\"pairedRegion\":[]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"israelcentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"israelcentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"israelcentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/qatarcentral\",\"name\":\"qatarcentral\",\"type\":\"Region\",\"displayName\":\"Qatar
+        Central\",\"regionalDisplayName\":\"(Middle East) Qatar Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Recommended\",\"geography\":\"Qatar\",\"geographyGroup\":\"Middle
+        East\",\"longitude\":\"51.439327\",\"latitude\":\"25.551462\",\"physicalLocation\":\"Doha\",\"pairedRegion\":[]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"qatarcentral-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"qatarcentral-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"qatarcentral-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centralusstage\",\"name\":\"centralusstage\",\"type\":\"Region\",\"displayName\":\"Central
+        US (Stage)\",\"regionalDisplayName\":\"(US) Central US (Stage)\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastusstage\",\"name\":\"eastusstage\",\"type\":\"Region\",\"displayName\":\"East
+        US (Stage)\",\"regionalDisplayName\":\"(US) East US (Stage)\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus2stage\",\"name\":\"eastus2stage\",\"type\":\"Region\",\"displayName\":\"East
+        US 2 (Stage)\",\"regionalDisplayName\":\"(US) East US 2 (Stage)\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/northcentralusstage\",\"name\":\"northcentralusstage\",\"type\":\"Region\",\"displayName\":\"North
+        Central US (Stage)\",\"regionalDisplayName\":\"(US) North Central US (Stage)\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralusstage\",\"name\":\"southcentralusstage\",\"type\":\"Region\",\"displayName\":\"South
+        Central US (Stage)\",\"regionalDisplayName\":\"(US) South Central US (Stage)\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westusstage\",\"name\":\"westusstage\",\"type\":\"Region\",\"displayName\":\"West
+        US (Stage)\",\"regionalDisplayName\":\"(US) West US (Stage)\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus2stage\",\"name\":\"westus2stage\",\"type\":\"Region\",\"displayName\":\"West
+        US 2 (Stage)\",\"regionalDisplayName\":\"(US) West US 2 (Stage)\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"usa\",\"geographyGroup\":\"US\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/asia\",\"name\":\"asia\",\"type\":\"Region\",\"displayName\":\"Asia\",\"regionalDisplayName\":\"Asia\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/asiapacific\",\"name\":\"asiapacific\",\"type\":\"Region\",\"displayName\":\"Asia
+        Pacific\",\"regionalDisplayName\":\"Asia Pacific\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australia\",\"name\":\"australia\",\"type\":\"Region\",\"displayName\":\"Australia\",\"regionalDisplayName\":\"Australia\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazil\",\"name\":\"brazil\",\"type\":\"Region\",\"displayName\":\"Brazil\",\"regionalDisplayName\":\"Brazil\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/canada\",\"name\":\"canada\",\"type\":\"Region\",\"displayName\":\"Canada\",\"regionalDisplayName\":\"Canada\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/europe\",\"name\":\"europe\",\"type\":\"Region\",\"displayName\":\"Europe\",\"regionalDisplayName\":\"Europe\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/france\",\"name\":\"france\",\"type\":\"Region\",\"displayName\":\"France\",\"regionalDisplayName\":\"France\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/germany\",\"name\":\"germany\",\"type\":\"Region\",\"displayName\":\"Germany\",\"regionalDisplayName\":\"Germany\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/global\",\"name\":\"global\",\"type\":\"Region\",\"displayName\":\"Global\",\"regionalDisplayName\":\"Global\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/india\",\"name\":\"india\",\"type\":\"Region\",\"displayName\":\"India\",\"regionalDisplayName\":\"India\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/israel\",\"name\":\"israel\",\"type\":\"Region\",\"displayName\":\"Israel\",\"regionalDisplayName\":\"Israel\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/italy\",\"name\":\"italy\",\"type\":\"Region\",\"displayName\":\"Italy\",\"regionalDisplayName\":\"Italy\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/japan\",\"name\":\"japan\",\"type\":\"Region\",\"displayName\":\"Japan\",\"regionalDisplayName\":\"Japan\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/korea\",\"name\":\"korea\",\"type\":\"Region\",\"displayName\":\"Korea\",\"regionalDisplayName\":\"Korea\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/newzealand\",\"name\":\"newzealand\",\"type\":\"Region\",\"displayName\":\"New
+        Zealand\",\"regionalDisplayName\":\"New Zealand\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/norway\",\"name\":\"norway\",\"type\":\"Region\",\"displayName\":\"Norway\",\"regionalDisplayName\":\"Norway\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/poland\",\"name\":\"poland\",\"type\":\"Region\",\"displayName\":\"Poland\",\"regionalDisplayName\":\"Poland\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/qatar\",\"name\":\"qatar\",\"type\":\"Region\",\"displayName\":\"Qatar\",\"regionalDisplayName\":\"Qatar\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/singapore\",\"name\":\"singapore\",\"type\":\"Region\",\"displayName\":\"Singapore\",\"regionalDisplayName\":\"Singapore\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southafrica\",\"name\":\"southafrica\",\"type\":\"Region\",\"displayName\":\"South
+        Africa\",\"regionalDisplayName\":\"South Africa\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/sweden\",\"name\":\"sweden\",\"type\":\"Region\",\"displayName\":\"Sweden\",\"regionalDisplayName\":\"Sweden\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/switzerland\",\"name\":\"switzerland\",\"type\":\"Region\",\"displayName\":\"Switzerland\",\"regionalDisplayName\":\"Switzerland\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uae\",\"name\":\"uae\",\"type\":\"Region\",\"displayName\":\"United
+        Arab Emirates\",\"regionalDisplayName\":\"United Arab Emirates\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uk\",\"name\":\"uk\",\"type\":\"Region\",\"displayName\":\"United
+        Kingdom\",\"regionalDisplayName\":\"United Kingdom\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/unitedstates\",\"name\":\"unitedstates\",\"type\":\"Region\",\"displayName\":\"United
+        States\",\"regionalDisplayName\":\"United States\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/unitedstateseuap\",\"name\":\"unitedstateseuap\",\"type\":\"Region\",\"displayName\":\"United
+        States EUAP\",\"regionalDisplayName\":\"United States EUAP\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastasiastage\",\"name\":\"eastasiastage\",\"type\":\"Region\",\"displayName\":\"East
+        Asia (Stage)\",\"regionalDisplayName\":\"(Asia Pacific) East Asia (Stage)\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"asia\",\"geographyGroup\":\"Asia
+        Pacific\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southeastasiastage\",\"name\":\"southeastasiastage\",\"type\":\"Region\",\"displayName\":\"Southeast
+        Asia (Stage)\",\"regionalDisplayName\":\"(Asia Pacific) Southeast Asia (Stage)\",\"metadata\":{\"regionType\":\"Logical\",\"regionCategory\":\"Other\",\"geography\":\"asia\",\"geographyGroup\":\"Asia
+        Pacific\"}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazilus\",\"name\":\"brazilus\",\"type\":\"Region\",\"displayName\":\"Brazil
+        US\",\"regionalDisplayName\":\"(South America) Brazil US\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Brazil\",\"geographyGroup\":\"South
+        America\",\"longitude\":\"0\",\"latitude\":\"0\",\"physicalLocation\":\"\",\"pairedRegion\":[{\"name\":\"brazilsoutheast\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazilsoutheast\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus2\",\"name\":\"eastus2\",\"type\":\"Region\",\"displayName\":\"East
+        US 2\",\"regionalDisplayName\":\"(US) East US 2\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"United
+        States\",\"geographyGroup\":\"US\",\"longitude\":\"-78.3889\",\"latitude\":\"36.6681\",\"physicalLocation\":\"Virginia\",\"pairedRegion\":[{\"name\":\"centralus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centralus\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"eastus2-az3\"},{\"logicalZone\":\"2\",\"physicalZone\":\"eastus2-az1\"},{\"logicalZone\":\"3\",\"physicalZone\":\"eastus2-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastusstg\",\"name\":\"eastusstg\",\"type\":\"Region\",\"displayName\":\"East
+        US STG\",\"regionalDisplayName\":\"(US) East US STG\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Stage
+        (US)\",\"geographyGroup\":\"US\",\"longitude\":\"-79.8164\",\"latitude\":\"37.3719\",\"physicalLocation\":\"Virginia\",\"pairedRegion\":[{\"name\":\"southcentralusstg\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralusstg\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/northcentralus\",\"name\":\"northcentralus\",\"type\":\"Region\",\"displayName\":\"North
+        Central US\",\"regionalDisplayName\":\"(US) North Central US\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"United
+        States\",\"geographyGroup\":\"US\",\"longitude\":\"-87.6278\",\"latitude\":\"41.8819\",\"physicalLocation\":\"Illinois\",\"pairedRegion\":[{\"name\":\"southcentralus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralus\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus\",\"name\":\"westus\",\"type\":\"Region\",\"displayName\":\"West
+        US\",\"regionalDisplayName\":\"(US) West US\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"United
+        States\",\"geographyGroup\":\"US\",\"longitude\":\"-122.417\",\"latitude\":\"37.783\",\"physicalLocation\":\"California\",\"pairedRegion\":[{\"name\":\"eastus\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/jioindiawest\",\"name\":\"jioindiawest\",\"type\":\"Region\",\"displayName\":\"Jio
+        India West\",\"regionalDisplayName\":\"(Asia Pacific) Jio India West\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"India\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"70.05773\",\"latitude\":\"22.470701\",\"physicalLocation\":\"Jamnagar\",\"pairedRegion\":[{\"name\":\"jioindiacentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/jioindiacentral\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centraluseuap\",\"name\":\"centraluseuap\",\"type\":\"Region\",\"displayName\":\"Central
+        US EUAP\",\"regionalDisplayName\":\"(US) Central US EUAP\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Canary
+        (US)\",\"geographyGroup\":\"US\",\"longitude\":\"-93.6208\",\"latitude\":\"41.5908\",\"physicalLocation\":\"\",\"pairedRegion\":[{\"name\":\"eastus2euap\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus2euap\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"centraluseuap-az1\"},{\"logicalZone\":\"2\",\"physicalZone\":\"centraluseuap-az2\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastus2euap\",\"name\":\"eastus2euap\",\"type\":\"Region\",\"displayName\":\"East
+        US 2 EUAP\",\"regionalDisplayName\":\"(US) East US 2 EUAP\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Canary
+        (US)\",\"geographyGroup\":\"US\",\"longitude\":\"-78.3889\",\"latitude\":\"36.6681\",\"physicalLocation\":\"\",\"pairedRegion\":[{\"name\":\"centraluseuap\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centraluseuap\"}]},\"availabilityZoneMappings\":[{\"logicalZone\":\"1\",\"physicalZone\":\"eastus2euap-az1\"},{\"logicalZone\":\"2\",\"physicalZone\":\"eastus2euap-az2\"},{\"logicalZone\":\"3\",\"physicalZone\":\"eastus2euap-az3\"}]},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southcentralusstg\",\"name\":\"southcentralusstg\",\"type\":\"Region\",\"displayName\":\"South
+        Central US STG\",\"regionalDisplayName\":\"(US) South Central US STG\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Stage
+        (US)\",\"geographyGroup\":\"US\",\"longitude\":\"-98.5\",\"latitude\":\"29.4167\",\"physicalLocation\":\"Texas\",\"pairedRegion\":[{\"name\":\"eastusstg\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastusstg\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westcentralus\",\"name\":\"westcentralus\",\"type\":\"Region\",\"displayName\":\"West
+        Central US\",\"regionalDisplayName\":\"(US) West Central US\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"United
+        States\",\"geographyGroup\":\"US\",\"longitude\":\"-110.234\",\"latitude\":\"40.89\",\"physicalLocation\":\"Wyoming\",\"pairedRegion\":[{\"name\":\"westus2\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westus2\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southafricawest\",\"name\":\"southafricawest\",\"type\":\"Region\",\"displayName\":\"South
+        Africa West\",\"regionalDisplayName\":\"(Africa) South Africa West\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"South
+        Africa\",\"geographyGroup\":\"Africa\",\"longitude\":\"18.843266\",\"latitude\":\"-34.075691\",\"physicalLocation\":\"Cape
+        Town\",\"pairedRegion\":[{\"name\":\"southafricanorth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southafricanorth\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiacentral\",\"name\":\"australiacentral\",\"type\":\"Region\",\"displayName\":\"Australia
+        Central\",\"regionalDisplayName\":\"(Asia Pacific) Australia Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Australia\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"149.1244\",\"latitude\":\"-35.3075\",\"physicalLocation\":\"Canberra\",\"pairedRegion\":[{\"name\":\"australiacentral2\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiacentral2\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiacentral2\",\"name\":\"australiacentral2\",\"type\":\"Region\",\"displayName\":\"Australia
+        Central 2\",\"regionalDisplayName\":\"(Asia Pacific) Australia Central 2\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Australia\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"149.1244\",\"latitude\":\"-35.3075\",\"physicalLocation\":\"Canberra\",\"pairedRegion\":[{\"name\":\"australiacentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiacentral\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiasoutheast\",\"name\":\"australiasoutheast\",\"type\":\"Region\",\"displayName\":\"Australia
+        Southeast\",\"regionalDisplayName\":\"(Asia Pacific) Australia Southeast\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Australia\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"144.9631\",\"latitude\":\"-37.8136\",\"physicalLocation\":\"Victoria\",\"pairedRegion\":[{\"name\":\"australiaeast\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/australiaeast\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/jioindiacentral\",\"name\":\"jioindiacentral\",\"type\":\"Region\",\"displayName\":\"Jio
+        India Central\",\"regionalDisplayName\":\"(Asia Pacific) Jio India Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"India\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"79.08886\",\"latitude\":\"21.146633\",\"physicalLocation\":\"Nagpur\",\"pairedRegion\":[{\"name\":\"jioindiawest\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/jioindiawest\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/koreasouth\",\"name\":\"koreasouth\",\"type\":\"Region\",\"displayName\":\"Korea
+        South\",\"regionalDisplayName\":\"(Asia Pacific) Korea South\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Korea\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"129.0756\",\"latitude\":\"35.1796\",\"physicalLocation\":\"Busan\",\"pairedRegion\":[{\"name\":\"koreacentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/koreacentral\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southindia\",\"name\":\"southindia\",\"type\":\"Region\",\"displayName\":\"South
+        India\",\"regionalDisplayName\":\"(Asia Pacific) South India\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"India\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"80.1636\",\"latitude\":\"12.9822\",\"physicalLocation\":\"Chennai\",\"pairedRegion\":[{\"name\":\"centralindia\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/centralindia\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/westindia\",\"name\":\"westindia\",\"type\":\"Region\",\"displayName\":\"West
+        India\",\"regionalDisplayName\":\"(Asia Pacific) West India\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"India\",\"geographyGroup\":\"Asia
+        Pacific\",\"longitude\":\"72.868\",\"latitude\":\"19.088\",\"physicalLocation\":\"Mumbai\",\"pairedRegion\":[{\"name\":\"southindia\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/southindia\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/canadaeast\",\"name\":\"canadaeast\",\"type\":\"Region\",\"displayName\":\"Canada
+        East\",\"regionalDisplayName\":\"(Canada) Canada East\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Canada\",\"geographyGroup\":\"Canada\",\"longitude\":\"-71.217\",\"latitude\":\"46.817\",\"physicalLocation\":\"Quebec\",\"pairedRegion\":[{\"name\":\"canadacentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/canadacentral\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/francesouth\",\"name\":\"francesouth\",\"type\":\"Region\",\"displayName\":\"France
+        South\",\"regionalDisplayName\":\"(Europe) France South\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"France\",\"geographyGroup\":\"Europe\",\"longitude\":\"2.1972\",\"latitude\":\"43.8345\",\"physicalLocation\":\"Marseille\",\"pairedRegion\":[{\"name\":\"francecentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/francecentral\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/germanynorth\",\"name\":\"germanynorth\",\"type\":\"Region\",\"displayName\":\"Germany
+        North\",\"regionalDisplayName\":\"(Europe) Germany North\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Germany\",\"geographyGroup\":\"Europe\",\"longitude\":\"8.806422\",\"latitude\":\"53.073635\",\"physicalLocation\":\"Berlin\",\"pairedRegion\":[{\"name\":\"germanywestcentral\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/germanywestcentral\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/norwaywest\",\"name\":\"norwaywest\",\"type\":\"Region\",\"displayName\":\"Norway
+        West\",\"regionalDisplayName\":\"(Europe) Norway West\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Norway\",\"geographyGroup\":\"Europe\",\"longitude\":\"5.733107\",\"latitude\":\"58.969975\",\"physicalLocation\":\"Norway\",\"pairedRegion\":[{\"name\":\"norwayeast\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/norwayeast\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/switzerlandwest\",\"name\":\"switzerlandwest\",\"type\":\"Region\",\"displayName\":\"Switzerland
+        West\",\"regionalDisplayName\":\"(Europe) Switzerland West\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Switzerland\",\"geographyGroup\":\"Europe\",\"longitude\":\"6.143158\",\"latitude\":\"46.204391\",\"physicalLocation\":\"Geneva\",\"pairedRegion\":[{\"name\":\"switzerlandnorth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/switzerlandnorth\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/ukwest\",\"name\":\"ukwest\",\"type\":\"Region\",\"displayName\":\"UK
+        West\",\"regionalDisplayName\":\"(Europe) UK West\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"United
+        Kingdom\",\"geographyGroup\":\"Europe\",\"longitude\":\"-3.084\",\"latitude\":\"53.427\",\"physicalLocation\":\"Cardiff\",\"pairedRegion\":[{\"name\":\"uksouth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uksouth\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uaecentral\",\"name\":\"uaecentral\",\"type\":\"Region\",\"displayName\":\"UAE
+        Central\",\"regionalDisplayName\":\"(Middle East) UAE Central\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"UAE\",\"geographyGroup\":\"Middle
+        East\",\"longitude\":\"54.366669\",\"latitude\":\"24.466667\",\"physicalLocation\":\"Abu
+        Dhabi\",\"pairedRegion\":[{\"name\":\"uaenorth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/uaenorth\"}]}},{\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazilsoutheast\",\"name\":\"brazilsoutheast\",\"type\":\"Region\",\"displayName\":\"Brazil
+        Southeast\",\"regionalDisplayName\":\"(South America) Brazil Southeast\",\"metadata\":{\"regionType\":\"Physical\",\"regionCategory\":\"Other\",\"geography\":\"Brazil\",\"geographyGroup\":\"South
+        America\",\"longitude\":\"-43.2075\",\"latitude\":\"-22.90278\",\"physicalLocation\":\"Rio\",\"pairedRegion\":[{\"name\":\"brazilsouth\",\"id\":\"/subscriptions/00000000-0000-0000-0000-000000000000/locations/brazilsouth\"}]}}]}"
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '42231'
+      - '44283'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 14 May 2024 08:39:18 GMT
+      - Fri, 04 Apr 2025 16:29:57 GMT
       expires:
       - '-1'
       pragma:
@@ -888,8 +469,10 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
       x-msedge-ref:
-      - 'Ref A: CB9AAC46301D46058DDA1BEB7873383D Ref B: TYO201151003036 Ref C: 2024-05-14T08:39:16Z'
+      - 'Ref A: EC8D1C3B15F44C82BFF8880F00034951 Ref B: BN1AA2051015009 Ref C: 2025-04-04T16:29:55Z'
     status:
       code: 200
       message: OK
@@ -897,7 +480,7 @@ interactions:
     body: '{"tags": {}, "location": "westus", "identity": {"type": "UserAssigned",
       "userAssignedIdentities": {"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1":
       {}}}, "properties": {"source": {"type": "PlatformImage", "publisher": "Canonical",
-      "offer": "UbuntuServer", "sku": "18.04-LTS", "version": "latest"}, "distribute":
+      "offer": "UbuntuServer", "sku": "18_04-LTS-GEN2", "version": "latest"}, "distribute":
       [{"type": "ManagedImage", "runOutputName": "img1", "imageId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Compute/images/img1",
       "location": "westus"}], "vmProfile": {}}}'
     headers:
@@ -910,42 +493,42 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '656'
+      - '661'
       Content-Type:
       - application/json
       ParameterSetName:
       - -g -n --image-source --managed-image-destinations --identity
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1?api-version=2023-07-01
   response:
     body:
-      string: "{\n \"properties\": {\n  \"source\": {\n   \"exactVersion\": \"latest\"\
-        ,\n   \"offer\": \"UbuntuServer\",\n   \"publisher\": \"Canonical\",\n   \"\
-        sku\": \"18.04-LTS\",\n   \"type\": \"PlatformImage\",\n   \"version\": \"\
-        latest\"\n  },\n  \"distribute\": [\n   {\n    \"artifactTags\": {},\n   \
-        \ \"imageId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Compute/images/img1\"\
-        ,\n    \"location\": \"westus\",\n    \"runOutputName\": \"img1\",\n    \"\
-        type\": \"ManagedImage\"\n   }\n  ],\n  \"provisioningState\": \"Creating\"\
-        ,\n  \"buildTimeoutInMinutes\": 0,\n  \"vmProfile\": {\n   \"vmSize\": \"\"\
-        ,\n   \"osDiskSizeGB\": 0\n  },\n  \"stagingResourceGroup\": \"\",\n  \"exactStagingResourceGroup\"\
-        : \"\"\n },\n \"identity\": {\n  \"type\": \"UserAssigned\",\n  \"userAssignedIdentities\"\
-        : {\n   \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1\"\
-        : {}\n  }\n },\n \"tags\": {},\n \"location\": \"westus\",\n \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1\"\
-        ,\n \"name\": \"template1\",\n \"type\": \"Microsoft.VirtualMachineImages/imageTemplates\"\
-        \n}"
+      string: "{\n \"properties\": {\n  \"source\": {\n   \"exactVersion\": \"latest\",\n
+        \  \"offer\": \"UbuntuServer\",\n   \"publisher\": \"Canonical\",\n   \"sku\":
+        \"18_04-LTS-GEN2\",\n   \"type\": \"PlatformImage\",\n   \"version\": \"latest\"\n
+        \ },\n  \"distribute\": [\n   {\n    \"artifactTags\": {},\n    \"imageId\":
+        \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Compute/images/img1\",\n
+        \   \"location\": \"westus\",\n    \"runOutputName\": \"img1\",\n    \"type\":
+        \"ManagedImage\"\n   }\n  ],\n  \"provisioningState\": \"Creating\",\n  \"buildTimeoutInMinutes\":
+        0,\n  \"vmProfile\": {\n   \"vmSize\": \"\",\n   \"osDiskSizeGB\": 0\n  },\n
+        \ \"stagingResourceGroup\": \"\",\n  \"exactStagingResourceGroup\": \"\"\n
+        },\n \"identity\": {\n  \"type\": \"UserAssigned\",\n  \"userAssignedIdentities\":
+        {\n   \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1\":
+        {}\n  }\n },\n \"tags\": {},\n \"location\": \"westus\",\n \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1\",\n
+        \"name\": \"template1\",\n \"type\": \"Microsoft.VirtualMachineImages/imageTemplates\"\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.VirtualMachineImages/locations/westus/operations/5d932474-0c0d-4494-9f05-1667959fddb1?api-version=2023-07-01&t=638512727623256914&c=MIIHSDCCBjCgAwIBAgITOgL9GKuxwuoAvl6gDgAEAv0YqzANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSU5GUkEgQ0EgMDEwHhcNMjQwNTAyMTUxMzA5WhcNMjUwNDI3MTUxMzA5WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM07DTGnL1WbXOa1u9Ox1zn93UOdzLFtBuxDtLwkLwE5XYbQErk1VfIqbqMWVJBTz43qzYkSUywN3kS5W-3jMCFAsWLYHKk-bdgh07JhyEmf_mrR7Xm3zoHG0F16AdlxBQjSN2QUJl55bEnC1Jl3KCDiVnKozpTS-PgNbAKxy1vnDaihayz-jd1p2krOq0AkGmr8EwgyH9cxsXty3H8oLuIW4UCIf6-ovtP_gZK7LvUJosGQlUVzRY5oQeq6Cjanrjz8LO4V7OmvglKA7MT6-y0iIXCiet24ek-PnJ26p0_epq6-1NK5ppjrvQ88reQo_Wey0U6uGqPCf_quM95smlUCAwEAAaOCBDUwggQxMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFggvX2K4Py0SACAWQCAQowggHaBggrBgEFBQcBAQSCAcwwggHIMGYGCCsGAQUFBzAChlpodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQlkyUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMElORlJBJTIwQ0ElMjAwMSg0KS5jcnQwVgYIKwYBBQUHMAKGSmh0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0JZMlBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3J0MFYGCCsGAQUFBzAChkpodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9CWTJQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSU5GUkElMjBDQSUyMDAxKDQpLmNydDBWBggrBgEFBQcwAoZKaHR0cDovL2NybDMuYW1lLmdibC9haWEvQlkyUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMElORlJBJTIwQ0ElMjAwMSg0KS5jcnQwVgYIKwYBBQUHMAKGSmh0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0JZMlBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3J0MB0GA1UdDgQWBBT9nF_3LeJfKo2wUhifl8Go-LrcVDAOBgNVHQ8BAf8EBAMCBaAwggE1BgNVHR8EggEsMIIBKDCCASSgggEgoIIBHIZCaHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JsMEEGA1UdIAQ6MDgwDAYKKwYBBAGCN3sBATAMBgorBgEEAYI3ewIBMAwGCisGAQQBgjd7AwEwDAYKKwYBBAGCN3sEATAfBgNVHSMEGDAWgBTl2Ztn_PjsurvwwKidileIud8-YzAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAEuFlcYl9ZMazlAmrJEK39sgT_V4pzoLJIud-g98rzZXpDdqVHiLKQnosingp2Z1u4HNQDrUVwcOrTcmE8nii9nUF36rQFqlNH_pmwRif9NB94CYh9u9htz7aSzwTplb44TPxHcuJa_QGO3LpN4n7WMiq5yKPZmLLkUBaS6idLzrlvnexhEGzTlXs6wXDMw_haje_UlA6qY4NUdK-nzsbnu7WWO6U8-alrOTk0D9DKSuW_jlzb2iRh-pyK82sfDI-x0fBW8qarQ6y5zcqBA9R3k5BbVwa-nn6PIlXNk2v3a56ZrTQqvJMJ9IBF0w0ebhF568LNZ3effLqwGX2alJ2ZE&s=V-J3O11zlxfzQBNQHhQDQHckW42b3OPFNRgA0sEfYTVqnIPRSk53mSPc1Hl25r2MkdzgdqWp6Ty1QS-O_NtcPlwqbO_xRkSxqzvKYG6ZzjqlKgGzUm7Yjhf8I9239kHY0s7oMlDD4ZpbUPC6pmXpeWg_h0Ox2FHKXWjcLGnDcBZrO1S65G6TJOyTQzhqStiZZbbn5lvUh3TSFTXSbOFrajDxOMnaZ_x88ZAB2OFNZbilR_i3KaJG6BjhCpbJeCPQyZSbni6pk6aphXaJJK5HqOYDeVRbjba3J4-18L1TurZi9HuaMqe_ply41Eeh1UN6Y7mQz96WE4t2ORDf7rEsuA&h=csUFfwC8iTKROlrZcRCfOt_mNec6wz4vzXKBtc_wfZc
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.VirtualMachineImages/locations/westus/operations/8855b187-ece5-4018-8f5c-d9c49a2715bb?api-version=2023-07-01&t=638793810008363199&c=MIIHhzCCBm-gAwIBAgITfAaTYo0ffVKAVQo0FAAABpNijTANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIxMjE0MDQ4WhcNMjUwNzIwMjE0MDQ4WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKl-TWTOH_oCbu9zNBntAM-9rowzTWYg_nRy16M4ghALCnU3YR0fsip-EwpHzk9rnA5iIgnJlMI24hzCv8PHGFCetnQdEMPxXIAtPo2i11HHKdcdycYnJhIqn0dddd92khimTrvPl1xVX65oC1uuMOEtYmaMGk26gGAo9mB9Zr4WVufN-UvLKvZwiDY-1ddNpdcUGB0S56H1dFUw8k7GHlWSYZS5eSVQZ9aXl7wJmQC-v3c2X-p3hLdo59aIWab5bWDKRbtaYjcAD6nr-GrtOOf2M96Ce_K9djoryf-X1tdOJSgIU4-Ortzj0xbyC9xNtrEVFfPwLRrR2KEGrEZkA4kCAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBSJEel4OnU1M8eUZtmgkwWb3vk1VTAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBABuKpMrZMDe3nmRYZgM_6QgVm5HpwSTDM72-Lvvtvbqu2HnIfPvmK-Qf9nxbZ3uCylFll3Zrq0s0c2GBdBoZmx7_eEa_ttQ9pvMj9uVUnuHbvLYOBYpmBIE8Q_b-DaOjC_1Rkkan6Jnpi_Cnu6QTe729Gf5FZnI0sIGY_eaetW7FjqOfGIlVKLX_50hcOXYCV_goHf2VHFIhVo4g9QShK_UEpzuG0yZCEKqHQRs-3UIEDZSuhchSmic2WNuSunTZ_HI9feNwqUIMBnn5EyIdrpjSszdDRR00CiJs7kBU2NvO5dQQ5qHwUJCWr69a42_uqATc6_1ViE8yGCSO6nZ0i1M&s=PqM9PtdfxgpkUiFF9MWAOwWV6cXJNiurTE9hei195f5S0IjtZYpZRJ14RMeM_UdzzZ1IXRGePvfY2rjA-VVAq6D8MjsZciGmSseGG5Yjdsr_EHWwMNN4L6Gcgxht_2sQLxEfFdI2DHs78YqjI2rH79LGf-sh3gWWa9omowjSEMVUZGcLeFIwNEOeShQJv-tcU4Hdq0EttfQ3tTemTr8qpySxSaJUPA5nbkmOQCU5mBrdlBG-80lWAoFzL1iJvoXq2zc2xWlfkd_r8xvdCd9cNgYBIjkcH6mn64ILOVIelxS6yFi4ulxoPVmMTHtugr8nW6J0zuOq0KrJ9VUtDi5rwg&h=1xaw3WyYbBaCzmc-sCIcoOlzBgAW3EH0_AmTcV1Cx3E
       cache-control:
       - no-cache
       content-length:
-      - '1202'
+      - '1207'
       content-type:
       - application/json
       date:
-      - Tue, 14 May 2024 08:39:21 GMT
+      - Fri, 04 Apr 2025 16:30:00 GMT
       expires:
       - '-1'
       pragma:
@@ -956,10 +539,14 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus2/9b50a294-b910-4efb-a274-2d2a8cb253f9
+      x-ms-ratelimit-remaining-subscription-global-writes:
+      - '2999'
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1197'
+      - '199'
       x-msedge-ref:
-      - 'Ref A: D48A414257DB4FD99B7B657C62992C8D Ref B: TYO201100116045 Ref C: 2024-05-14T08:39:19Z'
+      - 'Ref A: 16E0326E8F4C44F2A733A4987A572A07 Ref B: BN1AA2051013025 Ref C: 2025-04-04T16:29:58Z'
     status:
       code: 201
       message: Created
@@ -977,13 +564,14 @@ interactions:
       ParameterSetName:
       - -g -n --image-source --managed-image-destinations --identity
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.VirtualMachineImages/locations/westus/operations/5d932474-0c0d-4494-9f05-1667959fddb1?api-version=2023-07-01&t=638512727623256914&c=MIIHSDCCBjCgAwIBAgITOgL9GKuxwuoAvl6gDgAEAv0YqzANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSU5GUkEgQ0EgMDEwHhcNMjQwNTAyMTUxMzA5WhcNMjUwNDI3MTUxMzA5WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM07DTGnL1WbXOa1u9Ox1zn93UOdzLFtBuxDtLwkLwE5XYbQErk1VfIqbqMWVJBTz43qzYkSUywN3kS5W-3jMCFAsWLYHKk-bdgh07JhyEmf_mrR7Xm3zoHG0F16AdlxBQjSN2QUJl55bEnC1Jl3KCDiVnKozpTS-PgNbAKxy1vnDaihayz-jd1p2krOq0AkGmr8EwgyH9cxsXty3H8oLuIW4UCIf6-ovtP_gZK7LvUJosGQlUVzRY5oQeq6Cjanrjz8LO4V7OmvglKA7MT6-y0iIXCiet24ek-PnJ26p0_epq6-1NK5ppjrvQ88reQo_Wey0U6uGqPCf_quM95smlUCAwEAAaOCBDUwggQxMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFggvX2K4Py0SACAWQCAQowggHaBggrBgEFBQcBAQSCAcwwggHIMGYGCCsGAQUFBzAChlpodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQlkyUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMElORlJBJTIwQ0ElMjAwMSg0KS5jcnQwVgYIKwYBBQUHMAKGSmh0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0JZMlBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3J0MFYGCCsGAQUFBzAChkpodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9CWTJQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSU5GUkElMjBDQSUyMDAxKDQpLmNydDBWBggrBgEFBQcwAoZKaHR0cDovL2NybDMuYW1lLmdibC9haWEvQlkyUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMElORlJBJTIwQ0ElMjAwMSg0KS5jcnQwVgYIKwYBBQUHMAKGSmh0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0JZMlBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3J0MB0GA1UdDgQWBBT9nF_3LeJfKo2wUhifl8Go-LrcVDAOBgNVHQ8BAf8EBAMCBaAwggE1BgNVHR8EggEsMIIBKDCCASSgggEgoIIBHIZCaHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JsMEEGA1UdIAQ6MDgwDAYKKwYBBAGCN3sBATAMBgorBgEEAYI3ewIBMAwGCisGAQQBgjd7AwEwDAYKKwYBBAGCN3sEATAfBgNVHSMEGDAWgBTl2Ztn_PjsurvwwKidileIud8-YzAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAEuFlcYl9ZMazlAmrJEK39sgT_V4pzoLJIud-g98rzZXpDdqVHiLKQnosingp2Z1u4HNQDrUVwcOrTcmE8nii9nUF36rQFqlNH_pmwRif9NB94CYh9u9htz7aSzwTplb44TPxHcuJa_QGO3LpN4n7WMiq5yKPZmLLkUBaS6idLzrlvnexhEGzTlXs6wXDMw_haje_UlA6qY4NUdK-nzsbnu7WWO6U8-alrOTk0D9DKSuW_jlzb2iRh-pyK82sfDI-x0fBW8qarQ6y5zcqBA9R3k5BbVwa-nn6PIlXNk2v3a56ZrTQqvJMJ9IBF0w0ebhF568LNZ3effLqwGX2alJ2ZE&s=V-J3O11zlxfzQBNQHhQDQHckW42b3OPFNRgA0sEfYTVqnIPRSk53mSPc1Hl25r2MkdzgdqWp6Ty1QS-O_NtcPlwqbO_xRkSxqzvKYG6ZzjqlKgGzUm7Yjhf8I9239kHY0s7oMlDD4ZpbUPC6pmXpeWg_h0Ox2FHKXWjcLGnDcBZrO1S65G6TJOyTQzhqStiZZbbn5lvUh3TSFTXSbOFrajDxOMnaZ_x88ZAB2OFNZbilR_i3KaJG6BjhCpbJeCPQyZSbni6pk6aphXaJJK5HqOYDeVRbjba3J4-18L1TurZi9HuaMqe_ply41Eeh1UN6Y7mQz96WE4t2ORDf7rEsuA&h=csUFfwC8iTKROlrZcRCfOt_mNec6wz4vzXKBtc_wfZc
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.VirtualMachineImages/locations/westus/operations/8855b187-ece5-4018-8f5c-d9c49a2715bb?api-version=2023-07-01&t=638793810008363199&c=MIIHhzCCBm-gAwIBAgITfAaTYo0ffVKAVQo0FAAABpNijTANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIxMjE0MDQ4WhcNMjUwNzIwMjE0MDQ4WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKl-TWTOH_oCbu9zNBntAM-9rowzTWYg_nRy16M4ghALCnU3YR0fsip-EwpHzk9rnA5iIgnJlMI24hzCv8PHGFCetnQdEMPxXIAtPo2i11HHKdcdycYnJhIqn0dddd92khimTrvPl1xVX65oC1uuMOEtYmaMGk26gGAo9mB9Zr4WVufN-UvLKvZwiDY-1ddNpdcUGB0S56H1dFUw8k7GHlWSYZS5eSVQZ9aXl7wJmQC-v3c2X-p3hLdo59aIWab5bWDKRbtaYjcAD6nr-GrtOOf2M96Ce_K9djoryf-X1tdOJSgIU4-Ortzj0xbyC9xNtrEVFfPwLRrR2KEGrEZkA4kCAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBSJEel4OnU1M8eUZtmgkwWb3vk1VTAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBABuKpMrZMDe3nmRYZgM_6QgVm5HpwSTDM72-Lvvtvbqu2HnIfPvmK-Qf9nxbZ3uCylFll3Zrq0s0c2GBdBoZmx7_eEa_ttQ9pvMj9uVUnuHbvLYOBYpmBIE8Q_b-DaOjC_1Rkkan6Jnpi_Cnu6QTe729Gf5FZnI0sIGY_eaetW7FjqOfGIlVKLX_50hcOXYCV_goHf2VHFIhVo4g9QShK_UEpzuG0yZCEKqHQRs-3UIEDZSuhchSmic2WNuSunTZ_HI9feNwqUIMBnn5EyIdrpjSszdDRR00CiJs7kBU2NvO5dQQ5qHwUJCWr69a42_uqATc6_1ViE8yGCSO6nZ0i1M&s=PqM9PtdfxgpkUiFF9MWAOwWV6cXJNiurTE9hei195f5S0IjtZYpZRJ14RMeM_UdzzZ1IXRGePvfY2rjA-VVAq6D8MjsZciGmSseGG5Yjdsr_EHWwMNN4L6Gcgxht_2sQLxEfFdI2DHs78YqjI2rH79LGf-sh3gWWa9omowjSEMVUZGcLeFIwNEOeShQJv-tcU4Hdq0EttfQ3tTemTr8qpySxSaJUPA5nbkmOQCU5mBrdlBG-80lWAoFzL1iJvoXq2zc2xWlfkd_r8xvdCd9cNgYBIjkcH6mn64ILOVIelxS6yFi4ulxoPVmMTHtugr8nW6J0zuOq0KrJ9VUtDi5rwg&h=1xaw3WyYbBaCzmc-sCIcoOlzBgAW3EH0_AmTcV1Cx3E
   response:
     body:
-      string: "{\n \"name\": \"5D932474-0C0D-4494-9F05-1667959FDDB1\",\n \"status\"\
-        : \"InProgress\",\n \"startTime\": \"2024-05-14T08:39:22.0093205Z\"\n}"
+      string: "{\n \"name\": \"8855B187-ECE5-4018-8F5C-D9C49A2715BB\",\n \"status\":
+        \"InProgress\",\n \"startTime\": \"2025-04-04T16:30:00.5696827Z\"\n}"
     headers:
       cache-control:
       - no-cache
@@ -992,7 +580,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Tue, 14 May 2024 08:39:21 GMT
+      - Fri, 04 Apr 2025 16:30:00 GMT
       expires:
       - '-1'
       pragma:
@@ -1003,8 +591,12 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus2/fc6efac1-7604-4ce0-b47d-5248b68d0e7f
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
       x-msedge-ref:
-      - 'Ref A: B47EC2031B524225A5F70BB23B8CBB7D Ref B: TYO201100116045 Ref C: 2024-05-14T08:39:22Z'
+      - 'Ref A: 422D56FD0E8C48B2AD56904D5CF952A6 Ref B: BN1AA2051013025 Ref C: 2025-04-04T16:30:00Z'
     status:
       code: 200
       message: OK
@@ -1022,14 +614,15 @@ interactions:
       ParameterSetName:
       - -g -n --image-source --managed-image-destinations --identity
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.VirtualMachineImages/locations/westus/operations/5d932474-0c0d-4494-9f05-1667959fddb1?api-version=2023-07-01&t=638512727623256914&c=MIIHSDCCBjCgAwIBAgITOgL9GKuxwuoAvl6gDgAEAv0YqzANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSU5GUkEgQ0EgMDEwHhcNMjQwNTAyMTUxMzA5WhcNMjUwNDI3MTUxMzA5WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM07DTGnL1WbXOa1u9Ox1zn93UOdzLFtBuxDtLwkLwE5XYbQErk1VfIqbqMWVJBTz43qzYkSUywN3kS5W-3jMCFAsWLYHKk-bdgh07JhyEmf_mrR7Xm3zoHG0F16AdlxBQjSN2QUJl55bEnC1Jl3KCDiVnKozpTS-PgNbAKxy1vnDaihayz-jd1p2krOq0AkGmr8EwgyH9cxsXty3H8oLuIW4UCIf6-ovtP_gZK7LvUJosGQlUVzRY5oQeq6Cjanrjz8LO4V7OmvglKA7MT6-y0iIXCiet24ek-PnJ26p0_epq6-1NK5ppjrvQ88reQo_Wey0U6uGqPCf_quM95smlUCAwEAAaOCBDUwggQxMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFggvX2K4Py0SACAWQCAQowggHaBggrBgEFBQcBAQSCAcwwggHIMGYGCCsGAQUFBzAChlpodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQlkyUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMElORlJBJTIwQ0ElMjAwMSg0KS5jcnQwVgYIKwYBBQUHMAKGSmh0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0JZMlBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3J0MFYGCCsGAQUFBzAChkpodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9CWTJQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSU5GUkElMjBDQSUyMDAxKDQpLmNydDBWBggrBgEFBQcwAoZKaHR0cDovL2NybDMuYW1lLmdibC9haWEvQlkyUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMElORlJBJTIwQ0ElMjAwMSg0KS5jcnQwVgYIKwYBBQUHMAKGSmh0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0JZMlBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3J0MB0GA1UdDgQWBBT9nF_3LeJfKo2wUhifl8Go-LrcVDAOBgNVHQ8BAf8EBAMCBaAwggE1BgNVHR8EggEsMIIBKDCCASSgggEgoIIBHIZCaHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JsMEEGA1UdIAQ6MDgwDAYKKwYBBAGCN3sBATAMBgorBgEEAYI3ewIBMAwGCisGAQQBgjd7AwEwDAYKKwYBBAGCN3sEATAfBgNVHSMEGDAWgBTl2Ztn_PjsurvwwKidileIud8-YzAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAEuFlcYl9ZMazlAmrJEK39sgT_V4pzoLJIud-g98rzZXpDdqVHiLKQnosingp2Z1u4HNQDrUVwcOrTcmE8nii9nUF36rQFqlNH_pmwRif9NB94CYh9u9htz7aSzwTplb44TPxHcuJa_QGO3LpN4n7WMiq5yKPZmLLkUBaS6idLzrlvnexhEGzTlXs6wXDMw_haje_UlA6qY4NUdK-nzsbnu7WWO6U8-alrOTk0D9DKSuW_jlzb2iRh-pyK82sfDI-x0fBW8qarQ6y5zcqBA9R3k5BbVwa-nn6PIlXNk2v3a56ZrTQqvJMJ9IBF0w0ebhF568LNZ3effLqwGX2alJ2ZE&s=V-J3O11zlxfzQBNQHhQDQHckW42b3OPFNRgA0sEfYTVqnIPRSk53mSPc1Hl25r2MkdzgdqWp6Ty1QS-O_NtcPlwqbO_xRkSxqzvKYG6ZzjqlKgGzUm7Yjhf8I9239kHY0s7oMlDD4ZpbUPC6pmXpeWg_h0Ox2FHKXWjcLGnDcBZrO1S65G6TJOyTQzhqStiZZbbn5lvUh3TSFTXSbOFrajDxOMnaZ_x88ZAB2OFNZbilR_i3KaJG6BjhCpbJeCPQyZSbni6pk6aphXaJJK5HqOYDeVRbjba3J4-18L1TurZi9HuaMqe_ply41Eeh1UN6Y7mQz96WE4t2ORDf7rEsuA&h=csUFfwC8iTKROlrZcRCfOt_mNec6wz4vzXKBtc_wfZc
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.VirtualMachineImages/locations/westus/operations/8855b187-ece5-4018-8f5c-d9c49a2715bb?api-version=2023-07-01&t=638793810008363199&c=MIIHhzCCBm-gAwIBAgITfAaTYo0ffVKAVQo0FAAABpNijTANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIxMjE0MDQ4WhcNMjUwNzIwMjE0MDQ4WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKl-TWTOH_oCbu9zNBntAM-9rowzTWYg_nRy16M4ghALCnU3YR0fsip-EwpHzk9rnA5iIgnJlMI24hzCv8PHGFCetnQdEMPxXIAtPo2i11HHKdcdycYnJhIqn0dddd92khimTrvPl1xVX65oC1uuMOEtYmaMGk26gGAo9mB9Zr4WVufN-UvLKvZwiDY-1ddNpdcUGB0S56H1dFUw8k7GHlWSYZS5eSVQZ9aXl7wJmQC-v3c2X-p3hLdo59aIWab5bWDKRbtaYjcAD6nr-GrtOOf2M96Ce_K9djoryf-X1tdOJSgIU4-Ortzj0xbyC9xNtrEVFfPwLRrR2KEGrEZkA4kCAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBSJEel4OnU1M8eUZtmgkwWb3vk1VTAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBABuKpMrZMDe3nmRYZgM_6QgVm5HpwSTDM72-Lvvtvbqu2HnIfPvmK-Qf9nxbZ3uCylFll3Zrq0s0c2GBdBoZmx7_eEa_ttQ9pvMj9uVUnuHbvLYOBYpmBIE8Q_b-DaOjC_1Rkkan6Jnpi_Cnu6QTe729Gf5FZnI0sIGY_eaetW7FjqOfGIlVKLX_50hcOXYCV_goHf2VHFIhVo4g9QShK_UEpzuG0yZCEKqHQRs-3UIEDZSuhchSmic2WNuSunTZ_HI9feNwqUIMBnn5EyIdrpjSszdDRR00CiJs7kBU2NvO5dQQ5qHwUJCWr69a42_uqATc6_1ViE8yGCSO6nZ0i1M&s=PqM9PtdfxgpkUiFF9MWAOwWV6cXJNiurTE9hei195f5S0IjtZYpZRJ14RMeM_UdzzZ1IXRGePvfY2rjA-VVAq6D8MjsZciGmSseGG5Yjdsr_EHWwMNN4L6Gcgxht_2sQLxEfFdI2DHs78YqjI2rH79LGf-sh3gWWa9omowjSEMVUZGcLeFIwNEOeShQJv-tcU4Hdq0EttfQ3tTemTr8qpySxSaJUPA5nbkmOQCU5mBrdlBG-80lWAoFzL1iJvoXq2zc2xWlfkd_r8xvdCd9cNgYBIjkcH6mn64ILOVIelxS6yFi4ulxoPVmMTHtugr8nW6J0zuOq0KrJ9VUtDi5rwg&h=1xaw3WyYbBaCzmc-sCIcoOlzBgAW3EH0_AmTcV1Cx3E
   response:
     body:
-      string: "{\n \"name\": \"5D932474-0C0D-4494-9F05-1667959FDDB1\",\n \"status\"\
-        : \"Succeeded\",\n \"startTime\": \"2024-05-14T08:39:22.0093205Z\",\n \"endTime\"\
-        : \"2024-05-14T08:39:32.7044332Z\"\n}"
+      string: "{\n \"name\": \"8855B187-ECE5-4018-8F5C-D9C49A2715BB\",\n \"status\":
+        \"Succeeded\",\n \"startTime\": \"2025-04-04T16:30:00.5696827Z\",\n \"endTime\":
+        \"2025-04-04T16:30:12.7068118Z\"\n}"
     headers:
       cache-control:
       - no-cache
@@ -1038,7 +631,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Tue, 14 May 2024 08:39:52 GMT
+      - Fri, 04 Apr 2025 16:30:30 GMT
       expires:
       - '-1'
       pragma:
@@ -1049,8 +642,12 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus2/71edb976-726c-4828-aedd-73b75e501b58
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
       x-msedge-ref:
-      - 'Ref A: 13FDC21E80484F8EA1D3290A74FCA47F Ref B: TYO201100116045 Ref C: 2024-05-14T08:39:53Z'
+      - 'Ref A: BB574AD284294F87ABE58520031782C7 Ref B: BN1AA2051013025 Ref C: 2025-04-04T16:30:31Z'
     status:
       code: 200
       message: OK
@@ -1068,37 +665,36 @@ interactions:
       ParameterSetName:
       - -g -n --image-source --managed-image-destinations --identity
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1?api-version=2023-07-01
   response:
     body:
-      string: "{\n \"properties\": {\n  \"source\": {\n   \"exactVersion\": \"18.04.202401161\"\
-        ,\n   \"offer\": \"UbuntuServer\",\n   \"publisher\": \"Canonical\",\n   \"\
-        sku\": \"18.04-LTS\",\n   \"type\": \"PlatformImage\",\n   \"version\": \"\
-        latest\"\n  },\n  \"distribute\": [\n   {\n    \"artifactTags\": {},\n   \
-        \ \"imageId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Compute/images/img1\"\
-        ,\n    \"location\": \"westus\",\n    \"runOutputName\": \"img1\",\n    \"\
-        type\": \"ManagedImage\"\n   }\n  ],\n  \"provisioningState\": \"Succeeded\"\
-        ,\n  \"buildTimeoutInMinutes\": 0,\n  \"vmProfile\": {\n   \"vmSize\": \"\"\
-        ,\n   \"osDiskSizeGB\": 0\n  },\n  \"stagingResourceGroup\": \"\",\n  \"exactStagingResourceGroup\"\
-        : \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/IT_img_tmpl_cancel_emhju6zrlpnppjxhwbddlary_f5cec188-4223-466d-8d15-07366851ad0d\"\
-        \n },\n \"identity\": {\n  \"type\": \"UserAssigned\",\n  \"userAssignedIdentities\"\
-        : {\n   \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1\"\
-        : {\n    \"principalId\": \"79cb8114-fd7e-4279-9170-8f6dee2bfffd\",\n    \"\
-        clientId\": \"0a92be89-7b0f-4b8f-abb6-21bb51bc0113\"\n   }\n  }\n },\n \"\
-        tags\": {},\n \"location\": \"westus\",\n \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1\"\
-        ,\n \"name\": \"template1\",\n \"type\": \"Microsoft.VirtualMachineImages/imageTemplates\"\
-        \n}"
+      string: "{\n \"properties\": {\n  \"source\": {\n   \"exactVersion\": \"18.04.202401161\",\n
+        \  \"offer\": \"UbuntuServer\",\n   \"publisher\": \"Canonical\",\n   \"sku\":
+        \"18_04-LTS-GEN2\",\n   \"type\": \"PlatformImage\",\n   \"version\": \"latest\"\n
+        \ },\n  \"distribute\": [\n   {\n    \"artifactTags\": {},\n    \"imageId\":
+        \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Compute/images/img1\",\n
+        \   \"location\": \"westus\",\n    \"runOutputName\": \"img1\",\n    \"type\":
+        \"ManagedImage\"\n   }\n  ],\n  \"provisioningState\": \"Succeeded\",\n  \"buildTimeoutInMinutes\":
+        0,\n  \"vmProfile\": {\n   \"vmSize\": \"\",\n   \"osDiskSizeGB\": 0\n  },\n
+        \ \"stagingResourceGroup\": \"\",\n  \"exactStagingResourceGroup\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/IT_img_tmpl_cancel_fasjctw6lss75mwarsdovyxd_84a03c07-3f90-4fdd-96e8-a7889cbc3528\"\n
+        },\n \"identity\": {\n  \"type\": \"UserAssigned\",\n  \"userAssignedIdentities\":
+        {\n   \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1\":
+        {\n    \"principalId\": \"2f667f26-f12d-4eb9-884d-61d140ca0ae1\",\n    \"clientId\":
+        \"9146cbb8-b890-458b-91fb-1779a08a718e\"\n   }\n  }\n },\n \"tags\": {},\n
+        \"location\": \"westus\",\n \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1\",\n
+        \"name\": \"template1\",\n \"type\": \"Microsoft.VirtualMachineImages/imageTemplates\"\n}"
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1477'
+      - '1482'
       content-type:
       - application/json
       date:
-      - Tue, 14 May 2024 08:39:53 GMT
+      - Fri, 04 Apr 2025 16:30:31 GMT
       expires:
       - '-1'
       pragma:
@@ -1109,8 +705,10 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
       x-msedge-ref:
-      - 'Ref A: 6A9EA8C9D45647C0917ED1E48C583141 Ref B: TYO201100116045 Ref C: 2024-05-14T08:39:53Z'
+      - 'Ref A: 288414C9A2224947996839C6BD65EE9A Ref B: BN1AA2051013025 Ref C: 2025-04-04T16:30:31Z'
     status:
       code: 200
       message: OK
@@ -1130,7 +728,8 @@ interactions:
       ParameterSetName:
       - -g -n --no-wait
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: POST
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1/run?api-version=2023-07-01
   response:
@@ -1138,17 +737,17 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.VirtualMachineImages/locations/westus/operations/83da6409-1577-4662-a748-61b4f3146ccc?api-version=2023-07-01&t=638512727959155187&c=MIIHSDCCBjCgAwIBAgITOgL9GKuxwuoAvl6gDgAEAv0YqzANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSU5GUkEgQ0EgMDEwHhcNMjQwNTAyMTUxMzA5WhcNMjUwNDI3MTUxMzA5WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM07DTGnL1WbXOa1u9Ox1zn93UOdzLFtBuxDtLwkLwE5XYbQErk1VfIqbqMWVJBTz43qzYkSUywN3kS5W-3jMCFAsWLYHKk-bdgh07JhyEmf_mrR7Xm3zoHG0F16AdlxBQjSN2QUJl55bEnC1Jl3KCDiVnKozpTS-PgNbAKxy1vnDaihayz-jd1p2krOq0AkGmr8EwgyH9cxsXty3H8oLuIW4UCIf6-ovtP_gZK7LvUJosGQlUVzRY5oQeq6Cjanrjz8LO4V7OmvglKA7MT6-y0iIXCiet24ek-PnJ26p0_epq6-1NK5ppjrvQ88reQo_Wey0U6uGqPCf_quM95smlUCAwEAAaOCBDUwggQxMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFggvX2K4Py0SACAWQCAQowggHaBggrBgEFBQcBAQSCAcwwggHIMGYGCCsGAQUFBzAChlpodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQlkyUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMElORlJBJTIwQ0ElMjAwMSg0KS5jcnQwVgYIKwYBBQUHMAKGSmh0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0JZMlBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3J0MFYGCCsGAQUFBzAChkpodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9CWTJQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSU5GUkElMjBDQSUyMDAxKDQpLmNydDBWBggrBgEFBQcwAoZKaHR0cDovL2NybDMuYW1lLmdibC9haWEvQlkyUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMElORlJBJTIwQ0ElMjAwMSg0KS5jcnQwVgYIKwYBBQUHMAKGSmh0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0JZMlBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3J0MB0GA1UdDgQWBBT9nF_3LeJfKo2wUhifl8Go-LrcVDAOBgNVHQ8BAf8EBAMCBaAwggE1BgNVHR8EggEsMIIBKDCCASSgggEgoIIBHIZCaHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JsMEEGA1UdIAQ6MDgwDAYKKwYBBAGCN3sBATAMBgorBgEEAYI3ewIBMAwGCisGAQQBgjd7AwEwDAYKKwYBBAGCN3sEATAfBgNVHSMEGDAWgBTl2Ztn_PjsurvwwKidileIud8-YzAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAEuFlcYl9ZMazlAmrJEK39sgT_V4pzoLJIud-g98rzZXpDdqVHiLKQnosingp2Z1u4HNQDrUVwcOrTcmE8nii9nUF36rQFqlNH_pmwRif9NB94CYh9u9htz7aSzwTplb44TPxHcuJa_QGO3LpN4n7WMiq5yKPZmLLkUBaS6idLzrlvnexhEGzTlXs6wXDMw_haje_UlA6qY4NUdK-nzsbnu7WWO6U8-alrOTk0D9DKSuW_jlzb2iRh-pyK82sfDI-x0fBW8qarQ6y5zcqBA9R3k5BbVwa-nn6PIlXNk2v3a56ZrTQqvJMJ9IBF0w0ebhF568LNZ3effLqwGX2alJ2ZE&s=ndyEx85B3MmQ4HJQDQyLyQXf2rI5ZvFtckMq9PsfUaZa0sbrI6JGOeCTcsM_UeN5CglHk1AGd5THwNCjdm7TWJFFyySlkV5GKN32KV8QtMPDXJ_N0CFMrg04J0b_-fl7mrwPFmdImnIUQs7PSzAa3WshfHr3BSyx2_ML8rJjBz_K340AAjO3jxJuBb_UXJYm9WqWNZgyJlkGSl7Z_6PDuB14PA6xRCIdyjxpNRL0bxReaYtkEw-qQeKdp-ZtMtzhueWFA_gYiLBA5DexNt9NcrsehwRJlyGy-MMmJV7l3fGaMvyKwRijsKNBPeWVvixiMOU2UgVoNbD9X7cPeAQOwg&h=MCK_87XJfjNqX6E-73HHv0ZBB_371DpJW3UD86BMNOQ
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.VirtualMachineImages/locations/westus/operations/17ba36cf-b6ec-4d30-b336-eb36002c089d?api-version=2023-07-01&t=638793810327377022&c=MIIHhzCCBm-gAwIBAgITfAaTYo0ffVKAVQo0FAAABpNijTANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIxMjE0MDQ4WhcNMjUwNzIwMjE0MDQ4WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKl-TWTOH_oCbu9zNBntAM-9rowzTWYg_nRy16M4ghALCnU3YR0fsip-EwpHzk9rnA5iIgnJlMI24hzCv8PHGFCetnQdEMPxXIAtPo2i11HHKdcdycYnJhIqn0dddd92khimTrvPl1xVX65oC1uuMOEtYmaMGk26gGAo9mB9Zr4WVufN-UvLKvZwiDY-1ddNpdcUGB0S56H1dFUw8k7GHlWSYZS5eSVQZ9aXl7wJmQC-v3c2X-p3hLdo59aIWab5bWDKRbtaYjcAD6nr-GrtOOf2M96Ce_K9djoryf-X1tdOJSgIU4-Ortzj0xbyC9xNtrEVFfPwLRrR2KEGrEZkA4kCAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBSJEel4OnU1M8eUZtmgkwWb3vk1VTAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBABuKpMrZMDe3nmRYZgM_6QgVm5HpwSTDM72-Lvvtvbqu2HnIfPvmK-Qf9nxbZ3uCylFll3Zrq0s0c2GBdBoZmx7_eEa_ttQ9pvMj9uVUnuHbvLYOBYpmBIE8Q_b-DaOjC_1Rkkan6Jnpi_Cnu6QTe729Gf5FZnI0sIGY_eaetW7FjqOfGIlVKLX_50hcOXYCV_goHf2VHFIhVo4g9QShK_UEpzuG0yZCEKqHQRs-3UIEDZSuhchSmic2WNuSunTZ_HI9feNwqUIMBnn5EyIdrpjSszdDRR00CiJs7kBU2NvO5dQQ5qHwUJCWr69a42_uqATc6_1ViE8yGCSO6nZ0i1M&s=hSMbKUpy4NXVG5oc9syrMA7xvlnhXns93K1p2VMT8JdH5D4WqV6YexBHeq7f1kt5VDPfL8WFUoojiL56dnheurP7u1SUlkn7fXFC0WZ9-d9rCq2kH9X-8j8QgGrrEIhRRJPmvlCuWb-jCzVoctnBJrouRpPr-p8xWdGFHtka4Bwf8xxQB0Twopsft1O50Gp-aRWKfXqP6uOBCcLN77NkecEjuQHwfjdG5bkkeOsFch8LNMUBmT8_9bPavsvpMOfIoG4j41Z2vlf7PwD0fPAC7Nf-V1RCmXbBsvMd8MTBy8mncNsFbpyvW28OSbquQMzhm47appENE3vWMMJZJAC7Sg&h=JWu7wNeWJG1ZR1eksaoiWpcsbIThhVNVGPQboqdQpLw
       cache-control:
       - no-cache
       content-length:
       - '0'
       date:
-      - Tue, 14 May 2024 08:39:55 GMT
+      - Fri, 04 Apr 2025 16:30:32 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.VirtualMachineImages/locations/westus/operations/83da6409-1577-4662-a748-61b4f3146ccc?api-version=2023-07-01&t=638512727959155187&c=MIIHSDCCBjCgAwIBAgITOgL9GKuxwuoAvl6gDgAEAv0YqzANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSU5GUkEgQ0EgMDEwHhcNMjQwNTAyMTUxMzA5WhcNMjUwNDI3MTUxMzA5WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM07DTGnL1WbXOa1u9Ox1zn93UOdzLFtBuxDtLwkLwE5XYbQErk1VfIqbqMWVJBTz43qzYkSUywN3kS5W-3jMCFAsWLYHKk-bdgh07JhyEmf_mrR7Xm3zoHG0F16AdlxBQjSN2QUJl55bEnC1Jl3KCDiVnKozpTS-PgNbAKxy1vnDaihayz-jd1p2krOq0AkGmr8EwgyH9cxsXty3H8oLuIW4UCIf6-ovtP_gZK7LvUJosGQlUVzRY5oQeq6Cjanrjz8LO4V7OmvglKA7MT6-y0iIXCiet24ek-PnJ26p0_epq6-1NK5ppjrvQ88reQo_Wey0U6uGqPCf_quM95smlUCAwEAAaOCBDUwggQxMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFggvX2K4Py0SACAWQCAQowggHaBggrBgEFBQcBAQSCAcwwggHIMGYGCCsGAQUFBzAChlpodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQlkyUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMElORlJBJTIwQ0ElMjAwMSg0KS5jcnQwVgYIKwYBBQUHMAKGSmh0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0JZMlBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3J0MFYGCCsGAQUFBzAChkpodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9CWTJQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSU5GUkElMjBDQSUyMDAxKDQpLmNydDBWBggrBgEFBQcwAoZKaHR0cDovL2NybDMuYW1lLmdibC9haWEvQlkyUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMElORlJBJTIwQ0ElMjAwMSg0KS5jcnQwVgYIKwYBBQUHMAKGSmh0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0JZMlBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3J0MB0GA1UdDgQWBBT9nF_3LeJfKo2wUhifl8Go-LrcVDAOBgNVHQ8BAf8EBAMCBaAwggE1BgNVHR8EggEsMIIBKDCCASSgggEgoIIBHIZCaHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JshjRodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJTkZSQSUyMENBJTIwMDEoNCkuY3JsMEEGA1UdIAQ6MDgwDAYKKwYBBAGCN3sBATAMBgorBgEEAYI3ewIBMAwGCisGAQQBgjd7AwEwDAYKKwYBBAGCN3sEATAfBgNVHSMEGDAWgBTl2Ztn_PjsurvwwKidileIud8-YzAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAEuFlcYl9ZMazlAmrJEK39sgT_V4pzoLJIud-g98rzZXpDdqVHiLKQnosingp2Z1u4HNQDrUVwcOrTcmE8nii9nUF36rQFqlNH_pmwRif9NB94CYh9u9htz7aSzwTplb44TPxHcuJa_QGO3LpN4n7WMiq5yKPZmLLkUBaS6idLzrlvnexhEGzTlXs6wXDMw_haje_UlA6qY4NUdK-nzsbnu7WWO6U8-alrOTk0D9DKSuW_jlzb2iRh-pyK82sfDI-x0fBW8qarQ6y5zcqBA9R3k5BbVwa-nn6PIlXNk2v3a56ZrTQqvJMJ9IBF0w0ebhF568LNZ3effLqwGX2alJ2ZE&s=ndyEx85B3MmQ4HJQDQyLyQXf2rI5ZvFtckMq9PsfUaZa0sbrI6JGOeCTcsM_UeN5CglHk1AGd5THwNCjdm7TWJFFyySlkV5GKN32KV8QtMPDXJ_N0CFMrg04J0b_-fl7mrwPFmdImnIUQs7PSzAa3WshfHr3BSyx2_ML8rJjBz_K340AAjO3jxJuBb_UXJYm9WqWNZgyJlkGSl7Z_6PDuB14PA6xRCIdyjxpNRL0bxReaYtkEw-qQeKdp-ZtMtzhueWFA_gYiLBA5DexNt9NcrsehwRJlyGy-MMmJV7l3fGaMvyKwRijsKNBPeWVvixiMOU2UgVoNbD9X7cPeAQOwg&h=MCK_87XJfjNqX6E-73HHv0ZBB_371DpJW3UD86BMNOQ
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.VirtualMachineImages/locations/westus/operations/17ba36cf-b6ec-4d30-b336-eb36002c089d?api-version=2023-07-01&t=638793810327689529&c=MIIHhzCCBm-gAwIBAgITfAaTYo0ffVKAVQo0FAAABpNijTANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIxMjE0MDQ4WhcNMjUwNzIwMjE0MDQ4WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKl-TWTOH_oCbu9zNBntAM-9rowzTWYg_nRy16M4ghALCnU3YR0fsip-EwpHzk9rnA5iIgnJlMI24hzCv8PHGFCetnQdEMPxXIAtPo2i11HHKdcdycYnJhIqn0dddd92khimTrvPl1xVX65oC1uuMOEtYmaMGk26gGAo9mB9Zr4WVufN-UvLKvZwiDY-1ddNpdcUGB0S56H1dFUw8k7GHlWSYZS5eSVQZ9aXl7wJmQC-v3c2X-p3hLdo59aIWab5bWDKRbtaYjcAD6nr-GrtOOf2M96Ce_K9djoryf-X1tdOJSgIU4-Ortzj0xbyC9xNtrEVFfPwLRrR2KEGrEZkA4kCAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBSJEel4OnU1M8eUZtmgkwWb3vk1VTAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBABuKpMrZMDe3nmRYZgM_6QgVm5HpwSTDM72-Lvvtvbqu2HnIfPvmK-Qf9nxbZ3uCylFll3Zrq0s0c2GBdBoZmx7_eEa_ttQ9pvMj9uVUnuHbvLYOBYpmBIE8Q_b-DaOjC_1Rkkan6Jnpi_Cnu6QTe729Gf5FZnI0sIGY_eaetW7FjqOfGIlVKLX_50hcOXYCV_goHf2VHFIhVo4g9QShK_UEpzuG0yZCEKqHQRs-3UIEDZSuhchSmic2WNuSunTZ_HI9feNwqUIMBnn5EyIdrpjSszdDRR00CiJs7kBU2NvO5dQQ5qHwUJCWr69a42_uqATc6_1ViE8yGCSO6nZ0i1M&s=mp3H6bSkc49txNoYXnbTUH0h2DBYKXhCPYFTt-AD0Ogw5DdNhxR-ZVoqY-nc4BYmaG4-EKdRZi5AhmdMApZYL6GU-DnrZkncoF2-oEJlLW0heo67VgJrHSP_n40JwPd_4lWdp_b0YhEXHa7FoRsYFSTPFc-v4WPyi2I2lKc5N-Qujenva-2dfQ8NvhQV6RrKTsBLwIf7Czuzvo2YeAByUpEApfj2Vr4dPV2TUoSALIDBemywVA6fl1it8Cyk2SH2rt2Rd0QbFQ1M-aWk_Cw1fdMbD8vC03zeUoMN4Rtm6oOCCGyFln-J5GwydufHa2Fqy9ER3dVM5OP5bmhJ-mFA4g&h=vLXqVzu4JPwxM1GDeHVpzWoa8lEfl7AYXcwdD8SsWT4
       pragma:
       - no-cache
       strict-transport-security:
@@ -1157,10 +756,14 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus2/13772674-b712-4554-8348-caa034257106
+      x-ms-ratelimit-remaining-subscription-global-writes:
+      - '2999'
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '199'
       x-msedge-ref:
-      - 'Ref A: A66DD3249ECB43BE8B92CF81BFBF028D Ref B: TYO201100114027 Ref C: 2024-05-14T08:39:55Z'
+      - 'Ref A: F7A8C3F0359E47E5B34FCF687ED74492 Ref B: BN1AA2051013033 Ref C: 2025-04-04T16:30:31Z'
     status:
       code: 202
       message: Accepted
@@ -1178,40 +781,39 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1?api-version=2023-07-01
   response:
     body:
-      string: "{\n \"properties\": {\n  \"source\": {\n   \"exactVersion\": \"18.04.202401161\"\
-        ,\n   \"offer\": \"UbuntuServer\",\n   \"publisher\": \"Canonical\",\n   \"\
-        sku\": \"18.04-LTS\",\n   \"type\": \"PlatformImage\",\n   \"version\": \"\
-        latest\"\n  },\n  \"distribute\": [\n   {\n    \"artifactTags\": {},\n   \
-        \ \"imageId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Compute/images/img1\"\
-        ,\n    \"location\": \"westus\",\n    \"runOutputName\": \"img1\",\n    \"\
-        type\": \"ManagedImage\"\n   }\n  ],\n  \"provisioningState\": \"Succeeded\"\
-        ,\n  \"lastRunStatus\": {\n   \"startTime\": \"2024-05-14T08:39:55.679639302Z\"\
-        ,\n   \"endTime\": \"0001-01-01T00:00:00Z\",\n   \"runState\": \"Running\"\
-        ,\n   \"runSubState\": \"Building\",\n   \"message\": \"\"\n  },\n  \"buildTimeoutInMinutes\"\
-        : 0,\n  \"vmProfile\": {\n   \"vmSize\": \"\",\n   \"osDiskSizeGB\": 0\n \
-        \ },\n  \"stagingResourceGroup\": \"\",\n  \"exactStagingResourceGroup\":\
-        \ \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/IT_img_tmpl_cancel_emhju6zrlpnppjxhwbddlary_f5cec188-4223-466d-8d15-07366851ad0d\"\
-        \n },\n \"identity\": {\n  \"type\": \"UserAssigned\",\n  \"userAssignedIdentities\"\
-        : {\n   \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1\"\
-        : {\n    \"principalId\": \"79cb8114-fd7e-4279-9170-8f6dee2bfffd\",\n    \"\
-        clientId\": \"0a92be89-7b0f-4b8f-abb6-21bb51bc0113\"\n   }\n  }\n },\n \"\
-        tags\": {},\n \"location\": \"westus\",\n \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1\"\
-        ,\n \"name\": \"template1\",\n \"type\": \"Microsoft.VirtualMachineImages/imageTemplates\"\
-        \n}"
+      string: "{\n \"properties\": {\n  \"source\": {\n   \"exactVersion\": \"18.04.202401161\",\n
+        \  \"offer\": \"UbuntuServer\",\n   \"publisher\": \"Canonical\",\n   \"sku\":
+        \"18_04-LTS-GEN2\",\n   \"type\": \"PlatformImage\",\n   \"version\": \"latest\"\n
+        \ },\n  \"distribute\": [\n   {\n    \"artifactTags\": {},\n    \"imageId\":
+        \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Compute/images/img1\",\n
+        \   \"location\": \"westus\",\n    \"runOutputName\": \"img1\",\n    \"type\":
+        \"ManagedImage\"\n   }\n  ],\n  \"provisioningState\": \"Succeeded\",\n  \"lastRunStatus\":
+        {\n   \"startTime\": \"2025-04-04T16:30:32.455958946Z\",\n   \"endTime\":
+        \"0001-01-01T00:00:00Z\",\n   \"runState\": \"Running\",\n   \"runSubState\":
+        \"Queued\",\n   \"message\": \"\"\n  },\n  \"buildTimeoutInMinutes\": 0,\n
+        \ \"vmProfile\": {\n   \"vmSize\": \"\",\n   \"osDiskSizeGB\": 0\n  },\n  \"stagingResourceGroup\":
+        \"\",\n  \"exactStagingResourceGroup\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/IT_img_tmpl_cancel_fasjctw6lss75mwarsdovyxd_84a03c07-3f90-4fdd-96e8-a7889cbc3528\"\n
+        },\n \"identity\": {\n  \"type\": \"UserAssigned\",\n  \"userAssignedIdentities\":
+        {\n   \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1\":
+        {\n    \"principalId\": \"2f667f26-f12d-4eb9-884d-61d140ca0ae1\",\n    \"clientId\":
+        \"9146cbb8-b890-458b-91fb-1779a08a718e\"\n   }\n  }\n },\n \"tags\": {},\n
+        \"location\": \"westus\",\n \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1\",\n
+        \"name\": \"template1\",\n \"type\": \"Microsoft.VirtualMachineImages/imageTemplates\"\n}"
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1664'
+      - '1667'
       content-type:
       - application/json
       date:
-      - Tue, 14 May 2024 08:39:56 GMT
+      - Fri, 04 Apr 2025 16:30:32 GMT
       expires:
       - '-1'
       pragma:
@@ -1222,8 +824,10 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
       x-msedge-ref:
-      - 'Ref A: 21752F5A600D470BB801EA113E3FD027 Ref B: TYO201100114029 Ref C: 2024-05-14T08:39:56Z'
+      - 'Ref A: 77053B6AB99B441EB86DA27F5EF266A7 Ref B: BN1AA2051015021 Ref C: 2025-04-04T16:30:32Z'
     status:
       code: 200
       message: OK
@@ -1243,7 +847,8 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: POST
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1/cancel?api-version=2023-07-01
   response:
@@ -1253,7 +858,7 @@ interactions:
       cache-control:
       - no-cache
       date:
-      - Tue, 14 May 2024 08:40:12 GMT
+      - Fri, 04 Apr 2025 16:30:48 GMT
       expires:
       - '-1'
       pragma:
@@ -1264,10 +869,14 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus/840d9609-bacd-4c48-98c5-bd5df87578e7
+      x-ms-ratelimit-remaining-subscription-global-writes:
+      - '2998'
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '199'
       x-msedge-ref:
-      - 'Ref A: 25985322E80140B785DB579D39C8F819 Ref B: TYO201100116029 Ref C: 2024-05-14T08:40:12Z'
+      - 'Ref A: 56DF962D6345442FAD794D1B48EFA51B Ref B: BN1AA2051013049 Ref C: 2025-04-04T16:30:48Z'
     status:
       code: 204
       message: No Content
@@ -1285,40 +894,39 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - AZURECLI/2.60.0 azsdk-python-core/1.28.0 Python/3.10.11 (Windows-10-10.0.22631-SP0)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
+        VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1?api-version=2023-07-01
   response:
     body:
-      string: "{\n \"properties\": {\n  \"source\": {\n   \"exactVersion\": \"18.04.202401161\"\
-        ,\n   \"offer\": \"UbuntuServer\",\n   \"publisher\": \"Canonical\",\n   \"\
-        sku\": \"18.04-LTS\",\n   \"type\": \"PlatformImage\",\n   \"version\": \"\
-        latest\"\n  },\n  \"distribute\": [\n   {\n    \"artifactTags\": {},\n   \
-        \ \"imageId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Compute/images/img1\"\
-        ,\n    \"location\": \"westus\",\n    \"runOutputName\": \"img1\",\n    \"\
-        type\": \"ManagedImage\"\n   }\n  ],\n  \"provisioningState\": \"Succeeded\"\
-        ,\n  \"lastRunStatus\": {\n   \"startTime\": \"2024-05-14T08:39:55.679639302Z\"\
-        ,\n   \"endTime\": \"0001-01-01T00:00:00Z\",\n   \"runState\": \"Canceling\"\
-        ,\n   \"message\": \"Canceling image build\"\n  },\n  \"buildTimeoutInMinutes\"\
-        : 0,\n  \"vmProfile\": {\n   \"vmSize\": \"\",\n   \"osDiskSizeGB\": 0\n \
-        \ },\n  \"stagingResourceGroup\": \"\",\n  \"exactStagingResourceGroup\":\
-        \ \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/IT_img_tmpl_cancel_emhju6zrlpnppjxhwbddlary_f5cec188-4223-466d-8d15-07366851ad0d\"\
-        \n },\n \"identity\": {\n  \"type\": \"UserAssigned\",\n  \"userAssignedIdentities\"\
-        : {\n   \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1\"\
-        : {\n    \"principalId\": \"79cb8114-fd7e-4279-9170-8f6dee2bfffd\",\n    \"\
-        clientId\": \"0a92be89-7b0f-4b8f-abb6-21bb51bc0113\"\n   }\n  }\n },\n \"\
-        tags\": {},\n \"location\": \"westus\",\n \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1\"\
-        ,\n \"name\": \"template1\",\n \"type\": \"Microsoft.VirtualMachineImages/imageTemplates\"\
-        \n}"
+      string: "{\n \"properties\": {\n  \"source\": {\n   \"exactVersion\": \"18.04.202401161\",\n
+        \  \"offer\": \"UbuntuServer\",\n   \"publisher\": \"Canonical\",\n   \"sku\":
+        \"18_04-LTS-GEN2\",\n   \"type\": \"PlatformImage\",\n   \"version\": \"latest\"\n
+        \ },\n  \"distribute\": [\n   {\n    \"artifactTags\": {},\n    \"imageId\":
+        \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.Compute/images/img1\",\n
+        \   \"location\": \"westus\",\n    \"runOutputName\": \"img1\",\n    \"type\":
+        \"ManagedImage\"\n   }\n  ],\n  \"provisioningState\": \"Succeeded\",\n  \"lastRunStatus\":
+        {\n   \"startTime\": \"2025-04-04T16:30:32.455958946Z\",\n   \"endTime\":
+        \"0001-01-01T00:00:00Z\",\n   \"runState\": \"Canceling\",\n   \"message\":
+        \"Canceling image build\"\n  },\n  \"buildTimeoutInMinutes\": 0,\n  \"vmProfile\":
+        {\n   \"vmSize\": \"\",\n   \"osDiskSizeGB\": 0\n  },\n  \"stagingResourceGroup\":
+        \"\",\n  \"exactStagingResourceGroup\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/IT_img_tmpl_cancel_fasjctw6lss75mwarsdovyxd_84a03c07-3f90-4fdd-96e8-a7889cbc3528\"\n
+        },\n \"identity\": {\n  \"type\": \"UserAssigned\",\n  \"userAssignedIdentities\":
+        {\n   \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/img_tmpl_cancel_000001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ide1\":
+        {\n    \"principalId\": \"2f667f26-f12d-4eb9-884d-61d140ca0ae1\",\n    \"clientId\":
+        \"9146cbb8-b890-458b-91fb-1779a08a718e\"\n   }\n  }\n },\n \"tags\": {},\n
+        \"location\": \"westus\",\n \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/img_tmpl_cancel_000001/providers/Microsoft.VirtualMachineImages/imageTemplates/template1\",\n
+        \"name\": \"template1\",\n \"type\": \"Microsoft.VirtualMachineImages/imageTemplates\"\n}"
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1657'
+      - '1662'
       content-type:
       - application/json
       date:
-      - Tue, 14 May 2024 08:40:13 GMT
+      - Fri, 04 Apr 2025 16:30:48 GMT
       expires:
       - '-1'
       pragma:
@@ -1329,8 +937,10 @@ interactions:
       - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
       x-msedge-ref:
-      - 'Ref A: 8C50CE08CE61419A863910F80F616A60 Ref B: TYO201151001060 Ref C: 2024-05-14T08:40:13Z'
+      - 'Ref A: A31E718392E641898147265E06214C99 Ref B: BN1AA2051014045 Ref C: 2025-04-04T16:30:48Z'
     status:
       code: 200
       message: OK

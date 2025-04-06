@@ -11,7 +11,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/applicationSecurityGroups?api-version=2021-08-01
@@ -26,17 +26,21 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:12 GMT
+      - Sun, 06 Apr 2025 14:28:51 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: AF443E9813454AAEBE0D4F06286B9A81 Ref B: BN1AA2051013023 Ref C: 2025-04-06T14:28:51Z'
     status:
       code: 200
       message: OK
@@ -54,32 +58,36 @@ interactions:
       ParameterSetName:
       - -g -n --tags
       User-Agent:
-      - AZURECLI/2.45.0 azsdk-python-azure-mgmt-resource/22.0.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_asg000001?api-version=2022-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_asg000001?api-version=2024-11-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001","name":"cli_test_network_asg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2023-02-07T10:30:09Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001","name":"cli_test_network_asg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","test":"test_network_asg","date":"2025-04-06T14:28:48Z","module":"network"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '330'
+      - '375'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:12 GMT
+      - Sun, 06 Apr 2025 14:28:51 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: 2FB2B23C6FB548D7ACD0593AF5D4BB83 Ref B: BN1AA2051012035 Ref C: 2025-04-06T14:28:52Z'
     status:
       code: 200
       message: OK
@@ -101,45 +109,46 @@ interactions:
       ParameterSetName:
       - -g -n --tags
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1?api-version=2021-08-01
   response:
     body:
-      string: "{\r\n  \"name\": \"asg1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1\",\r\n
-        \ \"etag\": \"W/\\\"01f6a435-9822-427f-9f7e-77d3db5ca09b\\\"\",\r\n  \"type\":
-        \"Microsoft.Network/applicationSecurityGroups\",\r\n  \"location\": \"westus\",\r\n
-        \ \"tags\": {\r\n    \"foo\": \"doo\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Updating\"\r\n  }\r\n}"
+      string: '{"name":"asg1","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1","etag":"W/\"61c3d178-5eec-42f7-ad45-9aa7674b2028\"","type":"Microsoft.Network/applicationSecurityGroups","location":"westus","tags":{"foo":"doo"},"properties":{"provisioningState":"Updating"}}'
     headers:
       azure-asyncnotification:
       - Enabled
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/43f83cea-77d8-4fea-beda-da465959a905?api-version=2021-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/a8c89532-b068-43d5-86df-66ebbc009070?api-version=2021-08-01&t=638795465339248530&c=MIIHhzCCBm-gAwIBAgITfAaPVSYGYp0_a9-AhQAABo9VJjANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIwMDgzNTM2WhcNMjUwNzE5MDgzNTM2WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMIvzhqGKiWeVv5oxugQQEZ8AxTC1p8Lu-WshPo0K7VS2EMvF_bHNAJa2ICbsiu5eWYlTaYcdzZL_li8T_EER2Dx5l6uj7GUfGoYbEJQ0ZdYtzLoQJYa5_x168-RsA7F1839wPdzv32z3afnCHOSeIzPiOiCJXb6FjOWJ-znbB2na5Gw4nwgaj4uxlRQGN3ElReqQ4P64xkAph5x91fRINLkaaRTDeKQ_g_suaN1BHm22myYRg2O9gZy5mhTUzDjj9HsrGu2-1-ZFNZZPMl5ltWBsQD6c_49DWpOowaX9ZSYaO9E9s45gP5YMr-ALxZrETB9ilbvFNbbXmv9Kc5LEc0CAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBQj9GN21vymIgY86pEWjNqGR6-dlDAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAF0lTrFg0dSUCXo41FDWmaQFDJKZsucTat3vhDRkbIfxlo0n4QQJOqJQSCzj8n-NvH0p0CR42nsTk2C70Vpr54i80YKfcTOm0Q0Rq9FHB-Nz4KlrymTkU6hfeD0WRhUOq6PB1WhWLF_mqSzEwmTmuQAsVGXf8Gh0psllvyF--eEaF0pSbhEuo6lPzPk3hgUSico8gbSjr4hgIVn6x0JCa1XSFgaeKHIqD8eapb-mDfYa0QAQwJ8tYxzrkJ_n5OI7g5xCiIeV5DXmSzLTGx9QvaE4Y8-jFgRKG0qMhnqf8StrJOSKMrcJlHtjT7plbWt-fXPLHNvPydmtAiA2qygRnU0&s=ASBZ10KMBO04LdDvTcDuiGY-SFX6adVlcIEKeIYdhaLBZAgIHObWH5fPgPfHlpuQaJAdAnlBdvEdCbElteUgmQyzbCKp_yIasHUCY0rZe1uRTVFHTXppHiAeySdDNb92ELbemLYLSJIixElhc_zdK9nxz_aWCYd0ZY9LVl_sVcxzVTeh_nL2Ggwsun_byf7KtfqK-i_IL_wKUS-ejkStStyF54rv8hTSBsCm3u4P8AxXnQsYnYwTPO_727L8yitloMMVIqc2FHDlyO8nMOcHHum9aezduXjGjcHoCBE-Wyvb32Lyths3UsAmfuXrLFvqw5EG5sEqex_IaTB-mtTP5w&h=AMT3-kNb3xmhcqmuN7hkf15A49-7vj5r9qBUHqNjcP4
       cache-control:
       - no-cache
       content-length:
-      - '426'
+      - '367'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:15 GMT
+      - Sun, 06 Apr 2025 14:28:53 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - f4159019-fc10-44ae-bd66-5c88235bb395
+      - 33e2d7ec-cbc4-40c1-bcec-9f787f09c289
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus/5d0aa78c-eeab-4b03-8187-58d5673c440b
+      x-ms-ratelimit-remaining-subscription-global-writes:
+      - '2999'
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '199'
+      x-msedge-ref:
+      - 'Ref A: 3B0D5AEE02C74CD5BC6C7C08E034E6E7 Ref B: BN1AA2051014049 Ref C: 2025-04-06T14:28:52Z'
     status:
       code: 201
       message: Created
@@ -157,39 +166,40 @@ interactions:
       ParameterSetName:
       - -g -n --tags
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/43f83cea-77d8-4fea-beda-da465959a905?api-version=2021-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/a8c89532-b068-43d5-86df-66ebbc009070?api-version=2021-08-01&t=638795465339248530&c=MIIHhzCCBm-gAwIBAgITfAaPVSYGYp0_a9-AhQAABo9VJjANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIwMDgzNTM2WhcNMjUwNzE5MDgzNTM2WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMIvzhqGKiWeVv5oxugQQEZ8AxTC1p8Lu-WshPo0K7VS2EMvF_bHNAJa2ICbsiu5eWYlTaYcdzZL_li8T_EER2Dx5l6uj7GUfGoYbEJQ0ZdYtzLoQJYa5_x168-RsA7F1839wPdzv32z3afnCHOSeIzPiOiCJXb6FjOWJ-znbB2na5Gw4nwgaj4uxlRQGN3ElReqQ4P64xkAph5x91fRINLkaaRTDeKQ_g_suaN1BHm22myYRg2O9gZy5mhTUzDjj9HsrGu2-1-ZFNZZPMl5ltWBsQD6c_49DWpOowaX9ZSYaO9E9s45gP5YMr-ALxZrETB9ilbvFNbbXmv9Kc5LEc0CAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBQj9GN21vymIgY86pEWjNqGR6-dlDAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAF0lTrFg0dSUCXo41FDWmaQFDJKZsucTat3vhDRkbIfxlo0n4QQJOqJQSCzj8n-NvH0p0CR42nsTk2C70Vpr54i80YKfcTOm0Q0Rq9FHB-Nz4KlrymTkU6hfeD0WRhUOq6PB1WhWLF_mqSzEwmTmuQAsVGXf8Gh0psllvyF--eEaF0pSbhEuo6lPzPk3hgUSico8gbSjr4hgIVn6x0JCa1XSFgaeKHIqD8eapb-mDfYa0QAQwJ8tYxzrkJ_n5OI7g5xCiIeV5DXmSzLTGx9QvaE4Y8-jFgRKG0qMhnqf8StrJOSKMrcJlHtjT7plbWt-fXPLHNvPydmtAiA2qygRnU0&s=ASBZ10KMBO04LdDvTcDuiGY-SFX6adVlcIEKeIYdhaLBZAgIHObWH5fPgPfHlpuQaJAdAnlBdvEdCbElteUgmQyzbCKp_yIasHUCY0rZe1uRTVFHTXppHiAeySdDNb92ELbemLYLSJIixElhc_zdK9nxz_aWCYd0ZY9LVl_sVcxzVTeh_nL2Ggwsun_byf7KtfqK-i_IL_wKUS-ejkStStyF54rv8hTSBsCm3u4P8AxXnQsYnYwTPO_727L8yitloMMVIqc2FHDlyO8nMOcHHum9aezduXjGjcHoCBE-Wyvb32Lyths3UsAmfuXrLFvqw5EG5sEqex_IaTB-mtTP5w&h=AMT3-kNb3xmhcqmuN7hkf15A49-7vj5r9qBUHqNjcP4
   response:
     body:
-      string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
+      string: '{"status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '29'
+      - '22'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:26 GMT
+      - Sun, 06 Apr 2025 14:28:53 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - f4c9dfbf-eb3c-47c8-a28a-4819363253dc
+      - d965b4ce-c3a2-4ec0-be98-d2b5146f9985
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus/8cfda4ae-32ef-4512-943b-1c9d9a44be58
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: 502DD8FF20D34969A1F551046500E3B2 Ref B: BN1AA2051014049 Ref C: 2025-04-06T14:28:53Z'
     status:
       code: 200
       message: OK
@@ -207,45 +217,40 @@ interactions:
       ParameterSetName:
       - -g -n --tags
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1?api-version=2021-08-01
   response:
     body:
-      string: "{\r\n  \"name\": \"asg1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1\",\r\n
-        \ \"etag\": \"W/\\\"86caff2b-8466-4958-94e8-954744f5a22c\\\"\",\r\n  \"type\":
-        \"Microsoft.Network/applicationSecurityGroups\",\r\n  \"location\": \"westus\",\r\n
-        \ \"tags\": {\r\n    \"foo\": \"doo\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Succeeded\"\r\n  }\r\n}"
+      string: '{"name":"asg1","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1","etag":"W/\"d9a5042d-ce46-47b7-bd88-eb40fb459146\"","type":"Microsoft.Network/applicationSecurityGroups","location":"westus","tags":{"foo":"doo"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '427'
+      - '368'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:26 GMT
+      - Sun, 06 Apr 2025 14:28:54 GMT
       etag:
-      - W/"86caff2b-8466-4958-94e8-954744f5a22c"
+      - W/"d9a5042d-ce46-47b7-bd88-eb40fb459146"
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 40d51909-e7c1-4acb-b4d1-9dfe5924c2e3
+      - ae1a1008-6dfb-4ea8-b480-f7acfb85e288
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: 23D0119DA3AB4FBDAF6FFCC74FCE88D4 Ref B: BN1AA2051014049 Ref C: 2025-04-06T14:28:54Z'
     status:
       code: 200
       message: OK
@@ -263,32 +268,36 @@ interactions:
       ParameterSetName:
       - -g -n --tags
       User-Agent:
-      - AZURECLI/2.45.0 azsdk-python-azure-mgmt-resource/22.0.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_asg000001?api-version=2022-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_asg000001?api-version=2024-11-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001","name":"cli_test_network_asg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2023-02-07T10:30:09Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001","name":"cli_test_network_asg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","test":"test_network_asg","date":"2025-04-06T14:28:48Z","module":"network","DateCreated":"2025-04-06T14:28:51Z","Creator":"05e98f05-c170-4236-968f-5bf6b5884bfc"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '330'
+      - '461'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:26 GMT
+      - Sun, 06 Apr 2025 14:28:55 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: 326F1945878B4222B50FAB5C88F096F9 Ref B: BN1AA2051015029 Ref C: 2025-04-06T14:28:55Z'
     status:
       code: 200
       message: OK
@@ -306,45 +315,40 @@ interactions:
       ParameterSetName:
       - -g -n --tags
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1?api-version=2021-08-01
   response:
     body:
-      string: "{\r\n  \"name\": \"asg1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1\",\r\n
-        \ \"etag\": \"W/\\\"86caff2b-8466-4958-94e8-954744f5a22c\\\"\",\r\n  \"type\":
-        \"Microsoft.Network/applicationSecurityGroups\",\r\n  \"location\": \"westus\",\r\n
-        \ \"tags\": {\r\n    \"foo\": \"doo\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Succeeded\"\r\n  }\r\n}"
+      string: '{"name":"asg1","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1","etag":"W/\"d9a5042d-ce46-47b7-bd88-eb40fb459146\"","type":"Microsoft.Network/applicationSecurityGroups","location":"westus","tags":{"foo":"doo"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '427'
+      - '368'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:26 GMT
+      - Sun, 06 Apr 2025 14:28:55 GMT
       etag:
-      - W/"86caff2b-8466-4958-94e8-954744f5a22c"
+      - W/"d9a5042d-ce46-47b7-bd88-eb40fb459146"
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 1b957d9d-1be9-4b2d-b0d9-a63ce95a2d55
+      - 6c2c8258-e0f0-4189-b783-ffd66c9e6d0c
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: EC6BAE59FEA1440C98827F334CFCBBCE Ref B: BN1AA2051012051 Ref C: 2025-04-06T14:28:55Z'
     status:
       code: 200
       message: OK
@@ -367,49 +371,46 @@ interactions:
       ParameterSetName:
       - -g -n --tags
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1?api-version=2021-08-01
   response:
     body:
-      string: "{\r\n  \"name\": \"asg1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1\",\r\n
-        \ \"etag\": \"W/\\\"e298f4e8-4663-4bd9-bfe8-7300ecd5c87b\\\"\",\r\n  \"type\":
-        \"Microsoft.Network/applicationSecurityGroups\",\r\n  \"location\": \"westus\",\r\n
-        \ \"tags\": {\r\n    \"foo\": \"bar\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Succeeded\"\r\n  }\r\n}"
+      string: '{"name":"asg1","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1","etag":"W/\"f450f907-1d32-49df-a208-95b50deb470b\"","type":"Microsoft.Network/applicationSecurityGroups","location":"westus","tags":{"foo":"bar"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       azure-asyncnotification:
       - Enabled
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/24515f4b-c148-422f-bae6-7a3e9daabdc1?api-version=2021-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/1b589c06-7f56-41ab-951d-ce47fad73a44?api-version=2021-08-01&t=638795465380405211&c=MIIHhzCCBm-gAwIBAgITfAaPVSYGYp0_a9-AhQAABo9VJjANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIwMDgzNTM2WhcNMjUwNzE5MDgzNTM2WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMIvzhqGKiWeVv5oxugQQEZ8AxTC1p8Lu-WshPo0K7VS2EMvF_bHNAJa2ICbsiu5eWYlTaYcdzZL_li8T_EER2Dx5l6uj7GUfGoYbEJQ0ZdYtzLoQJYa5_x168-RsA7F1839wPdzv32z3afnCHOSeIzPiOiCJXb6FjOWJ-znbB2na5Gw4nwgaj4uxlRQGN3ElReqQ4P64xkAph5x91fRINLkaaRTDeKQ_g_suaN1BHm22myYRg2O9gZy5mhTUzDjj9HsrGu2-1-ZFNZZPMl5ltWBsQD6c_49DWpOowaX9ZSYaO9E9s45gP5YMr-ALxZrETB9ilbvFNbbXmv9Kc5LEc0CAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBQj9GN21vymIgY86pEWjNqGR6-dlDAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAF0lTrFg0dSUCXo41FDWmaQFDJKZsucTat3vhDRkbIfxlo0n4QQJOqJQSCzj8n-NvH0p0CR42nsTk2C70Vpr54i80YKfcTOm0Q0Rq9FHB-Nz4KlrymTkU6hfeD0WRhUOq6PB1WhWLF_mqSzEwmTmuQAsVGXf8Gh0psllvyF--eEaF0pSbhEuo6lPzPk3hgUSico8gbSjr4hgIVn6x0JCa1XSFgaeKHIqD8eapb-mDfYa0QAQwJ8tYxzrkJ_n5OI7g5xCiIeV5DXmSzLTGx9QvaE4Y8-jFgRKG0qMhnqf8StrJOSKMrcJlHtjT7plbWt-fXPLHNvPydmtAiA2qygRnU0&s=Y17Z2DMrYnLADFdAB9z-D1jAeRn0I_0uZDm9nByzu0gp_IHRCc2-tLSm88Teb9rM9z9cjOH-ihf5v9uoUkvQ8oysJbwH65EvNXEg3UGOsE4rmUwsqcL7TT2Lj8x18FdUExnISL78_lndU3BhYuzNNvATb0K44uJbPGjF4c-zDJuf7b57Yzb1Egxas720mr3gyYcPkqNy9ScWkwvBaGzYWfdTkN7BrDRJze2QexsXBHoD5g1H3WDGWnqQ4N1f962DNeDveFmmLNZZNJD-kKvyZo_0IG4bvAoj66Go1Nw9tUAEcqWwgSb33gF6UIsuAqB4lxdEODycscUXq7e9v1RJDw&h=KL7VASVCKHCvXpmCli5TbR-26QvX3mMGf26xbHeTaek
       cache-control:
       - no-cache
       content-length:
-      - '427'
+      - '368'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:27 GMT
+      - Sun, 06 Apr 2025 14:28:58 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - f3408159-1c02-4b88-b9a1-4c1b0587cac3
+      - 161fe89b-c3da-4e83-a4d4-81d9c7376c3e
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus/2d10a72d-a5b7-41d0-a311-5711886b8b83
+      x-ms-ratelimit-remaining-subscription-global-writes:
+      - '2999'
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '199'
+      x-msedge-ref:
+      - 'Ref A: 8219436DEAC142B2A5CB8BE943DC489E Ref B: BN1AA2051012051 Ref C: 2025-04-06T14:28:55Z'
     status:
       code: 200
       message: OK
@@ -427,39 +428,40 @@ interactions:
       ParameterSetName:
       - -g -n --tags
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/24515f4b-c148-422f-bae6-7a3e9daabdc1?api-version=2021-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/1b589c06-7f56-41ab-951d-ce47fad73a44?api-version=2021-08-01&t=638795465380405211&c=MIIHhzCCBm-gAwIBAgITfAaPVSYGYp0_a9-AhQAABo9VJjANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIwMDgzNTM2WhcNMjUwNzE5MDgzNTM2WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMIvzhqGKiWeVv5oxugQQEZ8AxTC1p8Lu-WshPo0K7VS2EMvF_bHNAJa2ICbsiu5eWYlTaYcdzZL_li8T_EER2Dx5l6uj7GUfGoYbEJQ0ZdYtzLoQJYa5_x168-RsA7F1839wPdzv32z3afnCHOSeIzPiOiCJXb6FjOWJ-znbB2na5Gw4nwgaj4uxlRQGN3ElReqQ4P64xkAph5x91fRINLkaaRTDeKQ_g_suaN1BHm22myYRg2O9gZy5mhTUzDjj9HsrGu2-1-ZFNZZPMl5ltWBsQD6c_49DWpOowaX9ZSYaO9E9s45gP5YMr-ALxZrETB9ilbvFNbbXmv9Kc5LEc0CAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBQj9GN21vymIgY86pEWjNqGR6-dlDAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAF0lTrFg0dSUCXo41FDWmaQFDJKZsucTat3vhDRkbIfxlo0n4QQJOqJQSCzj8n-NvH0p0CR42nsTk2C70Vpr54i80YKfcTOm0Q0Rq9FHB-Nz4KlrymTkU6hfeD0WRhUOq6PB1WhWLF_mqSzEwmTmuQAsVGXf8Gh0psllvyF--eEaF0pSbhEuo6lPzPk3hgUSico8gbSjr4hgIVn6x0JCa1XSFgaeKHIqD8eapb-mDfYa0QAQwJ8tYxzrkJ_n5OI7g5xCiIeV5DXmSzLTGx9QvaE4Y8-jFgRKG0qMhnqf8StrJOSKMrcJlHtjT7plbWt-fXPLHNvPydmtAiA2qygRnU0&s=Y17Z2DMrYnLADFdAB9z-D1jAeRn0I_0uZDm9nByzu0gp_IHRCc2-tLSm88Teb9rM9z9cjOH-ihf5v9uoUkvQ8oysJbwH65EvNXEg3UGOsE4rmUwsqcL7TT2Lj8x18FdUExnISL78_lndU3BhYuzNNvATb0K44uJbPGjF4c-zDJuf7b57Yzb1Egxas720mr3gyYcPkqNy9ScWkwvBaGzYWfdTkN7BrDRJze2QexsXBHoD5g1H3WDGWnqQ4N1f962DNeDveFmmLNZZNJD-kKvyZo_0IG4bvAoj66Go1Nw9tUAEcqWwgSb33gF6UIsuAqB4lxdEODycscUXq7e9v1RJDw&h=KL7VASVCKHCvXpmCli5TbR-26QvX3mMGf26xbHeTaek
   response:
     body:
-      string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
+      string: '{"status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '29'
+      - '22'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:57 GMT
+      - Sun, 06 Apr 2025 14:28:58 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - d9d607cd-e644-4dd3-be34-b2a312a48933
+      - 59481a67-a7e1-4698-99ab-70a32412a8c8
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus/e601e2b1-6bb3-4f53-ae65-2c64407be56f
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: 70DBB43F3B3646CFAE7D5BB1A379FB42 Ref B: BN1AA2051012051 Ref C: 2025-04-06T14:28:58Z'
     status:
       code: 200
       message: OK
@@ -477,45 +479,40 @@ interactions:
       ParameterSetName:
       - -g -n --tags
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1?api-version=2021-08-01
   response:
     body:
-      string: "{\r\n  \"name\": \"asg1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1\",\r\n
-        \ \"etag\": \"W/\\\"e298f4e8-4663-4bd9-bfe8-7300ecd5c87b\\\"\",\r\n  \"type\":
-        \"Microsoft.Network/applicationSecurityGroups\",\r\n  \"location\": \"westus\",\r\n
-        \ \"tags\": {\r\n    \"foo\": \"bar\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Succeeded\"\r\n  }\r\n}"
+      string: '{"name":"asg1","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1","etag":"W/\"f450f907-1d32-49df-a208-95b50deb470b\"","type":"Microsoft.Network/applicationSecurityGroups","location":"westus","tags":{"foo":"bar"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '427'
+      - '368'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:57 GMT
+      - Sun, 06 Apr 2025 14:28:58 GMT
       etag:
-      - W/"e298f4e8-4663-4bd9-bfe8-7300ecd5c87b"
+      - W/"f450f907-1d32-49df-a208-95b50deb470b"
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 53831120-8754-4abd-b161-9b74e9197501
+      - 529617c0-7fc2-4aea-be0a-ca407e5bd46a
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: 2A0A5434ACEF4BC39A9AE57BACEE6764 Ref B: BN1AA2051012051 Ref C: 2025-04-06T14:28:58Z'
     status:
       code: 200
       message: OK
@@ -531,45 +528,38 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/applicationSecurityGroups?api-version=2021-08-01
   response:
     body:
-      string: "{\r\n  \"value\": [\r\n    {\r\n      \"name\": \"asg1\",\r\n      \"id\":
-        \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1\",\r\n
-        \     \"etag\": \"W/\\\"e298f4e8-4663-4bd9-bfe8-7300ecd5c87b\\\"\",\r\n      \"type\":
-        \"Microsoft.Network/applicationSecurityGroups\",\r\n      \"location\": \"westus\",\r\n
-        \     \"tags\": {\r\n        \"foo\": \"bar\"\r\n      },\r\n      \"properties\":
-        {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    }\r\n
-        \ ]\r\n}"
+      string: '{"value":[{"name":"asg1","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1","etag":"W/\"f450f907-1d32-49df-a208-95b50deb470b\"","type":"Microsoft.Network/applicationSecurityGroups","location":"westus","tags":{"foo":"bar"},"properties":{"provisioningState":"Succeeded"}}]}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '504'
+      - '380'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:58 GMT
+      - Sun, 06 Apr 2025 14:28:59 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 1fc86833-c158-44ff-a415-6393a6b3b5ef
+      - 2622687b-ba77-4d91-ab28-eb0e375f3709
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: 3BB5497AFC23476A8BC1CA2470DB9B88 Ref B: BN1AA2051014051 Ref C: 2025-04-06T14:28:59Z'
     status:
       code: 200
       message: OK
@@ -587,45 +577,40 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1?api-version=2021-08-01
   response:
     body:
-      string: "{\r\n  \"name\": \"asg1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1\",\r\n
-        \ \"etag\": \"W/\\\"e298f4e8-4663-4bd9-bfe8-7300ecd5c87b\\\"\",\r\n  \"type\":
-        \"Microsoft.Network/applicationSecurityGroups\",\r\n  \"location\": \"westus\",\r\n
-        \ \"tags\": {\r\n    \"foo\": \"bar\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Succeeded\"\r\n  }\r\n}"
+      string: '{"name":"asg1","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1","etag":"W/\"f450f907-1d32-49df-a208-95b50deb470b\"","type":"Microsoft.Network/applicationSecurityGroups","location":"westus","tags":{"foo":"bar"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '427'
+      - '368'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:30:59 GMT
+      - Sun, 06 Apr 2025 14:28:59 GMT
       etag:
-      - W/"e298f4e8-4663-4bd9-bfe8-7300ecd5c87b"
+      - W/"f450f907-1d32-49df-a208-95b50deb470b"
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 9bb96fb8-293c-4067-a13b-21083edb2f86
+      - 311cf9b2-3a62-4ea5-834b-a708e708360e
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: 4D505295EBE74DF98A86D062E56584CC Ref B: BN1AA2051015017 Ref C: 2025-04-06T14:28:59Z'
     status:
       code: 200
       message: OK
@@ -645,7 +630,7 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: DELETE
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_asg000001/providers/Microsoft.Network/applicationSecurityGroups/asg1?api-version=2021-08-01
@@ -656,30 +641,35 @@ interactions:
       azure-asyncnotification:
       - Enabled
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/d168d585-a933-486c-827d-654aab33dfab?api-version=2021-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/2ad58223-58b4-4376-8671-98df3dfde30e?api-version=2021-08-01&t=638795465414756624&c=MIIHhzCCBm-gAwIBAgITfAaPVSYGYp0_a9-AhQAABo9VJjANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIwMDgzNTM2WhcNMjUwNzE5MDgzNTM2WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMIvzhqGKiWeVv5oxugQQEZ8AxTC1p8Lu-WshPo0K7VS2EMvF_bHNAJa2ICbsiu5eWYlTaYcdzZL_li8T_EER2Dx5l6uj7GUfGoYbEJQ0ZdYtzLoQJYa5_x168-RsA7F1839wPdzv32z3afnCHOSeIzPiOiCJXb6FjOWJ-znbB2na5Gw4nwgaj4uxlRQGN3ElReqQ4P64xkAph5x91fRINLkaaRTDeKQ_g_suaN1BHm22myYRg2O9gZy5mhTUzDjj9HsrGu2-1-ZFNZZPMl5ltWBsQD6c_49DWpOowaX9ZSYaO9E9s45gP5YMr-ALxZrETB9ilbvFNbbXmv9Kc5LEc0CAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBQj9GN21vymIgY86pEWjNqGR6-dlDAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAF0lTrFg0dSUCXo41FDWmaQFDJKZsucTat3vhDRkbIfxlo0n4QQJOqJQSCzj8n-NvH0p0CR42nsTk2C70Vpr54i80YKfcTOm0Q0Rq9FHB-Nz4KlrymTkU6hfeD0WRhUOq6PB1WhWLF_mqSzEwmTmuQAsVGXf8Gh0psllvyF--eEaF0pSbhEuo6lPzPk3hgUSico8gbSjr4hgIVn6x0JCa1XSFgaeKHIqD8eapb-mDfYa0QAQwJ8tYxzrkJ_n5OI7g5xCiIeV5DXmSzLTGx9QvaE4Y8-jFgRKG0qMhnqf8StrJOSKMrcJlHtjT7plbWt-fXPLHNvPydmtAiA2qygRnU0&s=sjhbgww97TDxmqr8X1bCU2vLgyxN1Vzj6B6U8QFXSq7x5fi3kROsNoks3ldlFSrtavPJqX6sY1DNQByMNXJetoQXcNwDsMbA2qhSEKzbhNPHa5MWCc66jz3R4clT9j85-PQFkrrNiQByXtEBCBJbI6SPGVszXALJiGJkhd8-jI6LJ-xh0sG2VeA6Yq87x2Y0-OZOCVYi_TYYVyif_9npZEacSxzsqLTzHiwtYSj-5-2CERI4qc0MmB6Nl-d3xxe_7csKPMZHabCqo9AXaIYsxPWWPBbR1prANXUoLbLRu0FEfBH8B4YmFtzLW3gna4sNRZd-KbnoV3nWclGwak7VDw&h=97zV8BXelWkTyy83hxjOM5-7Yht9bcAJ5vY7_tQbEQ4
       cache-control:
       - no-cache
       content-length:
       - '0'
       date:
-      - Tue, 07 Feb 2023 10:30:59 GMT
+      - Sun, 06 Apr 2025 14:29:01 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operationResults/d168d585-a933-486c-827d-654aab33dfab?api-version=2021-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operationResults/2ad58223-58b4-4376-8671-98df3dfde30e?api-version=2021-08-01&t=638795465414912884&c=MIIHhzCCBm-gAwIBAgITfAaPVSYGYp0_a9-AhQAABo9VJjANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIwMDgzNTM2WhcNMjUwNzE5MDgzNTM2WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMIvzhqGKiWeVv5oxugQQEZ8AxTC1p8Lu-WshPo0K7VS2EMvF_bHNAJa2ICbsiu5eWYlTaYcdzZL_li8T_EER2Dx5l6uj7GUfGoYbEJQ0ZdYtzLoQJYa5_x168-RsA7F1839wPdzv32z3afnCHOSeIzPiOiCJXb6FjOWJ-znbB2na5Gw4nwgaj4uxlRQGN3ElReqQ4P64xkAph5x91fRINLkaaRTDeKQ_g_suaN1BHm22myYRg2O9gZy5mhTUzDjj9HsrGu2-1-ZFNZZPMl5ltWBsQD6c_49DWpOowaX9ZSYaO9E9s45gP5YMr-ALxZrETB9ilbvFNbbXmv9Kc5LEc0CAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBQj9GN21vymIgY86pEWjNqGR6-dlDAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAF0lTrFg0dSUCXo41FDWmaQFDJKZsucTat3vhDRkbIfxlo0n4QQJOqJQSCzj8n-NvH0p0CR42nsTk2C70Vpr54i80YKfcTOm0Q0Rq9FHB-Nz4KlrymTkU6hfeD0WRhUOq6PB1WhWLF_mqSzEwmTmuQAsVGXf8Gh0psllvyF--eEaF0pSbhEuo6lPzPk3hgUSico8gbSjr4hgIVn6x0JCa1XSFgaeKHIqD8eapb-mDfYa0QAQwJ8tYxzrkJ_n5OI7g5xCiIeV5DXmSzLTGx9QvaE4Y8-jFgRKG0qMhnqf8StrJOSKMrcJlHtjT7plbWt-fXPLHNvPydmtAiA2qygRnU0&s=MZ6AIqkq8rovQ6MQHtLvVu1iCbBzfEYioiHyVUxSlHc83UdF-fP30VQwdlVcmsu7WrY5keTc2io3euth19xzfXrEcM-BaKCd8lZPm3-AdMSA2P2tXE_LFYgrzWgMjlS3oYWtPotwnyrk-gy1aa_y32zTCpMZfoh8JcQtLWmcc2bapDJ2xdQM1LnyoXjjLp4YJ7bXC2d_JGEoR0zEtU7r5jxW8LKuMjxeBbOzUaR9I6Oh94050022sjaOppUAbdJCPGdfrn6ipLksDUlxdSFVI3qUUrA6cTBJmY9jZdvJLHKUP6afSPmPEoAOxiock5gTJUQLSUm8IfeLU2qNnOu2yw&h=yQVPpAJ0xTyDAKtAqzDsEVZ22UBfCNNx2qIY_tLKVFQ
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - de119f55-79ce-461f-80c1-8040e14a76b8
+      - b22f2cdd-c77b-46b5-a50e-e95215ecff85
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus/ccb049b4-73d3-46b0-858f-1aee504b365d
       x-ms-ratelimit-remaining-subscription-deletes:
-      - '14998'
+      - '199'
+      x-ms-ratelimit-remaining-subscription-global-deletes:
+      - '2999'
+      x-msedge-ref:
+      - 'Ref A: A1786A6D1CC34BD1831EFF10DDAEEDC4 Ref B: BN1AA2051013035 Ref C: 2025-04-06T14:28:59Z'
     status:
       code: 202
       message: Accepted
@@ -697,39 +687,40 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/d168d585-a933-486c-827d-654aab33dfab?api-version=2021-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/2ad58223-58b4-4376-8671-98df3dfde30e?api-version=2021-08-01&t=638795465414756624&c=MIIHhzCCBm-gAwIBAgITfAaPVSYGYp0_a9-AhQAABo9VJjANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIwMDgzNTM2WhcNMjUwNzE5MDgzNTM2WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMIvzhqGKiWeVv5oxugQQEZ8AxTC1p8Lu-WshPo0K7VS2EMvF_bHNAJa2ICbsiu5eWYlTaYcdzZL_li8T_EER2Dx5l6uj7GUfGoYbEJQ0ZdYtzLoQJYa5_x168-RsA7F1839wPdzv32z3afnCHOSeIzPiOiCJXb6FjOWJ-znbB2na5Gw4nwgaj4uxlRQGN3ElReqQ4P64xkAph5x91fRINLkaaRTDeKQ_g_suaN1BHm22myYRg2O9gZy5mhTUzDjj9HsrGu2-1-ZFNZZPMl5ltWBsQD6c_49DWpOowaX9ZSYaO9E9s45gP5YMr-ALxZrETB9ilbvFNbbXmv9Kc5LEc0CAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBQj9GN21vymIgY86pEWjNqGR6-dlDAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAF0lTrFg0dSUCXo41FDWmaQFDJKZsucTat3vhDRkbIfxlo0n4QQJOqJQSCzj8n-NvH0p0CR42nsTk2C70Vpr54i80YKfcTOm0Q0Rq9FHB-Nz4KlrymTkU6hfeD0WRhUOq6PB1WhWLF_mqSzEwmTmuQAsVGXf8Gh0psllvyF--eEaF0pSbhEuo6lPzPk3hgUSico8gbSjr4hgIVn6x0JCa1XSFgaeKHIqD8eapb-mDfYa0QAQwJ8tYxzrkJ_n5OI7g5xCiIeV5DXmSzLTGx9QvaE4Y8-jFgRKG0qMhnqf8StrJOSKMrcJlHtjT7plbWt-fXPLHNvPydmtAiA2qygRnU0&s=sjhbgww97TDxmqr8X1bCU2vLgyxN1Vzj6B6U8QFXSq7x5fi3kROsNoks3ldlFSrtavPJqX6sY1DNQByMNXJetoQXcNwDsMbA2qhSEKzbhNPHa5MWCc66jz3R4clT9j85-PQFkrrNiQByXtEBCBJbI6SPGVszXALJiGJkhd8-jI6LJ-xh0sG2VeA6Yq87x2Y0-OZOCVYi_TYYVyif_9npZEacSxzsqLTzHiwtYSj-5-2CERI4qc0MmB6Nl-d3xxe_7csKPMZHabCqo9AXaIYsxPWWPBbR1prANXUoLbLRu0FEfBH8B4YmFtzLW3gna4sNRZd-KbnoV3nWclGwak7VDw&h=97zV8BXelWkTyy83hxjOM5-7Yht9bcAJ5vY7_tQbEQ4
   response:
     body:
-      string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
+      string: '{"status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '29'
+      - '22'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:31:09 GMT
+      - Sun, 06 Apr 2025 14:29:01 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - ac29fd58-1a78-4e73-82a3-d6448e19b288
+      - 67559c88-8467-4879-905e-ed01d8186a52
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus/da03582b-1eac-4e80-b898-99ff4fa22567
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: E44FE0A06FEA48F99B0769B8F90BC07C Ref B: BN1AA2051013035 Ref C: 2025-04-06T14:29:01Z'
     status:
       code: 200
       message: OK
@@ -747,10 +738,10 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operationResults/d168d585-a933-486c-827d-654aab33dfab?api-version=2021-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operationResults/2ad58223-58b4-4376-8671-98df3dfde30e?api-version=2021-08-01&t=638795465414912884&c=MIIHhzCCBm-gAwIBAgITfAaPVSYGYp0_a9-AhQAABo9VJjANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIwMDgzNTM2WhcNMjUwNzE5MDgzNTM2WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMIvzhqGKiWeVv5oxugQQEZ8AxTC1p8Lu-WshPo0K7VS2EMvF_bHNAJa2ICbsiu5eWYlTaYcdzZL_li8T_EER2Dx5l6uj7GUfGoYbEJQ0ZdYtzLoQJYa5_x168-RsA7F1839wPdzv32z3afnCHOSeIzPiOiCJXb6FjOWJ-znbB2na5Gw4nwgaj4uxlRQGN3ElReqQ4P64xkAph5x91fRINLkaaRTDeKQ_g_suaN1BHm22myYRg2O9gZy5mhTUzDjj9HsrGu2-1-ZFNZZPMl5ltWBsQD6c_49DWpOowaX9ZSYaO9E9s45gP5YMr-ALxZrETB9ilbvFNbbXmv9Kc5LEc0CAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBQj9GN21vymIgY86pEWjNqGR6-dlDAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAF0lTrFg0dSUCXo41FDWmaQFDJKZsucTat3vhDRkbIfxlo0n4QQJOqJQSCzj8n-NvH0p0CR42nsTk2C70Vpr54i80YKfcTOm0Q0Rq9FHB-Nz4KlrymTkU6hfeD0WRhUOq6PB1WhWLF_mqSzEwmTmuQAsVGXf8Gh0psllvyF--eEaF0pSbhEuo6lPzPk3hgUSico8gbSjr4hgIVn6x0JCa1XSFgaeKHIqD8eapb-mDfYa0QAQwJ8tYxzrkJ_n5OI7g5xCiIeV5DXmSzLTGx9QvaE4Y8-jFgRKG0qMhnqf8StrJOSKMrcJlHtjT7plbWt-fXPLHNvPydmtAiA2qygRnU0&s=MZ6AIqkq8rovQ6MQHtLvVu1iCbBzfEYioiHyVUxSlHc83UdF-fP30VQwdlVcmsu7WrY5keTc2io3euth19xzfXrEcM-BaKCd8lZPm3-AdMSA2P2tXE_LFYgrzWgMjlS3oYWtPotwnyrk-gy1aa_y32zTCpMZfoh8JcQtLWmcc2bapDJ2xdQM1LnyoXjjLp4YJ7bXC2d_JGEoR0zEtU7r5jxW8LKuMjxeBbOzUaR9I6Oh94050022sjaOppUAbdJCPGdfrn6ipLksDUlxdSFVI3qUUrA6cTBJmY9jZdvJLHKUP6afSPmPEoAOxiock5gTJUQLSUm8IfeLU2qNnOu2yw&h=yQVPpAJ0xTyDAKtAqzDsEVZ22UBfCNNx2qIY_tLKVFQ
   response:
     body:
       string: ''
@@ -758,28 +749,33 @@ interactions:
       azure-asyncnotification:
       - Enabled
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/d168d585-a933-486c-827d-654aab33dfab?api-version=2021-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/2ad58223-58b4-4376-8671-98df3dfde30e?api-version=2021-08-01&t=638795465422734133&c=MIIHhzCCBm-gAwIBAgITfAaPVSYGYp0_a9-AhQAABo9VJjANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIwMDgzNTM2WhcNMjUwNzE5MDgzNTM2WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMIvzhqGKiWeVv5oxugQQEZ8AxTC1p8Lu-WshPo0K7VS2EMvF_bHNAJa2ICbsiu5eWYlTaYcdzZL_li8T_EER2Dx5l6uj7GUfGoYbEJQ0ZdYtzLoQJYa5_x168-RsA7F1839wPdzv32z3afnCHOSeIzPiOiCJXb6FjOWJ-znbB2na5Gw4nwgaj4uxlRQGN3ElReqQ4P64xkAph5x91fRINLkaaRTDeKQ_g_suaN1BHm22myYRg2O9gZy5mhTUzDjj9HsrGu2-1-ZFNZZPMl5ltWBsQD6c_49DWpOowaX9ZSYaO9E9s45gP5YMr-ALxZrETB9ilbvFNbbXmv9Kc5LEc0CAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBQj9GN21vymIgY86pEWjNqGR6-dlDAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAF0lTrFg0dSUCXo41FDWmaQFDJKZsucTat3vhDRkbIfxlo0n4QQJOqJQSCzj8n-NvH0p0CR42nsTk2C70Vpr54i80YKfcTOm0Q0Rq9FHB-Nz4KlrymTkU6hfeD0WRhUOq6PB1WhWLF_mqSzEwmTmuQAsVGXf8Gh0psllvyF--eEaF0pSbhEuo6lPzPk3hgUSico8gbSjr4hgIVn6x0JCa1XSFgaeKHIqD8eapb-mDfYa0QAQwJ8tYxzrkJ_n5OI7g5xCiIeV5DXmSzLTGx9QvaE4Y8-jFgRKG0qMhnqf8StrJOSKMrcJlHtjT7plbWt-fXPLHNvPydmtAiA2qygRnU0&s=sURn6PmE7FmSAqc57mbhhdyK-GrIR7lO93itsEqtR7WFL1qHnSC5OFrB4BcRIhNA0ZsNPCJ6VfWE6pRurPmRl7awnwif5qFSw7jKizaLX0bZuPmL7kkIsG6PI4KtWLk8pL7I04UEdeDddJZccmf5fnAU1lTa8aYpfUCBf7fgFFsBfDLEFdkfYFsToVP0UfA6Ro2pO4NYZ9vqg-xAVzmW_s7P6q-0toIQuHO3I40SEKvLqLA_w8aTdnlKL6v87wrp87mWqzmAy9eMhtd_B-xnxMhJThUgXWDurBKwRcd1fe1fnG9dHOzw9Mr4EXpyt4YkfK-CauKa9P0h3v36pZzyzw&h=uSv9kJFGRQZpwsznlDqD6ZzZRB5Ceq4QNwtMzY_-cq0
       cache-control:
       - no-cache
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:31:10 GMT
+      - Sun, 06 Apr 2025 14:29:02 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operationResults/d168d585-a933-486c-827d-654aab33dfab?api-version=2021-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operationResults/2ad58223-58b4-4376-8671-98df3dfde30e?api-version=2021-08-01&t=638795465422890382&c=MIIHhzCCBm-gAwIBAgITfAaPVSYGYp0_a9-AhQAABo9VJjANBgkqhkiG9w0BAQsFADBEMRMwEQYKCZImiZPyLGQBGRYDR0JMMRMwEQYKCZImiZPyLGQBGRYDQU1FMRgwFgYDVQQDEw9BTUUgSW5mcmEgQ0EgMDUwHhcNMjUwMTIwMDgzNTM2WhcNMjUwNzE5MDgzNTM2WjBAMT4wPAYDVQQDEzVhc3luY29wZXJhdGlvbnNpZ25pbmdjZXJ0aWZpY2F0ZS5tYW5hZ2VtZW50LmF6dXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMIvzhqGKiWeVv5oxugQQEZ8AxTC1p8Lu-WshPo0K7VS2EMvF_bHNAJa2ICbsiu5eWYlTaYcdzZL_li8T_EER2Dx5l6uj7GUfGoYbEJQ0ZdYtzLoQJYa5_x168-RsA7F1839wPdzv32z3afnCHOSeIzPiOiCJXb6FjOWJ-znbB2na5Gw4nwgaj4uxlRQGN3ElReqQ4P64xkAph5x91fRINLkaaRTDeKQ_g_suaN1BHm22myYRg2O9gZy5mhTUzDjj9HsrGu2-1-ZFNZZPMl5ltWBsQD6c_49DWpOowaX9ZSYaO9E9s45gP5YMr-ALxZrETB9ilbvFNbbXmv9Kc5LEc0CAwEAAaOCBHQwggRwMCcGCSsGAQQBgjcVCgQaMBgwCgYIKwYBBQUHAwEwCgYIKwYBBQUHAwIwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhpDjDYTVtHiE8Ys-hZvdFs6dEoFghfmRS4WsmTQCAWQCAQcwggHLBggrBgEFBQcBAQSCAb0wggG5MGMGCCsGAQUFBzAChldodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpaW5mcmEvQ2VydHMvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmwxLmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MFMGCCsGAQUFBzAChkdodHRwOi8vY3JsMi5hbWUuZ2JsL2FpYS9DTzFQS0lJTlRDQTAxLkFNRS5HQkxfQU1FJTIwSW5mcmElMjBDQSUyMDA1LmNydDBTBggrBgEFBQcwAoZHaHR0cDovL2NybDMuYW1lLmdibC9haWEvQ08xUEtJSU5UQ0EwMS5BTUUuR0JMX0FNRSUyMEluZnJhJTIwQ0ElMjAwNS5jcnQwUwYIKwYBBQUHMAKGR2h0dHA6Ly9jcmw0LmFtZS5nYmwvYWlhL0NPMVBLSUlOVENBMDEuQU1FLkdCTF9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3J0MB0GA1UdDgQWBBQj9GN21vymIgY86pEWjNqGR6-dlDAOBgNVHQ8BAf8EBAMCBaAwggEmBgNVHR8EggEdMIIBGTCCARWgggERoIIBDYY_aHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraWluZnJhL0NSTC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMS5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMi5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsMy5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JshjFodHRwOi8vY3JsNC5hbWUuZ2JsL2NybC9BTUUlMjBJbmZyYSUyMENBJTIwMDUuY3JsMIGdBgNVHSAEgZUwgZIwDAYKKwYBBAGCN3sBATBmBgorBgEEAYI3ewICMFgwVgYIKwYBBQUHAgIwSh5IADMAMwBlADAAMQA5ADIAMQAtADQAZAA2ADQALQA0AGYAOABjAC0AYQAwADUANQAtADUAYgBkAGEAZgBmAGQANQBlADMAMwBkMAwGCisGAQQBgjd7AwIwDAYKKwYBBAGCN3sEAjAfBgNVHSMEGDAWgBR61hmFKHlscXYeYPjzS--iBUIWHTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAF0lTrFg0dSUCXo41FDWmaQFDJKZsucTat3vhDRkbIfxlo0n4QQJOqJQSCzj8n-NvH0p0CR42nsTk2C70Vpr54i80YKfcTOm0Q0Rq9FHB-Nz4KlrymTkU6hfeD0WRhUOq6PB1WhWLF_mqSzEwmTmuQAsVGXf8Gh0psllvyF--eEaF0pSbhEuo6lPzPk3hgUSico8gbSjr4hgIVn6x0JCa1XSFgaeKHIqD8eapb-mDfYa0QAQwJ8tYxzrkJ_n5OI7g5xCiIeV5DXmSzLTGx9QvaE4Y8-jFgRKG0qMhnqf8StrJOSKMrcJlHtjT7plbWt-fXPLHNvPydmtAiA2qygRnU0&s=m3t8rMuAavOFyJ-epB1w597eDx4aQROzo5SF3V94vBuMeNS1uO1Bo2UFWMhOHwTvLQUTPtc7nPBSbeG84u3B32ax7Pi1oqYcj8bBUtqx4qF8zkJrFVj8N5dzzHIcP0leQFBOWiyAwG8uzUfT-uZtc4N3wbgW0Ep5CY8VrLzCyrbZuGZVLjOX1W9ANrDasi7VWXeDZMZzjwkqfMS1LBk-yFeuXR4yhmxDlsVeFKglQCaEkXOt6Ro_9IwqsIx7wn_I6a4ES3usbR4Pv-MlbYWGTWMx_yvI_TjuaSFyJjm3dUjbsL4-UfEVI7vKiex9c9BU3v9DTaeNgc-bxLRsVVSxKA&h=vvLLNmkSnLA_qkSpS5_Kg9kxVW8lcuOm2cHHlOAlR1Y
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - de119f55-79ce-461f-80c1-8040e14a76b8
+      - b22f2cdd-c77b-46b5-a50e-e95215ecff85
+      x-ms-operation-identifier:
+      - appId=05e98f05-c170-4236-968f-5bf6b5884bfc,tenantId=54826b22-38d6-4fb2-bad9-b7b93a3e9c5a,objectId=55e73ff3-85c1-4e75-84df-a7a86a55f067/eastus/408997bf-8b73-490e-b5ca-0b129115566b
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: 8F25719B40EF47F0A7F06D4A781B6F6C Ref B: BN1AA2051013035 Ref C: 2025-04-06T14:29:02Z'
     status:
       code: 204
       message: No Content
@@ -795,7 +791,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - AZURECLI/2.45.0 (AAZ) azsdk-python-core/1.24.0 Python/3.10.9 (Linux-5.15.0-1031-azure-x86_64-with-glibc2.31)
+      - AZURECLI/2.71.0 azsdk-python-core/1.31.0 Python/3.12.9 (Linux-6.8.0-1025-azure-x86_64-with-glibc2.35)
         VSTS_7b238909-6802-4b65-b90d-184bca47f458_build_220_0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/applicationSecurityGroups?api-version=2021-08-01
@@ -810,17 +806,23 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 07 Feb 2023 10:31:11 GMT
+      - Sun, 06 Apr 2025 14:29:02 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      vary:
-      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - 0bf1e5d3-16e3-49e9-adbc-7d0302f0b635
+      x-ms-ratelimit-remaining-subscription-global-reads:
+      - '3749'
+      x-msedge-ref:
+      - 'Ref A: 27F282C0E68943AFA89735ED5D137D0C Ref B: BN1AA2051012023 Ref C: 2025-04-06T14:29:02Z'
     status:
       code: 200
       message: OK
